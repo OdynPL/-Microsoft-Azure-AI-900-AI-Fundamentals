@@ -41,11 +41,13 @@
 
 ## Odpowiedzialna AI (**Responsible AI**)
 - Kluczowe zasady:
-	- **Fairness** (sprawiedliwość) – równe traktowanie wszystkich użytkowników
-	- **Bezpieczeństwo** – ochrona przed błędami i nadużyciami
-	- **Prywatność** – ochrona danych osobowych
-	- **Przejrzystość** – możliwość wyjaśnienia działania modelu
-	- **Odpowiedzialność** – jasne określenie, kto odpowiada za decyzje AI
+	- **Fairness** (sprawiedliwość, Fairness) – równe traktowanie wszystkich użytkowników
+	- **Inclusiveness** (włączalność, Inclusiveness) – projektowanie AI z myślą o dostępności i uwzględnianiu różnych grup użytkowników
+	- **Bezpieczeństwo** (Security) – ochrona przed błędami i nadużyciami
+	- **Prywatność** (Privacy) – ochrona danych osobowych
+	- **Przejrzystość** (Transparency) – możliwość wyjaśnienia działania modelu
+	- **Odpowiedzialność** (Accountability) – jasne określenie, kto odpowiada za decyzje AI
+	- **Niezawodność** (Reliability) – zapewnienie, że system AI działa poprawnie, stabilnie i zgodnie z oczekiwaniami
 
 ## Usługi **Azure AI**
 - **Azure AI Vision** – analiza obrazów i wideo, klasyfikacja, detekcja obiektów, OCR, rozpoznawanie twarzy
