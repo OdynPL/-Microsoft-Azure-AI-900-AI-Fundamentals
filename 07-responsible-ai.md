@@ -29,6 +29,7 @@
 - **Azure AI Content Safety** – wykrywanie i blokowanie szkodliwych treści generowanych lub podawanych przez AI: mowa nienawiści, przemoc, treści seksualne, samookaleczenie. Dostępna jako osobna usługa API.
 
 ![Azure AI Content Safety](assets/content-safety.svg)
+
 - **Monitorowanie modeli** – automatyczne śledzenie skuteczności, driftu danych i potencjalnych problemów etycznych.
 - **Compliance Manager** – wsparcie dla zgodności z regulacjami prawnymi (ISO, GDPR, HIPAA, SOC).
 - **Data Privacy Toolkit** – narzędzia do anonimizacji i ochrony danych.

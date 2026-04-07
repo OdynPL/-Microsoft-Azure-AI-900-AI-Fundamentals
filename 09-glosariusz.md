@@ -1,4 +1,5 @@
 # Glosariusz AI-900
+
 ![Glosariusz](assets/glosariusz.svg)
 
 

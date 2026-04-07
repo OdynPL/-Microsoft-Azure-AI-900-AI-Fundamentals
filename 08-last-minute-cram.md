@@ -1,4 +1,5 @@
 # Szybka ściąga AI-900
+
 ![Last Minute Cram](assets/last-minute-cram.svg)
 
 [⟵ Poprzedni: Responsible AI](07-responsible-ai.md) | [Następny: Glosariusz ⟶](09-glosariusz.md)
