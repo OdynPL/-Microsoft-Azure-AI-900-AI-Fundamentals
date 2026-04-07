@@ -39,9 +39,9 @@
 
 ![CLU – Conversational Language Understanding](assets/clu.svg)
 
-	- **Intent Recognition** – rozpoznawanie zamiaru użytkownika (np. „zamów pizza”, „sprawdź pogodę”)
-	- **Entity Extraction** – wyodrębnianie encji z wypowiedzi (np. rodzaj pizzy, miasto)
-	- Integracja z Azure Bot Service / Copilot Studio
+  - **Intent Recognition** – rozpoznawanie zamiaru użytkownika (np. „zamów pizza”, „sprawdź pogodę”)
+  - **Entity Extraction** – wyodrębnianie encji z wypowiedzi (np. rodzaj pizzy, miasto)
+  - Integracja z Azure Bot Service / Copilot Studio
 
 - **Question Answering** – budowanie baz wiedzy Q&A:
 	- Tworzenie pary pytanie-odpowiedź z dokumentów, FAQ, URL

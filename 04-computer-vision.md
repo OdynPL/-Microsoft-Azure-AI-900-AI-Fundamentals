@@ -35,29 +35,29 @@
 
 ![Custom Vision – pipeline](assets/custom-vision.svg)
 
-	- Wgrywanie i etykietowanie własnych zdjęć (data labeling)
-	- Trenowanie modelu jednym kliknięciem
-	- Eksport gotowego modelu do Edge/ONNX/CoreML/TensorFlow
-	- Dwa tryby: **Image Classification** (co jest na zdjęciu?) i **Object Detection** (gdzie jest obiekt?)
+  - Wgrywanie i etykietowanie własnych zdjęć (data labeling)
+  - Trenowanie modelu jednym kliknięciem
+  - Eksport gotowego modelu do Edge/ONNX/CoreML/TensorFlow
+  - Dwa tryby: **Image Classification** (co jest na zdjęciu?) i **Object Detection** (gdzie jest obiekt?)
 
 - **Azure AI Document Intelligence** (dawniej Form Recognizer) – automatyczna ekstrakcja danych ze strukturyzowanych dokumentów:
 
 ![Azure AI Document Intelligence](assets/document-intelligence.svg)
 
-	- Odczytywanie par klucz-wartość, tabel i pól formularzy
-	- Gotowe modele: **Invoice** (faktury), **Receipt** (paragony), **ID Document** (dowody), **Business Card**
-	- Możliwość trenowania własnych modeli na niestandardowych typach dokumentów
+  - Odczytywanie par klucz-wartość, tabel i pól formularzy
+  - Gotowe modele: **Invoice** (faktury), **Receipt** (paragony), **ID Document** (dowody), **Business Card**
+  - Możliwość trenowania własnych modeli na niestandardowych typach dokumentów
 
 - **Azure AI Face** – specjalistyczna usługa do rozpoznawania i analizy twarzy. Pozwala na:
 
 ![Azure AI Face](assets/face.svg)
 
-	- Detekcję i identyfikację twarzy na zdjęciach i wideo
-	- Analizę emocji, wieku, płci, zarostu, okularów, pozycji głowy
-	- Weryfikację tożsamości (np. logowanie biometryczne)
-	- Grupowanie i porównywanie twarzy
-	- **Face Liveness Detection** – wykrywanie żywej osoby (ochrona przed atakami z użyciem zdjęć lub wideo)
-	- **Ograniczony dostęp (Limited Access)** – identyfikacja i weryfikacja twarzy wymagają formalnej akceptacji przez Microsoft
+  - Detekcję i identyfikację twarzy na zdjęciach i wideo
+  - Analizę emocji, wieku, płci, zarostu, okularów, pozycji głowy
+  - Weryfikację tożsamości (np. logowanie biometryczne)
+  - Grupowanie i porównywanie twarzy
+  - **Face Liveness Detection** – wykrywanie żywej osoby (ochrona przed atakami z użyciem zdjęć lub wideo)
+  - **Ograniczony dostęp (Limited Access)** – identyfikacja i weryfikacja twarzy wymagają formalnej akceptacji przez Microsoft
 
 ## Przykłady zastosowań
 - **Automatyczna moderacja zdjęć** w mediach społecznościowych (usuwanie treści nieodpowiednich)
