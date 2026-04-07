@@ -1,24 +1,25 @@
 # 1. Wprowadzenie i profil egzaminu AI-900
 
-**Azure AI Fundamentals (AI-900)** to certyfikat potwierdzający znajomość podstawowych pojęć AI, ML oraz usług AI na platformie Azure.
+
+**Azure AI Fundamentals (AI-900)** to certyfikat potwierdzający znajomość podstawowych pojęć **AI**, **ML** oraz usług **AI** na platformie **Azure**.
 
 ## Dla kogo?
 - Osoby techniczne i nietechniczne
 - Nie wymaga doświadczenia w data science ani programowaniu
 
 ## Zakres egzaminu
-- Podstawy AI i ML
-- Computer Vision
-- Natural Language Processing (NLP)
-- Generatywna AI
-- Responsible AI
+- Podstawy **AI** i **ML**
+- **Computer Vision**
+- **Natural Language Processing (NLP)**
+- **Generatywna AI**
+- **Responsible AI**
 
 ## Przygotowanie
-- Kursy Microsoft Learn (self-paced lub instruktorskie)
+- Kursy **Microsoft Learn** (self-paced lub instruktorskie)
 - Praktyczne laboratoria i quizy
 
 ## Ścieżki rozwoju
-- AI-900 to dobry start przed certyfikatami: Data Scientist, AI Engineer
+- **AI-900** to dobry start przed certyfikatami: **Data Scientist**, **AI Engineer**
 
 ---
 

@@ -1,5 +1,5 @@
 
-# 9. Glosariusz pojęć AI-900
+# 9. **Glosariusz pojęć AI-900**
 
 - **AI (Artificial Intelligence)** – sztuczna inteligencja
 - **ML (Machine Learning)** – uczenie maszynowe
