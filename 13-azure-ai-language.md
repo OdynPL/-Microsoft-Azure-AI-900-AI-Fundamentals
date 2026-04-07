@@ -1,3 +1,5 @@
+[⟵ Poprzedni: Azure AI Face](12-azure-ai-face.md) | [Następny: Azure AI Speech ⟶](14-azure-ai-speech.md)
+
 # Azure AI Language
 
 
@@ -11,7 +13,7 @@ Azure AI Language to zaawansowana usługa do przetwarzania i analizy języka nat
 - **Ekstrakcja kluczowych fraz (Key Phrase Extraction)** – wyodrębnianie najważniejszych słów i zwrotów z tekstu.
 - **Rozpoznawanie encji (Named Entity Recognition, NER)** – identyfikacja nazw własnych: osoby, miejsca, organizacje, daty, kwoty, numery.
 - **Wykrywanie PII (Personally Identifiable Information)** – automatyczne wykrywanie i maskowanie danych osobowych (np. PESEL, numery kart, adresy e-mail).
-- **Podsumowywanie (Summarization)** – automatyczne streszczanie długich dokumentów, artykułów lub transkrypcji rozmow.
+- **Podsumowywanie (Summarization)** – automatyczne streszczanie długich dokumentów, artykułów lub transkrypcji rozmów.
 - **Tłumaczenia maszynowe** – automatyczne tłumaczenie tekstu na ponad 100 języków.
 - **Kategoryzacja dokumentów (Text Classification)** – przypisywanie tekstów do określonych kategorii, w tym trenowanie własnych klasyfikatorów.
 - **Detekcja języka (Language Detection)** – automatyczne rozpoznawanie języka tekstu spośród ponad 120 języków.
@@ -24,7 +26,7 @@ Azure AI Language to zaawansowana usługa do przetwarzania i analizy języka nat
 	- Obsługa stron otwartych (chitchat), rankowanie odpowiedzi
 	- Integracja z Azure Bot Service i Copilot Studio
 - **Custom NER (Named Entity Recognition)** – trenowanie własnego rozpoznawania encji specyficznych dla branży (np. kody produktów, terminy medyczne).
-- **Custom Text Classification** – klasyfikacja tekstu na własno ręcznie zdefiniowane kategorie.
+- **Custom Text Classification** – klasyfikacja tekstu na ręcznie zdefiniowane kategorie.
 
 ## Przykłady użycia (Use Cases)
 - Analiza opinii klientów w mediach społecznościowych.
@@ -33,7 +35,7 @@ Azure AI Language to zaawansowana usługa do przetwarzania i analizy języka nat
 - Automatyczne tagowanie i kategoryzacja wiadomości e-mail.
 - Weryfikacja tożsamości na podstawie analizy tekstu (np. chatboty).
 
-## Przykład implementacji (Python, REST API)
+## Przykład implementacji (C#)
 ```csharp
 // Przykład użycia Azure AI Language (Sentiment Analysis) w C#
 using System;
@@ -69,4 +71,4 @@ class Program
 - Rozliczanie za liczbę żądań lub ilość przetworzonych znaków.
 
 ---
-[⟵ Powrót do spisu treści](README.md)
+[⟵ Poprzedni: Azure AI Face](12-azure-ai-face.md) | [Następny: Azure AI Speech ⟶](14-azure-ai-speech.md)

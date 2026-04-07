@@ -1,5 +1,3 @@
-
-
 [⟵ Poprzedni: Computer Vision](04-computer-vision.md) | [Następny: Generatywna AI ⟶](06-generative-ai.md)
 
 # 5. **Natural Language Processing (NLP)**
@@ -52,7 +50,7 @@
 
 - **Azure AI Speech** – usługa do rozpoznawania i syntezy mowy. Pozwala na:
 	- **Speech-to-Text** – zamiana mowy na tekst w wielu językach i akcentach
-	- **Text-to-Speech** – synteza naturalnie brzmijącej mowy z tekstu
+	- **Text-to-Speech** – synteza naturalnie brzmiącej mowy z tekstu
 	- **Speaker Recognition** – identyfikacja i weryfikacja tożsamości na podstawie głosu
 	- **Speech Translation** – tłumaczenie mowy w czasie rzeczywistym
 	- **Custom Speech** – dostosowanie modelu rozpoznawania mowy do własnego słownictwa, akcentu lub stylu

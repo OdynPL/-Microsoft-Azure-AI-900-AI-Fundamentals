@@ -1,6 +1,3 @@
-
-
-
 [⟵ Poprzedni: Podstawy uczenia maszynowego](03-machine-learning.md) | [Następny: Natural Language Processing ⟶](05-nlp.md)
 
 # 4. **Computer Vision** na **Azure**

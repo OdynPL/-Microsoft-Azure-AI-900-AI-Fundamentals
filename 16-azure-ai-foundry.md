@@ -1,3 +1,5 @@
+[⟵ Poprzedni: Azure OpenAI](15-azure-openai.md) | [Następny: Azure Machine Learning ⟶](17-azure-machine-learning.md)
+
 # Azure AI Foundry
 
 
@@ -8,7 +10,7 @@ Azure AI Foundry to platforma do zarządzania, katalogowania i wdrażania modeli
 
 ## Kluczowe funkcje
 - **Katalog modeli (Model Catalog)** – centralna baza modeli AI: modele Microsoft (GPT-4, Phi-3), open source (Llama, Mistral, Falcon), modele partnerów. Umożliwia przeglądanie, ewaluację i szybkie wdrażanie.
-- **Prompt Flow** – narzędzie do orkiestracji przepustowości AI: budowa pipeline'ów łączących LLM, narzędzia, retrieval i logikę. Używane do RAG i wielostopniowych aplikacji AI.
+- **Prompt Flow** – narzędzie do orkiestracji przepływów AI: budowa pipeline’ów łączących LLM, narzędzia, retrieval i logikę. Używane do RAG i wielostopniowych aplikacji AI.
 - **AI Hub i AI Project** – środowisko pracy zespołowej: zarządzanie połączeniami, zasobami, dostępem i eksperymentami.
 - **Ewaluacja modeli (Evaluation)** – porównywanie jakości modeli i promptów na własnych danych testowych (metryki: coherence, groundedness, fluency, relevance).
 - **Wersjonowanie modeli** – śledzenie zmian i historii modeli.
@@ -25,7 +27,7 @@ Azure AI Foundry to platforma do zarządzania, katalogowania i wdrażania modeli
 - Szybkie wdrażanie modeli open source do środowiska chmurowego.
 - Zapewnienie zgodności i bezpieczeństwa modeli AI.
 
-## Przykład implementacji (CLI, Azure ML)
+## Przykład implementacji (C#)
 ```csharp
 // Rejestracja modelu i publikacja endpointu w Azure ML za pomocą C#
 using Azure.AI.MachineLearning;
@@ -60,4 +62,4 @@ mlClient.OnlineEndpoints.CreateOrUpdate(endpoint);
 - Rozliczanie za wykorzystanie zasobów i liczbę endpointów.
 
 ---
-[⟵ Powrót do spisu treści](README.md)
+[⟵ Poprzedni: Azure OpenAI](15-azure-openai.md) | [Następny: Azure Machine Learning ⟶](17-azure-machine-learning.md)

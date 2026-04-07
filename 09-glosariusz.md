@@ -1,12 +1,8 @@
-# Glosariusz AI-900
-
-![Glosariusz](assets/glosariusz.svg)
-
-
-[⟵ Poprzedni: Szybka ściąga i pułapki](08-last-minute-cram.md)
-
+[⟵ Poprzedni: Szybka ściąga i pułapki](08-last-minute-cram.md) | [Następny: No-code i low-code ML ⟶](10-no-code-ml.md)
 
 # 9. **Glosariusz pojęć AI-900**
+
+![Glosariusz](assets/glosariusz.svg)
 
 - **AI (Artificial Intelligence)** – sztuczna inteligencja, systemy naśladujące ludzkie zdolności poznawcze
 - **ML (Machine Learning)** – uczenie maszynowe, algorytmy uczące się na podstawie danych
@@ -76,5 +72,7 @@
 - **Confusion Matrix** – tabela TP/FP/TN/FN do oceny jakości klasyfikatora
 - **ROC / AUC** – krzywa ROC i pole pod krzywą – ocena skuteczności klasyfikatora binarnego
 - **MSE (Mean Square Error)** – średnia kwadratów błędów – metryka oceny modeli regresyjnych
-- **Data Augmentation** – sztyczne zwiększanie zbioru danych przez modyfikacje (obrót zdjęć, synonimy tekstu)
+- **Data Augmentation** – sztuczne zwiększanie zbioru danych przez modyfikacje (obrót zdjęć, synonimy tekstu)
 - **Transfer Learning** – wykorzystanie wytrenowanego modelu do nowego, pokrewnego zadania
+
+[⟵ Poprzedni: Szybka ściąga i pułapki](08-last-minute-cram.md) | [Następny: No-code i low-code ML ⟶](10-no-code-ml.md)

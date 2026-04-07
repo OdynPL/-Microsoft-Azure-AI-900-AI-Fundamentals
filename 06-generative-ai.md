@@ -1,6 +1,3 @@
-
-
-
 [⟵ Poprzedni: Natural Language Processing](05-nlp.md) | [Następny: Responsible AI ⟶](07-responsible-ai.md)
 
 # 6. **Generatywna AI (Generative AI)** na **Azure**

@@ -1,3 +1,5 @@
+[⟵ Poprzedni: No-code i low-code ML](10-no-code-ml.md) | [Następny: Azure AI Face ⟶](12-azure-ai-face.md)
+
 # Azure AI Vision
 
 
@@ -33,7 +35,7 @@ Azure AI Vision to kompleksowa usługa chmurowa umożliwiająca analizę obrazó
 - Systemy bezpieczeństwa: wykrywanie osób, pojazdów, tablic rejestracyjnych.
 - Analiza ruchu w sklepach (liczenie osób, heatmapy).
 
-## Przykład implementacji (Python, REST API)
+## Przykład implementacji (C#)
 ```csharp
 // Przykład użycia Azure AI Vision w C#
 using System;
@@ -72,4 +74,4 @@ class Program
 - Rozliczanie za liczbę żądań lub czas przetwarzania.
 
 ---
-[⟵ Powrót do spisu treści](README.md)
+[⟵ Poprzedni: No-code i low-code ML](10-no-code-ml.md) | [Następny: Azure AI Face ⟶](12-azure-ai-face.md)

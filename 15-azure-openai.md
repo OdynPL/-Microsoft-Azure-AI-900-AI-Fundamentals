@@ -1,3 +1,5 @@
+[⟵ Poprzedni: Azure AI Speech](14-azure-ai-speech.md) | [Następny: Azure AI Foundry ⟶](16-azure-ai-foundry.md)
+
 # Azure OpenAI
 
 
@@ -27,7 +29,7 @@ Azure OpenAI to usługa umożliwiająca dostęp do zaawansowanych modeli generat
 - Tworzenie obrazów do prezentacji, reklam, mediów społecznościowych.
 - Wsparcie analizy dokumentów i ekstrakcji danych.
 
-## Przykład implementacji (Python, REST API)
+## Przykład implementacji (C#)
 ```csharp
 // Przykład użycia Azure OpenAI (Chat Completion) w C#
 using System;
@@ -60,11 +62,11 @@ class Program
 - Obsługa modeli: **GPT-4**, **GPT-4o**, **GPT-3.5 Turbo**, **DALL-E 3**, **text-embedding-ada** i innych.
 - **Fine-tuning** – możliwość dostosowania modeli GPT-3.5 i GPT-4 do własnych danych.
 - Rozliczanie za **tokeny** (input + output) lub za generowane obrazy.
-- **Content Filters (filtry treści)** są aktywne domyślnie i można konfiguować ich czułość.
+- **Content Filters (filtry treści)** są aktywne domyślnie i można konfigurować ich czułość.
 - **Prompt Injection** – ryzyko bezpieczeństwa polegające na wstrzyknięciu instrukcji przez dane wejściowe – należy sanityzować dane.
 - Integracja z innymi usługami Azure: Logic Apps, Power Automate, Azure AI Search (do RAG).
 - Wymagania dotyczące bezpieczeństwa i zgodności z regulacjami (RODO, GDPR, HIPAA).
 - Dostępność w wybranych regionach Azure.
 
 ---
-[⟵ Powrót do spisu treści](README.md)
+[⟵ Poprzedni: Azure AI Speech](14-azure-ai-speech.md) | [Następny: Azure AI Foundry ⟶](16-azure-ai-foundry.md)

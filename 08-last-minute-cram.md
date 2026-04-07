@@ -1,10 +1,8 @@
-# Szybka ściąga AI-900
-
-![Last Minute Cram](assets/last-minute-cram.svg)
-
 [⟵ Poprzedni: Responsible AI](07-responsible-ai.md) | [Następny: Glosariusz ⟶](09-glosariusz.md)
 
 # 8. **Szybka ściąga i pułapki egzaminacyjne AI-900**
+
+![Last Minute Cram](assets/last-minute-cram.svg)
 
 ## Najważniejsze różnice i pułapki
 - **Computer Vision** ≠ **NLP** ≠ **Generatywna AI** – rozpoznawaj typ workloadu po opisie zadania (np. "analiza obrazu" to Computer Vision, "analiza tekstu" to NLP).

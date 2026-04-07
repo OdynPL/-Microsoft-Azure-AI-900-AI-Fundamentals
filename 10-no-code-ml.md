@@ -1,4 +1,4 @@
-[⟵ Poprzedni: Glosariusz](09-glosariusz.md)
+[⟵ Poprzedni: Glosariusz](09-glosariusz.md) | [Następny: Azure AI Vision ⟶](11-azure-ai-vision.md)
 
 # 10. **No-code i low-code Machine Learning na Azure**
 
@@ -55,4 +55,4 @@
 
 ![Przegląd usług Azure AI](assets/azure-ai-overview.svg)
 
-[⟵ Poprzedni: Glosariusz](09-glosariusz.md)
+[⟵ Poprzedni: Glosariusz](09-glosariusz.md) | [Następny: Azure AI Vision ⟶](11-azure-ai-vision.md)

@@ -1,6 +1,6 @@
-# Azure AI Speech
+[⟵ Poprzedni: Azure AI Language](13-azure-ai-language.md) | [Następny: Azure OpenAI ⟶](15-azure-openai.md)
 
-## Przegląd usług Azure AI
+# Azure AI Speech
 
 ![Przegląd usług Azure AI](assets/azure-ai-overview.svg)
 
@@ -9,7 +9,7 @@ Azure AI Speech to usługa umożliwiająca rozpoznawanie mowy, syntezę mowy, t�
 
 ## Kluczowe funkcje
 - **Rozpoznawanie mowy (Speech-to-Text)** – zamiana wypowiedzi na tekst w ponad 100 językach i wielu akcentach.
-- **Synteza mowy (Text-to-Speech)** – generowanie naturalnie brzmijącej mowy z tekstu, w tym z wyrażeniem emocji.
+- **Synteza mowy (Text-to-Speech)** – generowanie naturalnie brzmiącej mowy z tekstu, w tym z wyrażeniem emocji.
 - **Tłumaczenie mowy (Speech Translation)** – automatyczne tłumaczenie mowy na inne języki w czasie rzeczywistym.
 - **Rozpoznawanie mówców (Speaker Recognition)** – identyfikacja i weryfikacja tożsamości na podstawie głosu.
 - **Custom Speech** – dostosowanie modelu rozpoznawania mowy do własnego słownictwa, akcentu lub specjalistycznej terminologii (np. medycznej, prawniczej).
@@ -25,7 +25,7 @@ Azure AI Speech to usługa umożliwiająca rozpoznawanie mowy, syntezę mowy, t�
 - Weryfikacja tożsamości klientów przez telefon (biometria głosowa).
 - Ułatwienia dostępu dla osób z niepełnosprawnościami (np. czytanie tekstu na głos).
 
-## Przykład implementacji (Python, REST API)
+## Przykład implementacji (C#)
 ```csharp
 // Przykład użycia Azure AI Speech (Speech-to-Text) w C#
 using System;
@@ -64,4 +64,4 @@ class Program
 - Rozliczanie za czas przetwarzania lub liczbę żądań.
 
 ---
-[⟵ Powrót do spisu treści](README.md)
+[⟵ Poprzedni: Azure AI Language](13-azure-ai-language.md) | [Następny: Azure OpenAI ⟶](15-azure-openai.md)

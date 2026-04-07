@@ -1,3 +1,5 @@
+[⟵ Poprzedni: Azure AI Foundry](16-azure-ai-foundry.md)
+
 # Azure Machine Learning
 
 
@@ -9,11 +11,11 @@ Azure Machine Learning (Azure ML) to kompleksowa platforma do budowy, trenowania
 ## Kluczowe funkcje
 - **Projektowanie pipeline'ów ML (Designer)** – graficzny interfejs drag & drop do budowy procesów ML bez kodowania.
 - **Automated ML (AutoML)** – automatyczne dobieranie algorytmów i hiperparametrów. Obsługuje klasyfikację, regresję, klasteryzację, szeregi czasowe, Computer Vision i NLP.
-- **Trenowanie modeli** – obsługa framworków: scikit-learn, PyTorch, TensorFlow, XGBoost.
+- **Trenowanie modeli** – obsługa frameworków: scikit-learn, PyTorch, TensorFlow, XGBoost.
 - **Wdrażanie modeli** – publikacja jako REST endpointy: **Managed Online Endpoint** (real-time), **Batch Endpoint** (wsadowe).
 - **Monitorowanie i rejestracja modeli (Model Registry)** – wersjonowanie, śledzenie metryk, audyt.
 - **Zarządzanie danymi (Data Assets)** – rejestracja, wersjonowanie i przetwarzanie zbiorów danych.
-- **Compute clusters i compute instances** – klastry do trenowania (skalowalne) i instancje do dewelopmentu/notebboków.
+- **Compute clusters i compute instances** – klastry do trenowania (skalowalne) i instancje do dewelopmentu/notebooków.
 - **Data Labeling** – narzędzie do etykietowania danych (obrazy, tekst) z opcją asysty ML.
 - **MLOps** – automatyzacja wdrożeń ML: integracja z GitHub, Azure DevOps, CI/CD dla modeli ML.
 - **Responsible AI Dashboard** – kompleksowy panel do analizy modeli pod kątem:
@@ -23,7 +25,7 @@ Azure Machine Learning (Azure ML) to kompleksowa platforma do budowy, trenowania
 	- **Data Explorer** (eksploracja danych wejściowych)
 	- **Causal Analysis** (przyczynowość i kontrfaktualne przykłady)
 - **Feature Store** – centralne repozytorium cech ML do ponownego wykorzystania między projektami.
-- **Environments** – zarządzanie środowiskami Python (kontenery Docker) do reprodukowalnych trénowanie.
+- **Environments** – zarządzanie środowiskami Python (kontenery Docker) do reprodukowalnego trenowania.
 
 ## Przykłady użycia (Use Cases)
 - Budowa modeli predykcyjnych dla finansów, sprzedaży, produkcji.
@@ -32,7 +34,7 @@ Azure Machine Learning (Azure ML) to kompleksowa platforma do budowy, trenowania
 - Wdrażanie modeli do aplikacji biznesowych i API.
 - Monitorowanie jakości i wydajności modeli w produkcji.
 
-## Przykład implementacji (Python, SDK)
+## Przykład implementacji (C#)
 ```csharp
 // Przykład użycia Azure Machine Learning SDK w C#
 using Azure.AI.MachineLearning;
@@ -63,4 +65,4 @@ mlClient.OnlineEndpoints.CreateOrUpdate(endpoint);
 - Rozliczanie za wykorzystane zasoby obliczeniowe i przechowywanie danych.
 
 ---
-[⟵ Powrót do spisu treści](README.md)
+[⟵ Poprzedni: Azure AI Foundry](16-azure-ai-foundry.md)

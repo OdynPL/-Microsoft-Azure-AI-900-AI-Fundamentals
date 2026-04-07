@@ -1,4 +1,8 @@
+[⟵ Poprzedni: Azure AI Vision](11-azure-ai-vision.md) | [Następny: Azure AI Language ⟶](13-azure-ai-language.md)
+
 # Azure AI Face
+
+![Przegląd usług Azure AI](assets/azure-ai-overview.svg)
 
 ## Opis usługi
 Azure AI Face to specjalistyczna usługa do wykrywania, analizy i rozpoznawania twarzy na obrazach i wideo. Umożliwia identyfikację osób, analizę emocji, określanie wieku, płci oraz porównywanie twarzy. Usługa jest szeroko wykorzystywana w systemach bezpieczeństwa, kontroli dostępu i personalizacji usług.
@@ -17,7 +21,7 @@ Azure AI Face to specjalistyczna usługa do wykrywania, analizy i rozpoznawania 
 - Analiza emocji klientów w sklepach lub podczas obsługi klienta.
 - Automatyczne tagowanie zdjęć w galeriach i mediach społecznościowych.
 
-## Przykład implementacji (Python, REST API)
+## Przykład implementacji (C#)
 ```csharp
 // Przykład użycia Azure AI Face w C#
 using System;
@@ -59,4 +63,4 @@ class Program
 - Zakaz użycia do masowej, nieautoryzowanej inwigilacji osób publicznych.
 
 ---
-[⟵ Powrót do spisu treści](README.md)
+[⟵ Poprzedni: Azure AI Vision](11-azure-ai-vision.md) | [Następny: Azure AI Language ⟶](13-azure-ai-language.md)
