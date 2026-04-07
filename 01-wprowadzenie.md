@@ -4,7 +4,22 @@
 
 # 1. Wprowadzenie i profil egzaminu AI-900
 
+
 **Azure AI Fundamentals (AI-900)** to certyfikat potwierdzający znajomość podstawowych pojęć **AI**, **ML** oraz usług **AI** na platformie **Azure**.
+
+## Usługi Azure AI – przegląd
+
+Platforma **Microsoft Azure** oferuje szeroki zestaw gotowych usług AI, które pozwalają szybko wdrażać rozwiązania sztucznej inteligencji bez konieczności budowania modeli od zera:
+
+- **Azure AI Vision** – analiza obrazów i wideo, klasyfikacja, detekcja obiektów, OCR, rozpoznawanie twarzy.
+- **Azure AI Face** – rozpoznawanie i analiza twarzy (np. identyfikacja, emocje).
+- **Azure AI Language** – przetwarzanie języka naturalnego: analiza tekstu, ekstrakcja kluczowych fraz, rozpoznawanie encji, analiza sentymentu, tłumaczenia.
+- **Azure AI Speech** – rozpoznawanie i synteza mowy, zamiana tekstu na mowę i odwrotnie.
+- **Azure OpenAI** – dostęp do zaawansowanych modeli generatywnych (np. GPT, DALL-E) do generowania tekstu, obrazów, kodu.
+- **Azure AI Foundry** – katalog modeli AI, zarządzanie i wdrażanie modeli, integracja z innymi usługami.
+- **Azure Machine Learning** – platforma do trenowania, wdrażania i zarządzania własnymi modelami ML, automatyzacja procesów ML (AutoML), rejestr modeli, endpointy.
+
+Każda z tych usług posiada gotowe API, które można łatwo zintegrować z aplikacjami biznesowymi, stronami internetowymi czy chatbotami. Usługi te są szeroko wykorzystywane w zadaniach takich jak: rozpoznawanie obrazów, analiza tekstu, automatyzacja obsługi klienta, generowanie treści, digitalizacja dokumentów czy monitorowanie bezpieczeństwa.
 
 ## Najważniejsze pojęcia AI na egzaminie
 
