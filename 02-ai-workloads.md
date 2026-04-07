@@ -1,3 +1,6 @@
+
+[⟵ Poprzedni: Wprowadzenie](01-wprowadzenie.md) | [Następny: Podstawy uczenia maszynowego ⟶](03-machine-learning.md)
+
 # 2. Podstawy **AI** i rodzaje zadań
 
 ## Czym jest **AI**?
@@ -18,3 +21,5 @@
 
 ## Usługi **Azure AI**
 - **Azure AI Vision**, **Language**, **Speech**, **OpenAI**, **Foundry**
+
+[⟵ Poprzedni: Wprowadzenie](01-wprowadzenie.md) | [Następny: Podstawy uczenia maszynowego ⟶](03-machine-learning.md)

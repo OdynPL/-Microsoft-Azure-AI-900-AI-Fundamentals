@@ -1,4 +1,7 @@
 
+
+[⟵ Poprzedni: Szybka ściąga i pułapki](08-last-minute-cram.md)
+
 # 9. **Glosariusz pojęć AI-900**
 
 - **AI (Artificial Intelligence)** – sztuczna inteligencja

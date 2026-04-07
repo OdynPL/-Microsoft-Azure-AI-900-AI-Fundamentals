@@ -1,5 +1,8 @@
 
 
+
+[⟵ Poprzedni: Generatywna AI](06-generative-ai.md) | [Następny: Szybka ściąga i pułapki ⟶](08-last-minute-cram.md)
+
 # 7. **Responsible AI (Odpowiedzialna AI)** – zasady i etyka
 
 ## Czym jest **Responsible AI**?
@@ -24,3 +27,5 @@
 - **Monitorowanie biasu i sprawiedliwości modeli**
 - **Narzędzia do explainability (wyjaśniania decyzji modeli)**
 - **Wsparcie dla compliance i audytów**
+
+[⟵ Poprzedni: Generatywna AI](06-generative-ai.md) | [Następny: Szybka ściąga i pułapki ⟶](08-last-minute-cram.md)

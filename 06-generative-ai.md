@@ -1,5 +1,8 @@
 
 
+
+[⟵ Poprzedni: Natural Language Processing](05-nlp.md) | [Następny: Responsible AI ⟶](07-responsible-ai.md)
+
 # 6. **Generatywna AI (Generative AI)** na **Azure**
 
 ## Czym jest **generatywna AI**?
@@ -30,3 +33,5 @@
 - **Automatyzacja obsługi klienta**
 - **Tworzenie treści marketingowych**
 - **Wsparcie programistów (AI pair programming)**
+
+[⟵ Poprzedni: Natural Language Processing](05-nlp.md) | [Następny: Responsible AI ⟶](07-responsible-ai.md)

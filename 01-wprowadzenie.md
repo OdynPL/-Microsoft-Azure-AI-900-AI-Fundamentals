@@ -1,3 +1,6 @@
+
+[Następny: Podstawy AI i rodzaje zadań ⟶](02-ai-workloads.md)
+
 # 1. Wprowadzenie i profil egzaminu AI-900
 
 
@@ -26,3 +29,5 @@
 ## Struktura notatek
 - Każdy rozdział = 1 główny obszar egzaminu
 - Szybkie powtórki, porównania, praktyczne przykłady
+
+[Następny: Podstawy AI i rodzaje zadań ⟶](02-ai-workloads.md)

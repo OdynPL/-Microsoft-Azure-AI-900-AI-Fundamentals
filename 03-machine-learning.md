@@ -1,5 +1,8 @@
 
 
+
+[⟵ Poprzedni: Podstawy AI i rodzaje zadań](02-ai-workloads.md) | [Następny: Computer Vision ⟶](04-computer-vision.md)
+
 # 3. **Podstawy uczenia maszynowego (ML)**
 
 ## Czym jest **ML**?
@@ -35,3 +38,5 @@
 ## Usługi **Azure ML**
 - **Azure Machine Learning**: automatyzacja, zarządzanie, deployment modeli
 - **Automated ML**, **Data/Compute**, **Model Registry**
+
+[⟵ Poprzedni: Podstawy AI i rodzaje zadań](02-ai-workloads.md) | [Następny: Computer Vision ⟶](04-computer-vision.md)

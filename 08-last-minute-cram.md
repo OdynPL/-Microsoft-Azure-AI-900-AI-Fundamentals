@@ -1,3 +1,6 @@
+
+[⟵ Poprzedni: Responsible AI](07-responsible-ai.md) | [Następny: Glosariusz ⟶](09-glosariusz.md)
+
 # 8. **Szybka ściąga i pułapki egzaminacyjne AI-900**
 
 ## Najważniejsze różnice i pułapki
@@ -21,3 +24,5 @@
 - Czytaj uważnie scenariusz – kluczowe są słowa typu: "**klasyfikacja**", "**generowanie**", "**ekstrakcja**"
 - Eliminuj odpowiedzi, które nie pasują do typu workloadu
 - **Responsible AI** – zawsze wybieraj odpowiedzi promujące etykę i bezpieczeństwo
+
+[⟵ Poprzedni: Responsible AI](07-responsible-ai.md) | [Następny: Glosariusz ⟶](09-glosariusz.md)

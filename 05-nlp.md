@@ -1,5 +1,7 @@
 
 
+[⟵ Poprzedni: Computer Vision](04-computer-vision.md) | [Następny: Generatywna AI ⟶](06-generative-ai.md)
+
 # 5. **Natural Language Processing (NLP)**
 
 ## Czym jest **NLP**?
@@ -26,3 +28,5 @@
 - **Analiza opinii klientów**
 - **Automatyczne tłumaczenia**
 - **Wyszukiwanie semantyczne (Semantic Search)**
+
+[⟵ Poprzedni: Computer Vision](04-computer-vision.md) | [Następny: Generatywna AI ⟶](06-generative-ai.md)
