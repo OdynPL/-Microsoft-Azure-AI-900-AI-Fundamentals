@@ -21,10 +21,7 @@
 - **Rozpoznawanie intencji (Intent Recognition)** – określanie celu wypowiedzi użytkownika (np. pytanie o pogodę, zamówienie pizzy).
 
 ## Usługi **Azure**
-- **Azure AI Language** – kompleksowa usługa do analizy tekstu. Umożliwia:
-![Azure AI Language](assets/azure-ai-language.svg)
 
-- **Azure AI Language** – kompleksowa usługa do analizy tekstu. Umożliwia:
 - **Azure AI Language** – kompleksowa usługa do analizy tekstu. Umożliwia:
 	- Analizę sentymentu
 	- Ekstrakcję fraz kluczowych
@@ -32,12 +29,16 @@
 	- Tłumaczenia maszynowe
 	- Klasyfikację tekstu
 	- Wyszukiwanie semantyczne
+
+![Azure AI Language](assets/azure-ai-language.svg)
+
 - **Azure AI Speech** – usługa do rozpoznawania i syntezy mowy. Pozwala na:
-![Azure AI Speech](assets/azure-ai-speech.svg)
 	- Zamianę mowy na tekst (Speech-to-Text)
 	- Zamianę tekstu na mowę (Text-to-Speech)
 	- Rozpoznawanie mówców (Speaker Recognition)
 	- Tłumaczenia mowy w czasie rzeczywistym
+
+![Azure AI Speech](assets/azure-ai-speech.svg)
 
 ## Przykłady zastosowań
 - **Chatboty** – automatyzacja obsługi klienta, odpowiadanie na pytania użytkowników
