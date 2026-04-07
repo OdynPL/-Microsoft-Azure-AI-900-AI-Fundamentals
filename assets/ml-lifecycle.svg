@@ -1,0 +1,25 @@
+<svg width="520" height="120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="520" height="120" fill="#f3f6fa"/>
+  <g font-family="Arial" font-size="15">
+    <text x="260" y="30" text-anchor="middle" font-size="20" fill="#1a355e">Cykl życia ML</text>
+    <rect x="40" y="60" width="80" height="40" fill="#b3d1f7" stroke="#3572b0"/>
+    <text x="80" y="85" text-anchor="middle" fill="#1a355e">Dane</text>
+    <rect x="140" y="60" width="80" height="40" fill="#b3f7d1" stroke="#2b7a3d"/>
+    <text x="180" y="85" text-anchor="middle" fill="#1a3e2b">Trening</text>
+    <rect x="240" y="60" width="80" height="40" fill="#f7e3b3" stroke="#b07a35"/>
+    <text x="280" y="85" text-anchor="middle" fill="#7a4e1a">Walidacja</text>
+    <rect x="340" y="60" width="80" height="40" fill="#e3b3f7" stroke="#7a35b0"/>
+    <text x="380" y="85" text-anchor="middle" fill="#4e1a7a">Wdrożenie</text>
+    <rect x="440" y="60" width="60" height="40" fill="#b3e3f7" stroke="#357ab0"/>
+    <text x="470" y="85" text-anchor="middle" fill="#1a3e7a">Monitoring</text>
+    <line x1="120" y1="80" x2="140" y2="80" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="220" y1="80" x2="240" y2="80" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="320" y1="80" x2="340" y2="80" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="420" y1="80" x2="440" y2="80" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L10,5 L0,10 L2,5 z" fill="#888" />
+      </marker>
+    </defs>
+  </g>
+</svg>

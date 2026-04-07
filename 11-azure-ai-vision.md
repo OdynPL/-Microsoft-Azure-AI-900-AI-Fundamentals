@@ -1,5 +1,8 @@
 # Azure AI Vision
 
+
+![Przegląd usług Azure AI](assets/azure-ai-overview.svg)
+
 ## Opis usługi
 Azure AI Vision to kompleksowa usługa chmurowa umożliwiająca analizę obrazów i wideo. Pozwala na automatyczne rozpoznawanie obiektów, klasyfikację scen, wykrywanie tekstu (OCR), analizę twarzy oraz ekstrakcję metadanych z materiałów wizualnych. Usługa jest dostępna przez REST API, SDK oraz gotowe narzędzia w portalu Azure.
 

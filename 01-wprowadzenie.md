@@ -1,4 +1,3 @@
-
 [Następny: Podstawy AI i rodzaje zadań ⟶](02-ai-workloads.md)
 
 
@@ -72,5 +71,8 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 - **Responsible AI**
 
 ---
+
+
+![Przegląd usług Azure AI](assets/azure-ai-overview.svg)
 
 [Następny: Podstawy AI i rodzaje zadań ⟶](02-ai-workloads.md)

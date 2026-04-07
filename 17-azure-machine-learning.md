@@ -1,5 +1,8 @@
 # Azure Machine Learning
 
+
+![Przegląd usług Azure AI](assets/azure-ai-overview.svg)
+
 ## Opis usługi
 Azure Machine Learning (Azure ML) to kompleksowa platforma do budowy, trenowania, wdrażania i zarządzania modelami uczenia maszynowego w chmurze. Umożliwia zarówno pracę no-code/low-code (Designer, AutoML), jak i zaawansowane projekty kodowane w Pythonie. Wspiera cały cykl życia ML, automatyzację, MLOps i integrację z innymi usługami Azure.
 

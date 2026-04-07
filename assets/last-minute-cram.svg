@@ -1,0 +1,8 @@
+<svg width="420" height="120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="420" height="120" fill="#f3f6fa"/>
+  <g font-family="Segoe UI, Arial" font-size="16">
+    <text x="20" y="40" font-weight="bold" fill="#2d3a4a">Szybka ściąga AI-900</text>
+    <rect x="20" y="60" width="380" height="40" rx="8" fill="#b3d1f3"/>
+    <text x="30" y="85" fill="#2d3a4a">Porównania usług, pułapki, strategie egzaminacyjne</text>
+  </g>
+</svg>

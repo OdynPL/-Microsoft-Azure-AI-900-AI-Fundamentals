@@ -1,6 +1,3 @@
-
-
-
 [⟵ Poprzedni: Podstawy AI i rodzaje zadań](02-ai-workloads.md) | [Następny: Computer Vision ⟶](04-computer-vision.md)
 
 # 3. **Podstawy uczenia maszynowego (ML)**
@@ -45,6 +42,10 @@
 6. **Testowanie** – sprawdzenie skuteczności na nowych danych (zbiór testowy).
 7. **Deployment** – wdrożenie modelu do produkcji (np. jako API).
 8. **Monitorowanie** – śledzenie działania modelu i jego skuteczności w czasie.
+
+
+## Cykl życia ML
+![Cykl życia ML](assets/ml-lifecycle.svg)
 
 ## Usługi **Azure ML**
 - **Azure Machine Learning** – platforma do trenowania, wdrażania i zarządzania modelami ML w chmurze Azure. Umożliwia:

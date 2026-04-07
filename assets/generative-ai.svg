@@ -1,0 +1,16 @@
+<svg width="420" height="180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="420" height="180" fill="#f3f6fa"/>
+  <g font-family="Segoe UI, Arial" font-size="16">
+    <text x="20" y="40" font-weight="bold" fill="#2d3a4a">Generatywna AI</text>
+    <rect x="20" y="60" width="120" height="40" rx="8" fill="#e6c7f7"/>
+    <text x="30" y="85" fill="#2d3a4a">Text Generation</text>
+    <rect x="160" y="60" width="120" height="40" rx="8" fill="#e6c7f7"/>
+    <text x="170" y="85" fill="#2d3a4a">Image Generation</text>
+    <rect x="300" y="60" width="90" height="40" rx="8" fill="#e6c7f7"/>
+    <text x="310" y="85" fill="#2d3a4a">Code</text>
+    <rect x="20" y="120" width="120" height="40" rx="8" fill="#e6c7f7"/>
+    <text x="30" y="145" fill="#2d3a4a">Music</text>
+    <rect x="160" y="120" width="230" height="40" rx="8" fill="#e6c7f7"/>
+    <text x="170" y="145" fill="#2d3a4a">Semantic Search</text>
+  </g>
+</svg>

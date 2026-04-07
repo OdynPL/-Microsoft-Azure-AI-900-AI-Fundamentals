@@ -1,6 +1,3 @@
-
-
-
 [⟵ Poprzedni: Generatywna AI](06-generative-ai.md) | [Następny: Szybka ściąga i pułapki ⟶](08-last-minute-cram.md)
 
 # 7. **Responsible AI (Odpowiedzialna AI)** – zasady i etyka
@@ -15,6 +12,9 @@
 - **Inclusiveness (inkluzywność)** – projektowanie AI z myślą o dostępności dla różnych grup użytkowników.
 - **Transparency (przejrzystość)** – możliwość wyjaśnienia, jak AI podejmuje decyzje, jasność działania algorytmów.
 - **Accountability (odpowiedzialność)** – jasne określenie, kto odpowiada za decyzje i skutki działania AI.
+
+
+![Zasady Responsible AI](assets/responsible-ai.svg)
 
 ## Przykłady zastosowań Responsible AI
 - Eliminacja **biasu (Bias)** w danych – np. usuwanie tendencyjnych przykładów z danych treningowych.

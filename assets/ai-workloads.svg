@@ -1,0 +1,102 @@
+<svg width="600" height="340" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#fafdff"/>
+      <stop offset="100%" stop-color="#e3eaf7"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#b0c4de"/>
+    </filter>
+    <linearGradient id="cvGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b3d1f7"/>
+      <stop offset="100%" stop-color="#6fa8dc"/>
+    </linearGradient>
+    <linearGradient id="nlpGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b3f7d1"/>
+      <stop offset="100%" stop-color="#4ecb8c"/>
+    </linearGradient>
+    <linearGradient id="genGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7e3b3"/>
+      <stop offset="100%" stop-color="#f4b942"/>
+    </linearGradient>
+    <linearGradient id="docGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e3b3f7"/>
+      <stop offset="100%" stop-color="#b97fdc"/>
+    </linearGradient>
+    <linearGradient id="inneGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b3e3f7"/>
+      <stop offset="100%" stop-color="#5fa8dc"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 L2,5 z" fill="#888" />
+    </marker>
+  </defs>
+  <rect width="600" height="340" fill="url(#bg)"/>
+  <g font-family="Segoe UI, Arial" font-size="15">
+    <text x="300" y="54" text-anchor="middle" font-size="28" fill="#1a355e" font-weight="bold">Typowe workloady AI</text>
+    <!-- Computer Vision -->
+    <!-- Computer Vision -->
+    <g filter="url(#shadow)">
+      <rect x="60" y="110" width="120" height="70" rx="24" fill="url(#cvGrad)"/>
+      <g>
+        <circle cx="120" cy="100" r="18" fill="#fff" stroke="#3572b0" stroke-width="2"/>
+        <circle cx="120" cy="100" r="8" fill="#b3d1f7" stroke="#3572b0" stroke-width="2"/>
+        <rect x="112" y="92" width="16" height="6" rx="2" fill="#b3d1f7" stroke="#3572b0" stroke-width="1"/>
+      </g>
+      <text x="120" y="145" text-anchor="middle" fill="#1a355e" font-size="15" font-weight="bold">Computer Vision</text>
+      <text x="120" y="165" text-anchor="middle" fill="#1a355e" font-size="11">obrazy, OCR</text>
+    </g>
+    <!-- NLP -->
+    <!-- NLP -->
+    <g filter="url(#shadow)">
+      <rect x="240" y="110" width="120" height="70" rx="24" fill="url(#nlpGrad)"/>
+      <g>
+        <rect x="295" y="95" width="30" height="18" rx="6" fill="#fff" stroke="#2b7a3d" stroke-width="2"/>
+        <text x="310" y="109" font-size="13" fill="#4ecb8c" font-weight="bold">Aa</text>
+      </g>
+      <text x="300" y="145" text-anchor="middle" fill="#1a3e2b" font-size="15" font-weight="bold">NLP</text>
+      <text x="300" y="165" text-anchor="middle" fill="#1a3e2b" font-size="11">tekst, mowa</text>
+    </g>
+    <!-- Generative AI -->
+    <!-- Generatywna AI -->
+    <g filter="url(#shadow)">
+      <rect x="420" y="110" width="120" height="70" rx="24" fill="url(#genGrad)"/>
+      <g>
+        <rect x="475" y="95" width="30" height="18" rx="6" fill="#fff" stroke="#b07a35" stroke-width="2"/>
+        <circle cx="490" cy="104" r="6" fill="#f7e3b3" stroke="#b07a35" stroke-width="1.5"/>
+        <rect x="495" y="100" width="10" height="6" rx="2" fill="#f7e3b3" stroke="#b07a35" stroke-width="1.5"/>
+      </g>
+      <text x="480" y="145" text-anchor="middle" fill="#7a4e1a" font-size="15" font-weight="bold">Generatywna AI</text>
+      <text x="480" y="165" text-anchor="middle" fill="#7a4e1a" font-size="11">tekst, obrazy</text>
+    </g>
+    <!-- AI for Documents -->
+    <!-- AI dla dokumentów -->
+    <g filter="url(#shadow)">
+      <rect x="120" y="220" width="160" height="60" rx="20" fill="url(#docGrad)"/>
+      <g>
+        <rect x="190" y="205" width="36" height="22" rx="6" fill="#fff" stroke="#7a35b0" stroke-width="2"/>
+        <rect x="198" y="210" width="8" height="8" rx="2" fill="#e3b3f7" stroke="#7a35b0" stroke-width="1.5"/>
+        <rect x="210" y="210" width="8" height="8" rx="2" fill="#e3b3f7" stroke="#7a35b0" stroke-width="1.5"/>
+      </g>
+      <text x="200" y="250" text-anchor="middle" fill="#4e1a7a" font-size="14" font-weight="bold">AI dla dokumentów</text>
+      <text x="200" y="268" text-anchor="middle" fill="#4e1a7a" font-size="11">ekstrakcja</text>
+    </g>
+    <!-- Inne -->
+    <!-- Inne -->
+    <g filter="url(#shadow)">
+      <rect x="340" y="230" width="120" height="50" rx="18" fill="url(#inneGrad)"/>
+      <g>
+        <circle cx="400" cy="220" r="12" fill="#fff" stroke="#357ab0" stroke-width="2"/>
+        <circle cx="400" cy="220" r="5" fill="#b3e3f7" stroke="#357ab0" stroke-width="1.5"/>
+      </g>
+      <text x="400" y="255" text-anchor="middle" fill="#1a3e7a" font-size="13" font-weight="bold">Inne</text>
+      <text x="400" y="270" text-anchor="middle" fill="#1a3e7a" font-size="11">rekomendacje</text>
+    </g>
+    <!-- Strzałki -->
+    <!-- Strzałki -->
+    <polyline points="180,180 200,220" fill="none" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+    <polyline points="300,180 200,220" fill="none" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+    <polyline points="300,180 400,230" fill="none" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+    <polyline points="480,180 400,230" fill="none" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+</svg>

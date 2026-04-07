@@ -38,4 +38,7 @@
 - **Automated ML** – automatyczne trenowanie modeli
 - **Power Platform AI Builder** – narzędzia AI dla użytkowników biznesowych (np. predykcja, analiza tekstu, rozpoznawanie obrazów)
 
+
+![Przegląd usług Azure AI](assets/azure-ai-overview.svg)
+
 [⟵ Poprzedni: Glosariusz](09-glosariusz.md)

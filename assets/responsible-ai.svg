@@ -1,0 +1,22 @@
+<svg width="500" height="260" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="260" fill="#f3f6fa"/>
+  <g font-family="Arial" font-size="15">
+    <text x="250" y="30" text-anchor="middle" font-size="20" fill="#1a355e">Zasady Responsible AI</text>
+    <circle cx="250" cy="140" r="60" fill="#b3d1f7" stroke="#3572b0"/>
+    <text x="250" y="145" text-anchor="middle" font-size="18" fill="#1a355e">AI</text>
+    <text x="250" y="70" text-anchor="middle" fill="#1a355e">Fairness</text>
+    <text x="400" y="120" text-anchor="middle" fill="#1a3e2b">Inclusiveness</text>
+    <text x="250" y="240" text-anchor="middle" fill="#7a4e1a">Security</text>
+    <text x="100" y="120" text-anchor="middle" fill="#4e1a7a">Accountability</text>
+    <text x="250" y="200" text-anchor="middle" fill="#1a3e7a">Reliability</text>
+    <text x="400" y="200" text-anchor="middle" fill="#7a1a1a">Privacy</text>
+    <text x="100" y="200" text-anchor="middle" fill="#1a7a7a">Transparency</text>
+    <line x1="250" y1="140" x2="250" y2="70" stroke="#888" stroke-dasharray="4"/>
+    <line x1="250" y1="140" x2="400" y2="120" stroke="#888" stroke-dasharray="4"/>
+    <line x1="250" y1="140" x2="250" y2="240" stroke="#888" stroke-dasharray="4"/>
+    <line x1="250" y1="140" x2="100" y2="120" stroke="#888" stroke-dasharray="4"/>
+    <line x1="250" y1="140" x2="250" y2="200" stroke="#888" stroke-dasharray="4"/>
+    <line x1="250" y1="140" x2="400" y2="200" stroke="#888" stroke-dasharray="4"/>
+    <line x1="250" y1="140" x2="100" y2="200" stroke="#888" stroke-dasharray="4"/>
+  </g>
+</svg>

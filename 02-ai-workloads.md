@@ -1,4 +1,3 @@
-
 [⟵ Poprzedni: Wprowadzenie](01-wprowadzenie.md) | [Następny: Podstawy uczenia maszynowego ⟶](03-machine-learning.md)
 
 
@@ -30,6 +29,9 @@
 	- Wyszukiwanie semantyczne
 - **AI dla dokumentów** – automatyczna ekstrakcja danych, klasyfikacja dokumentów, digitalizacja (np. faktur, umów)
 
+
+![Typowe workloady AI](assets/ai-workloads.svg)
+
 ## Przykłady zastosowań
 - **Rozpoznawanie twarzy** w systemach bezpieczeństwa
 - **Analiza sentymentu** opinii klientów
@@ -57,6 +59,9 @@
 - **Azure OpenAI** – generowanie tekstu, obrazów, kodu (modele GPT, DALL-E)
 - **Azure AI Foundry** – katalog modeli AI, zarządzanie i wdrażanie modeli
 - **Azure Machine Learning** – trenowanie, wdrażanie i zarządzanie własnymi modelami ML, automatyzacja procesów ML (AutoML), rejestr modeli, endpointy
+
+
+![Przegląd usług Azure AI](assets/azure-ai-overview.svg)
 
 Każda z tych usług posiada gotowe API, które można łatwo zintegrować z aplikacjami biznesowymi, stronami internetowymi czy chatbotami. Usługi te są szeroko wykorzystywane w zadaniach takich jak: rozpoznawanie obrazów, analiza tekstu, automatyzacja obsługi klienta, generowanie treści, digitalizacja dokumentów czy monitorowanie bezpieczeństwa.
 
