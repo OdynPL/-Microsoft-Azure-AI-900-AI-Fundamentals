@@ -7,12 +7,23 @@
 Azure AI Vision to kompleksowa usługa chmurowa umożliwiająca analizę obrazów i wideo. Pozwala na automatyczne rozpoznawanie obiektów, klasyfikację scen, wykrywanie tekstu (OCR), analizę twarzy oraz ekstrakcję metadanych z materiałów wizualnych. Usługa jest dostępna przez REST API, SDK oraz gotowe narzędzia w portalu Azure.
 
 ## Kluczowe funkcje
-- **Klasyfikacja obrazów** – rozpoznawanie, co znajduje się na zdjęciu (np. pies, samochód, produkt).
-- **Detekcja obiektów** – lokalizowanie i oznaczanie obiektów na obrazie (np. wykrycie kilku osób na zdjęciu).
-- **OCR (Optical Character Recognition)** – rozpoznawanie tekstu na obrazach, skanach dokumentów, tablicach rejestracyjnych.
-- **Analiza twarzy** – wykrywanie twarzy, określanie wieku, płci, emocji, identyfikacja osób (w połączeniu z Azure AI Face).
-- **Analiza sceny** – opisanie sceny, generowanie tagów i opisów.
-- **Ekstrakcja metadanych** – np. dominujące kolory, format obrazu, rozdzielczość.
+- **Klasyfikacja obrazów (Image Classification)** – rozpoznawanie, co znajduje się na zdjęciu (np. pies, produkt, scena).
+- **Detekcja obiektów (Object Detection)** – lokalizowanie i oznaczanie wielu obiektów na obrazie ograniczającymi prostokątami (bounding boxes).
+- **OCR (Optical Character Recognition)** – rozpoznawanie i ekstrakcja tekstu z obrazów, skanów, tablic rejestracyjnych.
+- **Analiza sceny** – opisywanie sceny, generowanie tagów, kategorii i opisów w języku naturalnym.
+- **Moderacja treści** – wykrywanie treści nieodpowiednich (przemoc, treści dla dorosłych).
+- **Segmentacja obrazów (Image Segmentation)** – wyodrębnianie obszarów przynależących do różnych obiektów na poziomie pikseli.
+- **Analiza przestrzenna (Spatial Analysis)** – zliczanie osób, śledzenie ruchu, strefy zainteresowania w wideo na żywo.
+- **Ekstrakcja metadanych** – dominujące kolory, format, rozdzielczość.
+- **Custom Vision** – trenowanie własnych modeli klasyfikacji i detekcji bez kodowania:
+	- Wgrywanie i etykietowanie zdjęć
+	- Trenowanie jednym kliknięciem
+	- Eksport do Edge/ONNX/CoreML/TensorFlow Lite
+	- Dostępne zadania: Image Classification, Object Detection
+- **Azure AI Document Intelligence** (dawniej Form Recognizer) – ekstrakcja danych ze strukturyzowanych dokumentów:
+	- Odczytywanie par klucz-wartość i tabel z formularzy
+	- Gotowe modele: Invoice, Receipt, ID Document, Business Card, Tax
+	- Własne modele na niestandardowych dokumentach
 
 ## Przykłady użycia (Use Cases)
 - Automatyczna kategoryzacja zdjęć w aplikacjach e-commerce.

@@ -8,10 +8,14 @@
 Azure AI Speech to usługa umożliwiająca rozpoznawanie mowy, syntezę mowy, tłumaczenie mowy oraz analizę dźwięku. Pozwala na zamianę mowy na tekst (Speech-to-Text), tekstu na mowę (Text-to-Speech), tłumaczenie rozmów w czasie rzeczywistym oraz rozpoznawanie mówców. Usługa dostępna jest przez API, SDK oraz narzędzia w portalu Azure.
 
 ## Kluczowe funkcje
-- **Rozpoznawanie mowy (Speech-to-Text)** – zamiana wypowiedzi na tekst w wielu językach.
-- **Synteza mowy (Text-to-Speech)** – generowanie naturalnie brzmiącej mowy z tekstu.
-- **Tłumaczenie mowy** – automatyczne tłumaczenie wypowiedzi na inne języki w czasie rzeczywistym.
-- **Rozpoznawanie mówców** – identyfikacja i weryfikacja tożsamości na podstawie głosu.
+- **Rozpoznawanie mowy (Speech-to-Text)** – zamiana wypowiedzi na tekst w ponad 100 językach i wielu akcentach.
+- **Synteza mowy (Text-to-Speech)** – generowanie naturalnie brzmijącej mowy z tekstu, w tym z wyrażeniem emocji.
+- **Tłumaczenie mowy (Speech Translation)** – automatyczne tłumaczenie mowy na inne języki w czasie rzeczywistym.
+- **Rozpoznawanie mówców (Speaker Recognition)** – identyfikacja i weryfikacja tożsamości na podstawie głosu.
+- **Custom Speech** – dostosowanie modelu rozpoznawania mowy do własnego słownictwa, akcentu lub specjalistycznej terminologii (np. medycznej, prawniczej).
+- **Custom Voice** – tworzenie własnego, spersonalizowanego głosu syntetycznego dla asystentów i chatbotów.
+- **Batch Transcription** – masowa transkrypcja dużych zbiorów nagrań audio (asynchronicznie, bez limitu długości).
+- **Pronunciation Assessment** – ocena poprawności wymowy (przyda się w aplikacjach edukacyjnych).
 - **Analiza dźwięku** – wykrywanie emocji, tła, jakości nagrania.
 
 ## Przykłady użycia (Use Cases)

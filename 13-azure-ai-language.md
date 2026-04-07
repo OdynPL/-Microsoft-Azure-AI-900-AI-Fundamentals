@@ -7,13 +7,24 @@
 Azure AI Language to zaawansowana usługa do przetwarzania i analizy języka naturalnego (NLP). Pozwala na analizę tekstu, ekstrakcję kluczowych fraz, rozpoznawanie encji, analizę sentymentu, tłumaczenia oraz budowanie własnych modeli językowych. Usługa dostępna jest przez API, SDK oraz narzędzia w portalu Azure.
 
 ## Kluczowe funkcje
-- **Analiza sentymentu** – określanie emocji w tekście (pozytywne, negatywne, neutralne).
-- **Ekstrakcja kluczowych fraz** – wyodrębnianie najważniejszych informacji z tekstu.
-- **Rozpoznawanie encji** – identyfikacja nazw własnych (osoby, miejsca, organizacje).
-- **Tłumaczenia maszynowe** – automatyczne tłumaczenie tekstu na wiele języków.
-- **Kategoryzacja dokumentów** – przypisywanie tekstów do określonych kategorii.
-- **Detekcja języka** – rozpoznawanie, w jakim języku napisany jest tekst.
-- **Tworzenie własnych modeli** – trenowanie modeli do specyficznych zadań (np. klasyfikacja, ekstrakcja encji).
+- **Analiza sentymentu (Sentiment Analysis)** – określanie emocji w tekście: pozytywne, negatywne, neutralne, mieszane.
+- **Ekstrakcja kluczowych fraz (Key Phrase Extraction)** – wyodrębnianie najważniejszych słów i zwrotów z tekstu.
+- **Rozpoznawanie encji (Named Entity Recognition, NER)** – identyfikacja nazw własnych: osoby, miejsca, organizacje, daty, kwoty, numery.
+- **Wykrywanie PII (Personally Identifiable Information)** – automatyczne wykrywanie i maskowanie danych osobowych (np. PESEL, numery kart, adresy e-mail).
+- **Podsumowywanie (Summarization)** – automatyczne streszczanie długich dokumentów, artykułów lub transkrypcji rozmow.
+- **Tłumaczenia maszynowe** – automatyczne tłumaczenie tekstu na ponad 100 języków.
+- **Kategoryzacja dokumentów (Text Classification)** – przypisywanie tekstów do określonych kategorii, w tym trenowanie własnych klasyfikatorów.
+- **Detekcja języka (Language Detection)** – automatyczne rozpoznawanie języka tekstu spośród ponad 120 języków.
+- **Conversational Language Understanding (CLU)** – następca LUIS. Budowanie modeli rozumienia języka naturalnego dla chatbotów:
+	- Rozpoznawanie intencji (Intent Recognition)
+	- Wyodrębnianie encji z wypowiedzi (Entity Extraction)
+	- Obsługa wielu języków jednocześnie
+- **Question Answering** – tworzenie baz wiedzy Q&A z dokumentów, FAQ i adresów URL:
+	- Pytania i odpowiedzi w języku naturalnym
+	- Obsługa stron otwartych (chitchat), rankowanie odpowiedzi
+	- Integracja z Azure Bot Service i Copilot Studio
+- **Custom NER (Named Entity Recognition)** – trenowanie własnego rozpoznawania encji specyficznych dla branży (np. kody produktów, terminy medyczne).
+- **Custom Text Classification** – klasyfikacja tekstu na własno ręcznie zdefiniowane kategorie.
 
 ## Przykłady użycia (Use Cases)
 - Analiza opinii klientów w mediach społecznościowych.

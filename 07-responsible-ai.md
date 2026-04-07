@@ -14,9 +14,6 @@
 - **Transparency (przejrzystość)** – możliwość wyjaśnienia, jak AI podejmuje decyzje, jasność działania algorytmów.
 - **Accountability (odpowiedzialność)** – jasne określenie, kto odpowiada za decyzje i skutki działania AI.
 
-
-![Zasady Responsible AI](assets/responsible-ai.svg)
-
 ## Przykłady zastosowań Responsible AI
 - Eliminacja **biasu (Bias)** w danych – np. usuwanie tendencyjnych przykładów z danych treningowych.
 - **Wyjaśnialność (Explainability)** decyzji AI – stosowanie narzędzi wyjaśniających, dlaczego model podjął daną decyzję (np. SHAP, LIME).
@@ -25,11 +22,13 @@
 - **Monitorowanie modeli** – śledzenie skuteczności i sprawiedliwości modeli po wdrożeniu.
 
 ## Narzędzia i usługi **Azure** wspierające Responsible AI
-- **Azure Machine Learning Responsible AI dashboard** – narzędzie do monitorowania, audytu, wykrywania biasu, wyjaśniania decyzji modeli i oceny sprawiedliwości.
+- **Azure Machine Learning Responsible AI dashboard** – panel do monitorowania, audytu, wykrywania biasu, wyjaśniania decyzji modeli (Error Analysis, Fairness, Explainability, Causal Analysis).
 - **Fairlearn** – open-source’owe narzędzie do oceny i poprawy sprawiedliwości modeli ML.
-- **InterpretML** – narzędzie do wyjaśniania decyzji modeli (explainability).
+- **InterpretML** – narzędzie do wyjaśniania decyzji modeli (SHAP, LIME) – explainability.
+- **Azure AI Content Safety** – wykrywanie i blokowanie szkodliwych treści generowanych lub podawanych przez AI: mowa nienawiści, przemoc, treści seksualne, samookaleczenie. Dostępna jako osobna usługa API.
 - **Monitorowanie modeli** – automatyczne śledzenie skuteczności, driftu danych i potencjalnych problemów etycznych.
-- **Compliance Manager** – wsparcie dla zgodności z regulacjami prawnymi.
+- **Compliance Manager** – wsparcie dla zgodności z regulacjami prawnymi (ISO, GDPR, HIPAA, SOC).
 - **Data Privacy Toolkit** – narzędzia do anonimizacji i ochrony danych.
+- **Azure Policy i RBAC** – kontrola dostępu i egzekwowanie polityk zgodności w usługach AI.
 
 [⟵ Poprzedni: Generatywna AI](06-generative-ai.md) | [Następny: Szybka ściąga i pułapki ⟶](08-last-minute-cram.md)

@@ -46,6 +46,13 @@
 - **F1-score** – średnia harmoniczna precision i recall.
 - **Mean Square Error (MSE)** – średnia arytmetyczna kwadratów różnic między wartościami rzeczywistymi a przewidywanymi przez model. Im niższa wartość MSE, tym lepsze dopasowanie modelu regresyjnego.
 - **Confusion Matrix (macierz pomyłek)** – tabela pokazująca liczbę poprawnych i błędnych klasyfikacji.
+		- Przykład macierzy pomyłek:
+
+	|                | Przewidziane: Pozytywne | Przewidziane: Negatywne |
+	|----------------|------------------------|------------------------|
+	| Rzeczywiste: Pozytywne | True Positive (TP)         | False Negative (FN)         |
+	| Rzeczywiste: Negatywne | False Positive (FP)        | True Negative (TN)          |
+
 	- **True Positive (TP)** – przypadki poprawnie zaklasyfikowane jako pozytywne
 	- **False Positive (FP)** – przypadki błędnie zaklasyfikowane jako pozytywne (fałszywy alarm)
 	- **True Negative (TN)** – przypadki poprawnie zaklasyfikowane jako negatywne
@@ -61,6 +68,20 @@
 6. **Testowanie** – sprawdzenie skuteczności na nowych danych (zbiór testowy).
 7. **Deployment** – wdrożenie modelu do produkcji (np. jako API).
 8. **Monitorowanie** – śledzenie działania modelu i jego skuteczności w czasie.
+
+**Dodatkowe pojęcia i praktyki:**
+- **Drift** – zmiana rozkładu danych w czasie, która może pogorszyć skuteczność modelu
+- **Data Imbalance** – nierównomierny rozkład klas w zbiorze danych
+- **Transfer Learning** – wykorzystanie modelu wytrenowanego na innym zadaniu
+- **Data Augmentation** – sztuczne zwiększanie liczby przykładów przez modyfikacje danych
+- **Retraining** – ponowne trenowanie modelu na nowych danych
+- **Monitoring** – śledzenie skuteczności i sprawiedliwości modeli po wdrożeniu
+- **Interpretability** – możliwość zrozumienia, jak model podejmuje decyzje
+- **Compliance** – zgodność z regulacjami prawnymi (np. RODO)
+- **Fairness** – sprawiedliwość, równe traktowanie grup
+- **Explainability** – wyjaśnialność decyzji modelu
+- **Pipeline** – sekwencja kroków przetwarzania danych i trenowania modelu
+- **Endpoint** – punkt dostępu do modelu przez API
 
 
 ## Cykl życia ML

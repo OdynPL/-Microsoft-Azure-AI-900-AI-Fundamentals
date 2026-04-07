@@ -7,12 +7,16 @@
 Azure AI Foundry to platforma do zarządzania, katalogowania i wdrażania modeli AI w środowisku Azure. Umożliwia organizacjom centralne przechowywanie modeli, zarządzanie ich wersjami, udostępnianie modeli zespołom oraz monitorowanie ich wykorzystania i wydajności. Foundry wspiera zarówno modele własne, jak i modele open source oraz komercyjne.
 
 ## Kluczowe funkcje
-- **Katalogowanie modeli** – centralna baza modeli AI dostępnych w organizacji.
+- **Katalog modeli (Model Catalog)** – centralna baza modeli AI: modele Microsoft (GPT-4, Phi-3), open source (Llama, Mistral, Falcon), modele partnerów. Umożliwia przeglądanie, ewaluację i szybkie wdrażanie.
+- **Prompt Flow** – narzędzie do orkiestracji przepustowości AI: budowa pipeline'ów łączących LLM, narzędzia, retrieval i logikę. Używane do RAG i wielostopniowych aplikacji AI.
+- **AI Hub i AI Project** – środowisko pracy zespołowej: zarządzanie połączeniami, zasobami, dostępem i eksperymentami.
+- **Ewaluacja modeli (Evaluation)** – porównywanie jakości modeli i promptów na własnych danych testowych (metryki: coherence, groundedness, fluency, relevance).
 - **Wersjonowanie modeli** – śledzenie zmian i historii modeli.
-- **Wdrażanie modeli** – szybkie publikowanie modeli jako endpointy API.
-- **Zarządzanie dostępem** – kontrola, kto może korzystać z danego modelu.
-- **Monitorowanie wydajności** – analiza wykorzystania, skuteczności i błędów modeli.
-- **Integracja z Azure Machine Learning** – płynne wdrażanie i zarządzanie cyklem życia modeli.
+- **Wdrażanie modeli** – szybkie publikowanie modeli jako endpointy REST API (managed online endpoints).
+- **Zarządzanie dostępem** – kontrola RBAC, kto może korzystać z danego modelu lub projektu.
+- **Monitorowanie wydajności** – analiza wykorzystania, skuteczności i błędów modeli po wdrożeniu.
+- **Integracja z Azure Machine Learning** – płynne wdrażanie i zarządzanie cyklem życia modeli (MLOps).
+- **Responsible AI** – wbudowane dashboardy Responsible AI, content safety i ewaluacja fairness.
 
 ## Przykłady użycia (Use Cases)
 - Udostępnianie modeli AI zespołom deweloperskim i analitycznym.

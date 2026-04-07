@@ -7,13 +7,23 @@
 Azure Machine Learning (Azure ML) to kompleksowa platforma do budowy, trenowania, wdrażania i zarządzania modelami uczenia maszynowego w chmurze. Umożliwia zarówno pracę no-code/low-code (Designer, AutoML), jak i zaawansowane projekty kodowane w Pythonie. Wspiera cały cykl życia ML, automatyzację, MLOps i integrację z innymi usługami Azure.
 
 ## Kluczowe funkcje
-- **Projektowanie pipeline'ów ML** – graficzny interfejs (Designer) do budowy procesów ML bez kodowania.
-- **Automated ML (AutoML)** – automatyczne dobieranie algorytmów i parametrów.
-- **Trenowanie modeli** – obsługa popularnych frameworków (scikit-learn, PyTorch, TensorFlow).
-- **Wdrażanie modeli** – publikacja jako endpointy REST API.
-- **Monitorowanie i rejestracja modeli** – śledzenie wersji, metryk, wydajności.
-- **Zarządzanie danymi** – rejestracja, wersjonowanie i przetwarzanie zbiorów danych.
-- **MLOps** – automatyzacja wdrożeń, integracja z CI/CD, kontrola dostępu.
+- **Projektowanie pipeline'ów ML (Designer)** – graficzny interfejs drag & drop do budowy procesów ML bez kodowania.
+- **Automated ML (AutoML)** – automatyczne dobieranie algorytmów i hiperparametrów. Obsługuje klasyfikację, regresję, klasteryzację, szeregi czasowe, Computer Vision i NLP.
+- **Trenowanie modeli** – obsługa framworków: scikit-learn, PyTorch, TensorFlow, XGBoost.
+- **Wdrażanie modeli** – publikacja jako REST endpointy: **Managed Online Endpoint** (real-time), **Batch Endpoint** (wsadowe).
+- **Monitorowanie i rejestracja modeli (Model Registry)** – wersjonowanie, śledzenie metryk, audyt.
+- **Zarządzanie danymi (Data Assets)** – rejestracja, wersjonowanie i przetwarzanie zbiorów danych.
+- **Compute clusters i compute instances** – klastry do trenowania (skalowalne) i instancje do dewelopmentu/notebboków.
+- **Data Labeling** – narzędzie do etykietowania danych (obrazy, tekst) z opcją asysty ML.
+- **MLOps** – automatyzacja wdrożeń ML: integracja z GitHub, Azure DevOps, CI/CD dla modeli ML.
+- **Responsible AI Dashboard** – kompleksowy panel do analizy modeli pod kątem:
+	- **Fairness** (wykrywanie dyskryminacji między grupami)
+	- **Error Analysis** (analiza błędów modelu)
+	- **Explainability** (SHAP, LIME – wyjaśnienie decyzji modelu)
+	- **Data Explorer** (eksploracja danych wejściowych)
+	- **Causal Analysis** (przyczynowość i kontrfaktualne przykłady)
+- **Feature Store** – centralne repozytorium cech ML do ponownego wykorzystania między projektami.
+- **Environments** – zarządzanie środowiskami Python (kontenery Docker) do reprodukowalnych trénowanie.
 
 ## Przykłady użycia (Use Cases)
 - Budowa modeli predykcyjnych dla finansów, sprzedaży, produkcji.

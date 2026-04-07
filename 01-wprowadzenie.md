@@ -33,6 +33,26 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 - **Regresja (Regression)** – przewidywanie wartości liczbowych
 - **Klasyfikacja (Classification)** – przypisywanie do kategorii
 - **Klasteryzacja (Clustering)** – grupowanie podobnych danych
+- **Feature (cecha)** – pojedyncza właściwość lub atrybut wykorzystywany przez model ML do nauki (np. wiek, płeć, liczba transakcji)
+- **Label (etykieta)** – prawidłowa odpowiedź przypisana do przykładu w uczeniu nadzorowanym (np. kategoria: spam/nie-spam)
+- **True Positive (TP)** – przypadek poprawnie zaklasyfikowany jako pozytywny
+- **False Positive (FP)** – przypadek błędnie zaklasyfikowany jako pozytywny (fałszywy alarm)
+- **True Negative (TN)** – przypadek poprawnie zaklasyfikowany jako negatywny
+- **False Negative (FN)** – przypadek błędnie zaklasyfikowany jako negatywny (przeoczenie)
+- **Mean Square Error (MSE)** – średnia arytmetyczna kwadratów różnic między wartościami rzeczywistymi a przewidywanymi przez model
+- **Prompt** – polecenie lub zapytanie przekazywane do modelu generatywnego
+- **Token** – najmniejsza jednostka tekstu przetwarzana przez model językowy (np. słowo, znak)
+- **Drift** – zmiana rozkładu danych wejściowych lub wyjściowych w czasie, która może pogorszyć skuteczność modelu
+- **Data Imbalance** – nierównomierny rozkład klas w zbiorze danych (np. 95% klasy A, 5% klasy B)
+- **Transfer Learning** – wykorzystanie modelu wytrenowanego na jednym zadaniu do przyspieszenia nauki na innym, pokrewnym zadaniu
+- **Zero-shot learning** – model radzi sobie z zadaniem, którego nie widział podczas treningu
+- **Few-shot learning** – model uczy się na bardzo małej liczbie przykładów
+- **Data Augmentation** – sztuczne zwiększanie liczby przykładów przez modyfikacje danych (np. obrót obrazu, synonimy w tekście)
+- **Model Deployment** – wdrożenie modelu do środowiska produkcyjnego
+- **Monitoring** – śledzenie skuteczności i działania modelu po wdrożeniu
+- **Retraining** – ponowne trenowanie modelu na nowych danych
+- **Data Privacy** – ochrona prywatności i bezpieczeństwa danych
+- **Interpretability** – możliwość zrozumienia, jak model podejmuje decyzje
 - **Pipeline ML** – sekwencja kroków przetwarzania danych i trenowania modelu
 - **Overfitting/Underfitting** – przeuczenie/niedouczenie modelu
 - **Accuracy, Precision, Recall, F1-score** – metryki oceny modeli

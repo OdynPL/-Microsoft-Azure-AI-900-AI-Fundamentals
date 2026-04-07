@@ -31,12 +31,12 @@
 ---
 
 ## Zakres egzaminu (skills measured)
-- Opis zadań AI i rozpoznawanie typów workloadów
-- Podstawy ML, typy uczenia, architektury modeli
-- Computer Vision: klasyfikacja, detekcja, OCR, Face
-- NLP: ekstrakcja fraz, analiza sentymentu, rozpoznawanie mowy, tłumaczenia
-- Generatywna AI: modele, scenariusze, usługi Azure OpenAI, Foundry
-- Responsible AI: zasady, etyka, bezpieczeństwo, przejrzystość
+- Opis zadań AI i rozpoznawanie typów workloadów (Computer Vision, NLP, Generative AI, Anomaly Detection, Recommendations)
+- Podstawy ML: typy uczenia (supervised, unsupervised, reinforcement), metryki, overfitting, pipeline, AutoML, Designer
+- Computer Vision: klasyfikacja, detekcja obiektów, segmentacja, OCR, Face, Custom Vision, Document Intelligence, Spatial Analysis
+- NLP: sentyment, NER, PII, CLU, Question Answering, Speech-to-Text, Text-to-Speech, Custom Speech/Voice, tłumaczenia
+- Generatywna AI: LLM, GPT, DALL-E, RAG, Grounding, System Message, Temperature, Tokens, Content Filters, Fine-tuning, Prompt Flow
+- Responsible AI: Fairness, Reliability, Privacy, Inclusiveness, Transparency, Accountability, Content Safety, Explainability, Compliance
 
 ---
 

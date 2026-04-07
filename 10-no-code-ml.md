@@ -34,9 +34,21 @@
 - Szybkie prototypowanie rozwiązań AI w biznesie
 
 ## Usługi Azure wspierające no-code/low-code ML
-- **Azure Machine Learning Designer** – graficzne budowanie pipeline'ów ML
-- **Automated ML** – automatyczne trenowanie modeli
-- **Power Platform AI Builder** – narzędzia AI dla użytkowników biznesowych (np. predykcja, analiza tekstu, rozpoznawanie obrazów)
+- **Azure Machine Learning Designer** – graficzne budowanie pipeline'ów ML (drag & drop)
+- **Automated ML (AutoML)** – automatyczne trenowanie modeli (klasyfikacja, regresja, klasteryzacja, Computer Vision, NLP)
+- **Power Platform AI Builder** – narzędzia AI dla użytkowników biznesowych:
+	- Klasyfikacja tekstu i obrazów
+	- Wykrywanie obiektów
+	- Predykcja wartości numerycznych
+	- Analiza sentymentu
+	- Przetwarzanie dokumentów (faktury, formularze)
+	- Integracja z Power Apps i Power Automate
+- **Microsoft Copilot Studio** (dawniej Power Virtual Agents) – platforma no-code do tworzenia chatbotów i agentów AI:
+	- Budowa botów z użyciem generatywnej AI (GPT)
+	- Łączenie z zewnętrznymi źródłami wiedzy
+	- Integracja z Teams, stronami internetowymi, aplikacjami
+- **Azure AI Foundry Prompt Flow** – wizualny edytor do budowy aplikacji AI opartych na LLM bez konieczności kodowania.
+- **Azure AI Language Studio** – portal do trenowania i testowania modeli NLP (klasyfikacja tekstu, CLU, Question Answering) bez kodu.
 
 
 ![Przegląd usług Azure AI](assets/azure-ai-overview.svg)

@@ -51,9 +51,12 @@ class Program
 ## Ważne informacje
 - Wysoka dokładność wykrywania i rozpoznawania twarzy.
 - Obsługa zdjęć, wideo oraz strumieni na żywo.
-- Możliwość tworzenia własnych baz referencyjnych osób.
+- Możliwość tworzenia własnych baz referencyjnych osób (PersonGroup, LargePersonGroup).
 - Zgodność z przepisami o ochronie danych osobowych (RODO/GDPR).
-- Ograniczenia etyczne: nie wolno używać do masowej inwigilacji.
+- **Ograniczony dostęp (Limited Access Policy)** – funkcje identyfikacji twarzy i weryfikacji tożsamości są dostępne tylko po formalnej akceptacji przez Microsoft. Wymagane uzasadnienie biznesowe.
+- **Face Liveness Detection** – wykrywa próby wyłudzenia dostępu za pomocą zdjęć lub nagrań wideo (ochrona przed atakami typu „presentation attack”).
+- **Responsible AI** – Microsoft ograniczył dostęp do niektórych funkcji (np. rozpoznawanie emocji jako wnioskowanie o stanie psychicznym), by zapobiec nadużyciom i dyskryminacji.
+- Zakaz użycia do masowej, nieautoryzowanej inwigilacji osób publicznych.
 
 ---
 [⟵ Powrót do spisu treści](README.md)
