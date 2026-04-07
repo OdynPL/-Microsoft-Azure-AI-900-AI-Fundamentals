@@ -63,6 +63,9 @@
 - **ROC Curve, AUC** – krzywa ROC i pole pod krzywą, metryki oceny skuteczności klasyfikatorów.
 
 ## Proces ML
+
+![Proces ML – 8 kroków](assets/ml-process.svg)
+
 1. **Zbieranie danych** – pozyskiwanie i przygotowanie danych do analizy.
 2. **Podział danych** – na zbiory: treningowy, walidacyjny, testowy.
 3. **Feature engineering** – wybór i przetwarzanie cech (features).
@@ -98,8 +101,25 @@
 	- Rejestrację i wersjonowanie modeli (**Model Registry**)
 	- Wdrażanie modeli jako **endpointy** (API)
 	- Monitorowanie i audyt modeli
-- **Automated ML** – automatyczne trenowanie i wybór najlepszego modelu na podstawie danych.
+- **Automated ML (AutoML)** – automatyczne trenowanie i wybór najlepszego modelu na podstawie danych:
+	1. **Wskazujesz dane** – przesyłasz zbiór danych (CSV, Azure Blob, SQL)
+	2. **Wybierasz typ zadania** – klasyfikacja, regresja lub prognozowanie szeregów czasowych
+	3. **Wybierasz kolumnę docelową** (target column) – co model ma przewidywać
+	4. **AutoML automatycznie**:
+		- Testuje wiele algorytmów (np. LogisticRegression, XGBoost, LightGBM, RandomForest)
+		- Przeprowadza **feature engineering** (normalizacja, kodowanie, imputacja braków)
+		- Stosuje **cross-validation** (walidację krzyżową) do oceny modeli
+		- Optymalizuje hiperparametry każdego algorytmu
+	5. **Ranking modeli** – AutoML porównuje wyniki według wybranej metryki (Accuracy, AUC, RMSE itp.) i wskazuje **najlepszy model**
+	6. **Wdrożenie** – najlepszy model można jednym kliknięciem wdrożyć jako **REST API endpoint**
 - **Data/Compute** – zarządzanie danymi i mocą obliczeniową w chmurze.
-- **Model Registry** – repozytorium do przechowywania i wersjonowania modeli ML.
+- **Model Registry** – repozytorium do przechowywania i wersjonowania **własnych** wytrenowanych modeli ML (każdy model ma wersję, metadane, metryki)
+- **Model Catalog (Azure AI Foundry)** – katalog gotowych, **pre-built** modeli do użycia od razu lub fine-tuningu:
+	- **Modele OpenAI**: GPT-4, GPT-4o, GPT-4o-mini, GPT-3.5-Turbo, DALL-E 3, Whisper, text-embedding-ada-002
+	- **Modele Meta**: Llama 3, Llama 2
+	- **Modele Mistral**: Mistral Large, Mistral Small
+	- **Modele Microsoft**: Phi-3, Phi-2 (małe, wydajne modele językowe)
+	- **Modele Hugging Face**: tysiące modeli open-source (NLP, Vision, Audio)
+	- **Modele Cohere**: Command, Embed (generowanie, embeddingi)
 
 [⟵ Poprzedni: Podstawy AI i rodzaje zadań](02-ai-workloads.md) | [Następny: Computer Vision ⟶](04-computer-vision.md)
