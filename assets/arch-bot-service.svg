@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 80" font-family="Segoe UI,Arial,sans-serif">
+  <defs><marker id="a" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#0078D4"/></marker></defs>
+  <rect x="2" y="20" width="80" height="40" rx="6" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="42" y="38" text-anchor="middle" font-size="9" font-weight="bold" fill="#0078D4">Channels</text>
+  <text x="42" y="50" text-anchor="middle" font-size="7" fill="#555">Teams, Web</text>
+  <line x1="87" y1="40" x2="118" y2="40" stroke="#0078D4" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="123" y="10" width="120" height="60" rx="8" fill="#0078D4"/>
+  <text x="183" y="30" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">Bot Service</text>
+  <text x="183" y="45" text-anchor="middle" font-size="8" fill="#B8D8F8">Bot Framework SDK</text>
+  <text x="183" y="57" text-anchor="middle" font-size="8" fill="#B8D8F8">Dialogs | Cards</text>
+  <line x1="248" y1="40" x2="278" y2="40" stroke="#0078D4" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="283" y="10" width="110" height="60" rx="6" fill="#FFF4E6" stroke="#FF8C00" stroke-width="1.5"/>
+  <text x="338" y="30" text-anchor="middle" font-size="9" font-weight="bold" fill="#FF8C00">AI Services</text>
+  <text x="338" y="45" text-anchor="middle" font-size="8" fill="#555">CLU | Q&amp;A | Speech</text>
+  <text x="338" y="57" text-anchor="middle" font-size="8" fill="#555">OpenAI | Translator</text>
+  <line x1="398" y1="40" x2="428" y2="40" stroke="#FF8C00" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="433" y="20" width="82" height="40" rx="6" fill="#E6F7E6" stroke="#107C10" stroke-width="1.5"/>
+  <text x="474" y="44" text-anchor="middle" font-size="10" font-weight="bold" fill="#107C10">Odpowiedz</text>
+</svg>

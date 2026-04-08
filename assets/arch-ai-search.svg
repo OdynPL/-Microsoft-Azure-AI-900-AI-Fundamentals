@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 80" font-family="Segoe UI,Arial,sans-serif">
+  <defs><marker id="a" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#0078D4"/></marker></defs>
+  <rect x="2" y="20" width="80" height="40" rx="6" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="42" y="44" text-anchor="middle" font-size="10" font-weight="bold" fill="#0078D4">Dane</text>
+  <line x1="87" y1="40" x2="118" y2="40" stroke="#0078D4" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="123" y="15" width="75" height="50" rx="6" fill="#FFF4E6" stroke="#FF8C00" stroke-width="1.5"/>
+  <text x="160" y="36" text-anchor="middle" font-size="9" font-weight="bold" fill="#FF8C00">Indexer</text>
+  <text x="160" y="50" text-anchor="middle" font-size="7" fill="#555">+ Skillset</text>
+  <line x1="203" y1="40" x2="233" y2="40" stroke="#0078D4" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="238" y="10" width="90" height="60" rx="8" fill="#0078D4"/>
+  <text x="283" y="33" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">Index</text>
+  <text x="283" y="48" text-anchor="middle" font-size="8" fill="#B8D8F8">text + vector</text>
+  <text x="283" y="60" text-anchor="middle" font-size="8" fill="#B8D8F8">fields</text>
+  <line x1="333" y1="40" x2="363" y2="40" stroke="#0078D4" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="368" y="15" width="70" height="50" rx="6" fill="#E6F7E6" stroke="#107C10" stroke-width="1.5"/>
+  <text x="403" y="36" text-anchor="middle" font-size="9" font-weight="bold" fill="#107C10">Query</text>
+  <text x="403" y="50" text-anchor="middle" font-size="7" fill="#555">Hybrid Search</text>
+  <line x1="443" y1="40" x2="463" y2="40" stroke="#107C10" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="468" y="20" width="48" height="40" rx="6" fill="#EDE7F6" stroke="#6A1B9A" stroke-width="1.5"/>
+  <text x="492" y="38" text-anchor="middle" font-size="9" font-weight="bold" fill="#6A1B9A">RAG</text>
+  <text x="492" y="50" text-anchor="middle" font-size="7" fill="#555">LLM</text>
+</svg>

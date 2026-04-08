@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 80" font-family="Segoe UI,Arial,sans-serif">
+  <defs><marker id="a" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#0078D4"/></marker></defs>
+  <rect x="2" y="20" width="100" height="40" rx="6" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="52" y="38" text-anchor="middle" font-size="10" font-weight="bold" fill="#0078D4">Web App</text>
+  <text x="52" y="50" text-anchor="middle" font-size="7" fill="#555">JS SDK / iframe</text>
+  <line x1="107" y1="40" x2="148" y2="40" stroke="#0078D4" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="128" y="33" text-anchor="middle" font-size="8" fill="#555">embed</text>
+  <rect x="153" y="10" width="140" height="60" rx="8" fill="#0078D4"/>
+  <text x="223" y="28" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">Immersive Reader</text>
+  <text x="223" y="43" text-anchor="middle" font-size="8" fill="#B8D8F8">Read Aloud | Syllables</text>
+  <text x="223" y="55" text-anchor="middle" font-size="8" fill="#B8D8F8">Translate | Highlight</text>
+  <line x1="298" y1="40" x2="338" y2="40" stroke="#0078D4" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="343" y="15" width="100" height="50" rx="6" fill="#E6F7E6" stroke="#107C10" stroke-width="1.5"/>
+  <text x="393" y="36" text-anchor="middle" font-size="10" font-weight="bold" fill="#107C10">Czytelnik</text>
+  <text x="393" y="50" text-anchor="middle" font-size="8" fill="#555">dysleksja / nauka</text>
+  <rect x="455" y="20" width="60" height="40" rx="6" fill="#FFF4E6" stroke="#FF8C00" stroke-width="1.5"/>
+  <text x="485" y="38" text-anchor="middle" font-size="7" font-weight="bold" fill="#FF8C00">OneNote</text>
+  <text x="485" y="50" text-anchor="middle" font-size="7" font-weight="bold" fill="#FF8C00">Word</text>
+</svg>
