@@ -57,6 +57,12 @@ Platforma **Microsoft Azure** oferuje szeroki zestaw gotowych usług AI, które 
 | **Azure AI Immersive Reader** | Pomoc w czytaniu dla osób z dysleksją; tłumaczenie, czytanie na głos, wyróżnianie słów |
 | | ![Architektura Azure AI Immersive Reader](assets/arch-immersive-reader.svg) |
 | | **Komunikacja:** JavaScript SDK, REST API; osadzany w aplikacjach webowych <br><br> **Limity:** działa w przeglądarce (client-side rendering); wymaga Azure AD token <br><br> **Koszty:** Free (3M znaków/mies.), S0 od ~$1/1M znaków |
+| **Azure AI Video Indexer** | Analiza wideo i audio: transkrypcja, OCR, rozpoznawanie twarzy, wykrywanie scen, ekstrakcja tematów i etykiet |
+| | ![Architektura Azure AI Video Indexer](assets/arch-video-indexer.svg) |
+| | **Komunikacja:** REST API, portal Video Indexer (vi.microsoft.com); upload pliku lub URL <br><br> **Limity:** Free: 10 h indeksowania/mies., 40 min na plik; Paid: zależne od planu <br><br> **Koszty:** Free (10h/mies.), Standard od ~$0.035/min (wideo), $0.012/min (audio) |
+| **Azure AI Health Insights** | Analiza danych klinicznych: Clinical Matching, Trial Matcher, Radiology Insights; zgodność HIPAA |
+| | ![Architektura Azure AI Health Insights](assets/arch-health-insights.svg) |
+| | **Komunikacja:** REST API; dane wejściowe w formacie FHIR lub tekst kliniczny <br><br> **Limity:** preview/ograniczona dostępność regionalna; wymaga zatwierdzenia dostępu <br><br> **Koszty:** preview — pricing TBD; część funkcji w ramach Health Bot Service |
 
 ### Wycofane usługi (retired – mogą pojawić się jako dystraktory na egzaminie)
 
