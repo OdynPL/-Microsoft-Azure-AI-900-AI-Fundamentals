@@ -49,7 +49,7 @@
 	- **One-class SVM** – dla problemów binarnych (normalne vs anomalne)
 - **Typowe scenariusze biznesowe**:
 	- Detekcja oszustw finansowych (transakcje o nietypowych kwotach, lokalizacjach, częstości)
-	- Monitoring maszyn produkcyjnych (czujniki wskazujące anomalę = możliwa awaria)
+	- Monitoring maszyn produkcyjnych (czujniki wskazujące anomalię = możliwa awaria)
 	- Bezpieczeństwo sieci (anomalny ruch sieciowy = potencjalny atak)
 	- Medycyna: wykrywanie pacjentów o atypowych wskaźnikach zdrowia
 - **Azure**: Azure Machine Learning (AutoML obsługuje anomaly detection), Azure Stream Analytics (real-time anomalies), custom modele.

@@ -35,13 +35,13 @@
 	- Oferuje algorytmy do zmniejszania biasu (Reductions, Threshold Optimizer).
 - **InterpretML (SHAP, LIME)** – wyjaśnianie decyzji modeli:
 	- **SHAP** – wartości Shapleya pokazują wkład każdej cechy w predykcję.
-	- **LIME** – lokalne wyjaśnienia, co byłoby jeśli zmienimy pojedynczą cechę.
+	- **LIME** – lokalne wyjaśnienia – co by się stało, gdybyśmy zmienili pojedynczą cechę.
 
 ## Praktyczne użycie – Bias Detection & Mitigation
 
 ![Bias Detection & Mitigation](assets/bias-detection.svg)
 
-- **Scenariusz**: Rekrutacyjny model AI preferuje mężczyzn niż kobiety do roli inżyniera (bias w danych treningowych).
+- **Scenariusz**: Rekrutacyjny model AI faworyzuje mężczyzn kosztem kobiet do roli inżyniera (bias w danych treningowych).
 - **Detekcja**:
   1. Wytrenuj model na danych historycznych (gdzie mężczyźni byli preferowani).
   2. W Azure ML Responsible AI Dashboard sprawdź Fairness Assessment.

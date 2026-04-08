@@ -24,7 +24,7 @@ Azure AI Foundry to platforma do zarządzania, katalogowania i wdrażania modeli
 
 ![AI Agent Lifecycle](assets/agent-lifecycle.svg)
 
-- **Co to jest agent**: Aplikacja AI, która używa LLM do rozumowania i podejmowania autonomicznych decyzji. Różni się od chatbota – agent może kać narzędziami, dostępować danych i wykonywać wielokrokowe zadania.
+- **Co to jest agent**: Aplikacja AI, która używa LLM do rozumowania i podejmowania autonomicznych decyzji. Różni się od chatbota – agent może korzystać z narzędzi, uzyskiwać dostęp do danych i wykonywać wielokrokowe zadania.
 - **Komponenty agenta**:
   - **Model (LLM)** – GPT-4, Llama, DeepSeek (wybierz z katalogów Foundry)
   - **Instructions** – prompt systemowy, cele, ograniczenia

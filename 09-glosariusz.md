@@ -45,7 +45,7 @@
 - **Feature Engineering** – przygotowanie i wybór cech do modelu ML
 - **Pipeline ML** – sekwencja kroków przetwarzania danych i trenowania modelu
 - **Azure AI Vision** – usługa do analizy obrazów/wideo na Azure (klasyfikacja, detekcja, OCR)
-- **Azure AI Services** – rodzina gotowych uslug AI na Azure (API/SDK) do Vision, Language, Speech, Face i innych scenariuszy bez trenowania modelu od zera
+- **Azure AI Services** – rodzina gotowych usług AI na Azure (API/SDK) do Vision, Language, Speech, Face i innych scenariuszy bez trenowania modelu od zera
 - **Azure AI Face** – usługa do rozpoznawania i analizy twarzy na Azure
 - **Azure AI Language** – usługa do analizy tekstu, NLP na Azure
 - **Azure AI Speech** – rozpoznawanie i synteza mowy na Azure

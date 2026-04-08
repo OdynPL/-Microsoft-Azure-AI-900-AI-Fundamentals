@@ -77,15 +77,15 @@
 
 ![Data Imbalance](assets/data-imbalance.svg)
 
-- **Problem**: Zbiór danych ma nierówno rozmreszane klasy (np. 95% negatywnych przykładów, 5% pozytywnych). Model uczy się faworyzować większość i osiąga wysoką Accuracy, ale źle radzi sobie z mniejszością.
-  - Przykład: detekcia oszustw (99.95% transakcji legalne, 0.05% oszustwa) – model, który zawsze mówi „legalne", będzie miał 99.95% Accuracy, ale nie złapie żadnego oszustwa.
+- **Problem**: Zbiór danych ma nierówno rozłożone klasy (np. 95% negatywnych przykładów, 5% pozytywnych). Model uczy się faworyzować większość i osiąga wysoką Accuracy, ale źle radzi sobie z mniejszością.
+  - Przykład: detekcja oszustw (99.95% transakcji legalne, 0.05% oszustwa) – model, który zawsze mówi „legalne”, będzie miał 99.95% Accuracy, ale nie złapie żadnego oszustwa.
 - **Rozwiązania**:
   - **Class Weighting** – wagi wysoksze dla mniejszościowej klasy w funkcji strat
   - **Oversampling** – replikowanie przykładów mniejszości (SMOTE – Synthetic Minority Over-Sampling Technique)
   - **Undersampling** – zmniejszenie większości klasy
   - **Stratified Split** – dzielenie danych na trening/walidację/test z zachowaniem proporcji klas
   - **Wybór metryki** – zamiast Accuracy użyć F1-score, Recall lub Precision w zależności od scenariusza
-- **Azure**: AutoML w Azure ML automatycznie wykrywa imbalance i stosuje Class Weighting, a designerach można konfigurować oversampling.
+- **Azure**: AutoML w Azure ML automatycznie wykrywa imbalance i stosuje Class Weighting, a w Designerze można konfigurować oversampling.
 
 ## A/B Testing – porównywanie modeli w produkcji
 
@@ -94,8 +94,8 @@
 - **Co to jest**: Strategie wdrażania nowego modelu obok starego, gdzie część użytkowników otrzymuje stary model (A), część nowy (B). Porównuje się metryki biznesowe (CTR, konwersje, zadowolenie użytkownika).
 - **Kroki**:
   1. Wytrenuj nowy model, oceń go na zbiorze testowym.
-  2. Wdróż jako **Azure ML Managed Online Endpoint** z małym podziale tracfficu (np. 10%).
-  3. Monitoruj metryki dla obu wersji (np. real-time latency, error rate, biznesowa metrika).
+  2. Wdróż jako **Azure ML Managed Online Endpoint** z małym podziałem ruchu (np. 10%).
+  3. Monitoruj metryki dla obu wersji (np. real-time latency, error rate, metryka biznesowa).
   4. Jeśli nowy model jest lepszy, stopniowo zwiększaj traffic (gradual rollout).
   5. Jeśli gorzej, wycofaj i powróć do starego modelu.
 - **Typowe metryki**: CTR (click-through rate), conversion rate, user satisfaction, model latency, inference cost.

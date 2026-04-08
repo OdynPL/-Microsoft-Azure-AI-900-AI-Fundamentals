@@ -70,10 +70,10 @@ class Program
 - **XPIA (Cross-Prompt Injection Attacks)** – bardziej zaawansowany atak, gdzie agent pobiera z wielu źródeł (RAG) i adversary wstrzykuje instrukcje w jedno źródło by wpłynęło na inne.
   - Przykład: W Azure AI Search adversary dodaje wstrzyknięty tekst do jednego dokumentu, agent czyta i wykonuje nieuzasadnione polecenie
   - Obrona: Architektura agenta powinna weryfikować źródła, content safety filters, RBAC na użytkowników
-- **Hallucinations (zmyślone informacje)** – model generuje fałszywe dane jako potencjalne.
+- **Hallucinations (zmyślone informacje)** – model generuje fałszywe dane, prezentując je jako prawdziwe.
   - Obrona: RAG + grounding, content verification post-hoc, user reviews
 - **Content Filters** – Azure OpenAI automatycznie blokuje:
-  - Mowę nienawiści, przemoć, treści seksualne, samookaleczenie
+  - Mowę nienawiści, przemoc, treści seksualne, samookaleczenie
   - Konfigurowalny poziom czułości
 - **Data Privacy w GenAI**:
   - Dane użytkownika mogą zostać wykorzystane do treningu modelu (zależy od planu)

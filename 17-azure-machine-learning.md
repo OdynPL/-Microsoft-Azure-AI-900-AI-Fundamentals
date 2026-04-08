@@ -67,7 +67,7 @@ mlClient.OnlineEndpoints.CreateOrUpdate(endpoint);
 	- **Model drift**: pogorszenie się wydajności metryki predykcyjnej (accuracy, precision, recall) na nowych danych.
 	- **Prediction drift**: nagła zmiana przewidywań modelu (bez zmiany danych wejściowych).
 - **Scenariusz problemu**:
-  - Wytrenowałeś model kredytowy w 2024 na danych klientów głównie międzywiekowych).
+  - Wytrenowałeś model kredytowy w 2024 na danych klientów głównie w średnim wieku (25–45 lat).
   - W 2025 pojawia się nowa demografika (starsze osoby starają się o kredyty).
   - Model zaczyna źle przewidywać dla nowych grup → **DATA DRIFT**.
   - Trzeba retrenować model na nowych danych.
@@ -80,7 +80,7 @@ mlClient.OnlineEndpoints.CreateOrUpdate(endpoint);
   1. Zbierz nowe dane w produkcji (co tydzień, miesiąc).
   2. Uruchom eksperyment ML (AutoML lub custom trening) na nowych danych.
   3. Porównaj metryki nowego modelu ze starym.
-  4. Jeśli nowy jest lepszy: A/B test (traffic split) i postupniowy rollout.
+  4. Jeśli nowy jest lepszy: A/B test (traffic split) i stopniowy rollout.
   5. Jeśli gorzej: pozostań przy starym, zbierz więcej danych.
 - **Azure ML Schedules**: automatyzacja retrainingu – co miesiąc uruchom pipeline, przetrenuj, oceń, potencjalnie wdróż.
 

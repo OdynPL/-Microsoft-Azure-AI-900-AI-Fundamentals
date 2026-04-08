@@ -13,6 +13,7 @@ Azure AI Face to specjalistyczna usługa do wykrywania, analizy i rozpoznawania 
 - **Rozpoznawanie tożsamości** – identyfikacja osób na podstawie bazy referencyjnej (Face Identification).
 - **Porównywanie twarzy** – sprawdzanie, czy dwie twarze należą do tej samej osoby (Face Verification).
 - **Grupowanie twarzy** – automatyczne grupowanie podobnych twarzy.
+- **Face Liveness Detection** – wykrywanie, czy przed kamerą jest żywa osoba (ochrona przed atakami ze zdjęciem/wideo – anti-spoofing).
 
 ## Przykłady użycia (Use Cases)
 - Systemy kontroli dostępu (biometryczne wejście do budynków).

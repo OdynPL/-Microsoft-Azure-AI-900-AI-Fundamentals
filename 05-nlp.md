@@ -28,7 +28,7 @@
 	- **Rozpoznawanie encji (Named Entity Recognition, NER)** – osoby, miejsca, organizacje, daty, kwoty
 	- **Wykrywanie PII (Personally Identifiable Information)** – automatyczne wykrywanie i maskowanie danych osobowych (numery PESEL, adresy, numery kart)
 	- **Klasyfikację tekstu** – przypisywanie dokumentów do kategorii
-	- **Podsumowywanie (Summarization)** – automatyczne streszczanie dokumentów i rozmow
+	- **Podsumowywanie (Summarization)** – automatyczne streszczanie dokumentów i rozmów
 	- **Wykrywanie języka (Language Detection)** – automatyczne rozpoznawanie języka tekstu
 	- **Tłumaczenia maszynowe**
 	- **Wyszukiwanie semantyczne (Semantic Search)** – wyszukiwanie oparte na znaczeniu, nie słowach kluczowych

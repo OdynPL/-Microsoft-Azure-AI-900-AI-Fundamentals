@@ -42,13 +42,13 @@
 | Zastosowanie | Aktualne dane firmowe, FAQ, dokumenty | Specyficzny styl, ton, terminologia |
 
 ## Azure AI Services - szybkie fakty na egzamin
-- **Azure AI Services** to gotowe modele AI jako API - szybkie wdrozenie bez trenowania od zera.
-- **Single-service resource** = jeden zasob dla jednej uslugi; **Multi-service resource** = jeden zasob dla wielu uslug.
-- **Azure OpenAI** to oddzielny zasob i oddzielny proces dostepu (wymagana akceptacja Microsoft).
-- Gdy scenariusz mowi o szybkim wdrozeniu gotowych funkcji (OCR, NER, STT – Speech-to-Text, TTS – Text-to-Speech), zwykle wybierasz **Azure AI Services**.
-- Gdy scenariusz wymaga pelnej kontroli treningu, eksperymentow i MLOps, zwykle wybierasz **Azure Machine Learning**.
-- W pytaniach produkcyjnych zwracaj uwage na: **endpoint**, **autoryzacje** (klucz/Entra ID), **region**, **limity** i **koszty**.
-- W GenAI zawsze uwzgledniaj **Content Filters**, **grounding/RAG** oraz zasady **Responsible AI**.
+- **Azure AI Services** to gotowe modele AI jako API - szybkie wdrożenie bez trenowania od zera.
+- **Single-service resource** = jeden zasób dla jednej usługi; **Multi-service resource** = jeden zasób dla wielu usług.
+- **Azure OpenAI** to oddzielny zasób i oddzielny proces dostępu (wymagana akceptacja Microsoft).
+- Gdy scenariusz mówi o szybkim wdrożeniu gotowych funkcji (OCR, NER, STT – Speech-to-Text, TTS – Text-to-Speech), zwykle wybierasz **Azure AI Services**.
+- Gdy scenariusz wymaga pełnej kontroli treningu, eksperymentów i MLOps, zwykle wybierasz **Azure Machine Learning**.
+- W pytaniach produkcyjnych zwracaj uwagę na: **endpoint**, **autoryzację** (klucz/Entra ID), **region**, **limity** i **koszty**.
+- W GenAI zawsze uwzględniaj **Content Filters**, **grounding/RAG** oraz zasady **Responsible AI**.
 
 ## Agenci AI – nowy temat (AI-900/AI-901)
 - **Agent** = LLM (Large Language Model) + Instructions + Tools, działający autonomicznie (nie tylko chatbot)
@@ -68,7 +68,7 @@
 
 ## Strategie egzaminacyjne
 - Czytaj uważnie scenariusz – kluczowe są słowa: „**klasyfikacja**”, „**generowanie**”, „**ekstrakcja**”, „**tłumaczenie**”, „**rozpoznawanie**”.
-- Eliminuj odpowiedzi niepassujące do typu workloadu (np. nie wybieraj usługi tekstowej do zadania z obrazem).
+- Eliminuj odpowiedzi niepasujące do typu workloadu (np. nie wybieraj usługi tekstowej do zadania z obrazem).
 - Zwracaj uwagę na metryki – jeśli pytanie dotyczy skuteczności modelu, sprawdź czy chodzi o accuracy, precision, recall czy F1-score.
 - **Responsible AI** – zawsze wybieraj odpowiedzi promujące etykę, bezpieczeństwo, przejrzystość i zgodność z regulacjami.
 - Jeśli nie znasz odpowiedzi, wybierz opcję najbliższą zasadom Responsible AI lub bezpieczeństwa danych.
@@ -90,12 +90,12 @@
 | Zarządzać knowledge base dla agenta | Foundry IQ + Azure AI Search | Embeddings, vector search, hybrid search |
 | Potrzebuję similarity search (semantyka) | Azure AI Search + Vector Search | Hybrid (vector + keyword), multimodal |
 | Szybkie wdrażanie bez kodu | No-code usługi (Designer, AutoML, AI Builder) | Portal, drag & drop, szybkie prototypy |
-| Kiedy miał wiele błędów na jednej grupie? | Fairlearn, Azure ML RAI Dashboard | Detekcja i mitygacja biasu |
+| Model ma wiele błędów na jednej grupie | Fairlearn, Azure ML RAI Dashboard | Detekcja i mitygacja biasu |
 | Chcę A/B test nowego vs starego modelu | Azure ML Online Endpoint z traffic split | Monitoring real-time, bezpieczny rollout |
 | Moja dokładność spada w produkcji | Drift Detection, retrain pipeline | Data drift lub model drift |
 | Moje dane są niezbalansowane 95% vs 5% | Class Weighting, SMOTE (Synthetic Minority Over-Sampling Technique), stratified split | Metrics: F1-score, Recall, nie Accuracy |
 | Chcę wyjaśnić decyzję modelu użytkownikowi | SHAP (SHapley Additive exPlanations) / LIME (Local Interpretable Model-agnostic Explanations) + Azure ML Explainability | Feature importance, kontrfaktualne przykłady |
-| Chcę RAG dla danych firmowych FAQ | Azure OpenAI + Azure AI Search | Vektorowa wyszukiwarka + LLM |
+| Chcę RAG dla danych firmowych FAQ | Azure OpenAI + Azure AI Search | Wektorowa wyszukiwarka + LLM |
 
 ## Najnowsze do zapamiętania (AI-900)
 - **Few-shot learning** – model uczy się na 1–5 przykładach w promptie

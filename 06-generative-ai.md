@@ -100,7 +100,7 @@
 
 ![Vector Search & Hybrid Search](assets/vector-search.svg)
 
-- **Embeddings** – reprezentacja tekstu/obrazu w postaci wektora numerycznego (~1500 wymiarów dla tekstu). Modele podający semantyczne znaczenie.
+- **Embeddings** – reprezentacja tekstu/obrazu w postaci wektora numerycznego (~1500 wymiarów dla tekstu). Wektory oddają semantyczne znaczenie — podobne treści mają zbliżone embeddingi.
 - **Similarity Search** – zamiast słów kluczowych, pytanie zostaje zamienione w embedding, a wyszukiwarka zwraca dokumenty o najbardziej podobnych embeddings'ach.
 - **Hybrid Search** – kombinacja vector search (semantyka) + keyword search (dokładne słowa):
   - Vector search: "pies" i "canine" mogą mieć podobne embeddings
