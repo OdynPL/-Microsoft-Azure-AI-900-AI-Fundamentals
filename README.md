@@ -1,5 +1,17 @@
 # AI-900: Azure AI Fundamentals – Notatki i materiały do nauki
 
+Kompletne materiały w języku polskim do przygotowania się na egzamin certyfikacyjny **Microsoft AI-900: Azure AI Fundamentals**. Repozytorium zawiera notatki, diagramy SVG, przykłady kodu C# z oficjalnymi Azure SDK, porównania usług i pułapki egzaminacyjne.
+
+**Czego dotyczy egzamin AI-900?**
+- Podstawowe pojęcia AI i Machine Learning (supervised, unsupervised, reinforcement learning)
+- Usługi Azure AI: Vision, Face, Language, Speech, Translator, Document Intelligence, Content Safety
+- Azure OpenAI: GPT, DALL-E, Whisper, Prompt Engineering, RAG, Content Filters
+- Azure Machine Learning: AutoML, Designer, MLOps, endpointy, monitoring
+- Azure AI Foundry: Model Catalog, Prompt Flow, Agenci AI
+- Responsible AI: 6 filarów Microsoftu, Fairlearn, explainability, compliance
+
+**Format:** egzamin wielokrotnego wyboru, ~45 pytań, 45 minut, próg zdawalności 700/1000.
+
 ## Spis treści
 
 
@@ -39,7 +51,3 @@
 - Responsible AI: Fairness, Reliability, Privacy, Inclusiveness, Transparency, Accountability, Content Safety, Explainability, Compliance
 
 ---
-
-
-## Inspiracja
-Materiały przygotowane w stylu notatek AZ-900, z naciskiem na praktyczne różnice, szybkie powtórki i pułapki egzaminacyjne.
