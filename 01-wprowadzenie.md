@@ -323,6 +323,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **R² (R-Squared)** | Współczynnik determinacji; metryka regresji od 0 do 1 (1.0 = model idealny) |
 | **MAE (Mean Absolute Error)** | Średnia wartość bezwzględna błędów predykcji |
 | **RMSE (Root Mean Square Error)** | Pierwiastek z MSE; metryka w tych samych jednostkach co zmienna docelowa |
+| **Metryki wg typu zadania (egzamin!)** | **Classification:** Accuracy, Precision, Recall, F1, AUC, Confusion Matrix <br> **Regression:** MSE, MAE, RMSE, R² <br> **Clustering:** Silhouette Score, Average Distance to Cluster Center |
 
 ### **Computer Vision**
 
@@ -401,13 +402,16 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Intent** | Intencja – zamiar użytkownika rozpoznany z utterance (np. BookFlight) |
 | **Entity** | Encja wyodrębniona z utterance – konkretna wartość (np. miasto=Paryż, data=jutro) |
 | **Conversational AI Flow** | Utterance → Intent Recognition → Entity Extraction → Response – egzaminowy przepływ CLU |
+| **Multi-turn Conversation** | Rozmowa wieloturowa – chatbot utrzymuje kontekst między kolejnymi wypowiedziami użytkownika (historia konwersacji) |
 | **Question Answering** | Usługa tworzenia baz wiedzy Q&A z dokumentów, FAQ i stron internetowych |
 | **Speech Recognition** | Rozpoznawanie mowy (Speech-to-Text) |
 | **Speech Synthesis** | Synteza mowy z tekstu (Text-to-Speech) |
+| **SSML (Speech Synthesis Markup Language)** | Język znaczników do kontroli TTS: pauzy, intonacja, szybkość, głośność, wybór głosu i języka – XML-based |
 | **Speech Translation** | Tłumaczenie mowy w czasie rzeczywistym: speech-to-text + translation + text-to-speech |
 | **Speaker Recognition** | Identyfikacja/weryfikacja osoby na podstawie głosu (kto mówi, nie co mówi) |
 | **Custom Speech** | Dostosowanie modelu STT do własnego słownictwa, akcentu lub domeny (np. medyczna) |
 | **Custom Voice** | Tworzenie spersonalizowanego, syntetycznego głosu TTS |
+| **Custom Neural Voice** | Zaawansowana wersja Custom Voice z naturalnym brzmieniem; wymaga **Limited Access** (wniosek do Microsoft) |
 | **Custom Translator** | Dostosowanie modelu tłumaczenia do specjalistycznego słownictwa (prawo, medycyna) |
 | **Transliteration** | Zmiana alfabetu bez tłumaczenia (np. arabski → łaciński); Azure Translator, ~20 języków |
 | **Batch Transcription** | Masowa, asynchroniczna transkrypcja dużych zbiorów nagrań audio – Azure Speech |
@@ -449,6 +453,8 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | | ![MaaS](assets/genai-maas.svg) |
 | **Azure OpenAI Deployment Types** | **Standard** – shared compute, TPM/RPM quota, najczęstszy; **Provisioned (PTU)** – dedykowana przepustowość, stała opłata; **Global** – routing między regionami, najlepsza dostępność |
 | **Azure OpenAI Playground** | Interaktywne środowisko testowe w portalu: **Chat** (rozmowa z modelem), **Completions** (uzupełnianie tekstu), **Assistants** (agenci z narzędziami) – idealne do prototypowania |
+| **Azure OpenAI vs OpenAI (publiczny)** | Na egzaminie! Różnice: 1) Dane klientów **NIE** są używane do trenowania modeli Microsoft/OpenAI 2) VNet, Private Endpoint, compliance (RODO, HIPAA, SOC2) 3) Content Filters domyślnie włączone 4) Te same modele, ale managed i zabezpieczone przez Microsoft 5) Wymaga zatwierdzenia dostępu |
+| **Azure OpenAI Data Privacy** | „Your data is your data" – dane wysyłane do Azure OpenAI **nie trafiają** do OpenAI, nie są używane do trenowania modeli, nie są udostępniane innym klientom. Dane przetwarzane w wybranym regionie Azure |
 | **RAG (Retrieval Augmented Generation)** | Retrieval Augmented Generation – łączy LLM z zewnętrznymi źródłami danych zamiast polegać na wiedzy treningowej. Pipeline: dokumenty → chunking → embedding → vector index (Azure AI Search); pytanie → embed query → similarity search → top-K docs + prompt → LLM → grounded answer. Korzyści: aktualne dane, mniej halucynacji, cytowanie źródeł, brak potrzeby fine-tuningu. Na egzaminie: RAG to **najważniejsza technika** redukcji halucynacji |
 | | ![RAG Pipeline](assets/genai-rag-pipeline.svg) |
 | **Grounding (zakotwiczenie)** | Powiązanie odpowiedzi modelu z konkretnymi, zweryfikowanymi dokumentami |
@@ -518,6 +524,8 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Causal Analysis** | Analiza przyczynowości: „czy zmiana X powoduje zmianę Y?" (nie tylko korelacja) |
 | **Counterfactual** | Kontrfaktyczne przykłady: „jak zmieniłby się wynik, gdyby…" – wyjaśnienie alternatywnych scenariuszy |
 | **Responsible AI Dashboard** | Zintegrowany panel w Azure ML łączący: Error Analysis, Fairlearn, SHAP, Causal Analysis, Counterfactuals – jedno miejsce do analizy modelu |
+| **Human-in-the-Loop** | Człowiek w pętli decyzyjnej – kluczowa zasada RAI: AI wspiera, ale człowiek podejmuje ostateczną decyzję (zwłaszcza w medycynie, prawie, finansach) |
+| **Responsible AI Impact Assessment** | Microsoft wymaga oceny wpływu AI przed wdrożeniem: identyfikacja ryzyk, potencjalnych szkód i grup dotkniętych |
 
 ### **Cykl życia modelu i MLOps**
 
@@ -550,13 +558,17 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Designer** | Graficzny interfejs drag & drop w Azure ML do budowy pipeline'ów ML bez kodu |
 | **Azure AI Translator** | Osobna usługa do tłumaczeń maszynowych tekstu (100+ języków) |
 | **Azure AI Document Intelligence** | Ekstrakcja danych z formularzy, faktur, dokumentów (dawniej Form Recognizer) |
+| **Document Intelligence – Prebuilt Models** | Gotowe modele (egzamin!): **prebuilt-invoice** (faktury), **prebuilt-receipt** (paragony), **prebuilt-idDocument** (dowody, paszporty), **prebuilt-businessCard** (wizytówki), **prebuilt-layout** (tabele, tekst) – nie wymagają trenowania |
+| **Prebuilt vs Custom Model** | **Prebuilt:** gotowy model od Microsoft, działa od razu (Document Intelligence, Custom Vision prebuilt). **Custom:** trenujesz na własnych danych, gdy prebuilt nie pasuje do domeny. Egzamin: zawsze preferuj prebuilt jeśli wystarczy |
 | **Azure AI Content Safety** | Filtrowanie szkodliwych treści: mowy nienawiści, przemocy, treści seksualnych |
 | **Azure AI Search** | Wektorowa baza danych i platforma wyszukiwania (indexer, index, skillset); kluczowa dla RAG |
 | **Custom Vision** | Trenowanie własnych modeli klasyfikacji/detekcji obrazów bez kodu |
 | **Azure Bot Service** | Usługa do budowy chatbotów; jeden bot obsługuje wiele kanałów (Web Chat, Teams, Facebook) |
 | **Copilot Studio** | Platforma no-code do budowy chatbotów i agentów AI (dawniej Power Virtual Agents) |
+| **Bot Service vs Copilot Studio** | **Bot Service:** dla developerów, kod w C#/JS/Python, pełna kontrola. **Copilot Studio:** no-code, użytkownicy biznesowi, szybkie prototypowanie. Egzamin: Copilot Studio = no-code, Bot Service = pro-code |
 | **AI Builder** | Narzędzia AI w Power Platform dla użytkowników biznesowych |
 | **Knowledge Mining** | Wydobywanie wiedzy z niestrukturyzowanych danych za pomocą AI (OCR, NLP, wzbogacanie) |
+| **Knowledge Mining Pipeline** | Trójstopniowy wzorzec (egzamin!): **Ingest** (źródła: Blob, SQL, Cosmos DB) → **Enrich** (AI Skillset: OCR, NER, key phrases, language detection) → **Explore** (Search Index, Dashboard, Power BI) |
 | **Vector Search** | Wyszukiwanie na bazie podobieństwa embeddingów (semantyczne, nie słowa kluczowe) |
 | **AI Agents** | Aplikacje AI z LLM, instrukcjami i narzędziami, działające autonomicznie (3 typy: Prompt, Workflow, Hosted) |
 | **RBAC** | Role-Based Access Control – kontrola dostępu do zasobów Azure (właściciel, współpracownik, czytelnik) |
@@ -605,6 +617,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Index** | Struktura przechowująca wyszukiwalne dane; zawiera pola z atrybutami (searchable, filterable) |
 | **Skillset** | Opcjonalny pipeline AI enrichment: OCR, NER, key phrase extraction, language detection |
 | **Knowledge Store** | Miejsce w Azure Storage do przechowywania wzbogaconych wyników AI (tabele, blob) |
+| **Semantic Ranker** | AI-based re-ranking wyników wyszukiwania w Azure AI Search; poprawia trafność przez rozumienie kontekstu zapytania (nie tylko keyword match) |
 
 ### **Agenci AI – szczegóły**
 
