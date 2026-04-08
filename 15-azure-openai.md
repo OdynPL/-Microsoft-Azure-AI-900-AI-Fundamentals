@@ -31,30 +31,32 @@ Azure OpenAI to usługa umożliwiająca dostęp do zaawansowanych modeli generat
 
 ## Przykład implementacji (C#)
 ```csharp
-// Przykład użycia Azure OpenAI (Chat Completion) w C#
-using System;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
+// Azure OpenAI – Chat Completion (SDK: Azure.AI.OpenAI)
+using Azure;
+using Azure.AI.OpenAI;
+using OpenAI.Chat;
 
-class Program
+var endpoint = new Uri("https://<your-resource>.openai.azure.com/");
+var credential = new AzureKeyCredential(Environment.GetEnvironmentVariable("AZURE_OPENAI_KEY")!);
+
+var azureClient = new AzureOpenAIClient(endpoint, credential);
+var chatClient = azureClient.GetChatClient("gpt-4o"); // nazwa deploymentu
+
+var messages = new List<ChatMessage>
 {
-    static async Task Main()
-    {
-        var endpoint = "https://<your-resource-name>.openai.azure.com/openai/deployments/gpt-35-turbo/chat/completions?api-version=2023-05-15";
-        var apiKey = "<your-key>";
+    new SystemChatMessage("Jesteś pomocnym asystentem. Odpowiadaj po polsku."),
+    new UserChatMessage("Wygeneruj podsumowanie tego tekstu: Azure AI to platforma chmurowa...")
+};
 
-        using var client = new HttpClient();
-        client.DefaultRequestHeaders.Add("api-key", apiKey);
+var options = new ChatCompletionOptions
+{
+    Temperature = 0.7f,
+    MaxOutputTokenCount = 500
+};
 
-        var json = "{\"messages\":[{\"role\":\"user\",\"content\":\"Wygeneruj podsumowanie tego tekstu...\"}]}";
-        var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-        var response = await client.PostAsync(endpoint, content);
-        var result = await response.Content.ReadAsStringAsync();
-        Console.WriteLine(result);
-    }
-}
+var response = await chatClient.CompleteChatAsync(messages, options);
+Console.WriteLine(response.Value.Content[0].Text);
+Console.WriteLine($"Tokeny: input={response.Value.Usage.InputTokenCount}, output={response.Value.Usage.OutputTokenCount}");
 ```
 
 ## Ważne informacje

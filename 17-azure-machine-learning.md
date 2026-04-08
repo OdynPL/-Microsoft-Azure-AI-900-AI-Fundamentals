@@ -36,25 +36,40 @@ Azure Machine Learning (Azure ML) to kompleksowa platforma do budowy, trenowania
 
 ## Przykład implementacji (C#)
 ```csharp
-// Przykład użycia Azure Machine Learning SDK w C#
-using Azure.AI.MachineLearning;
-using Azure.AI.MachineLearning.Models;
+// Azure Machine Learning – zarządzanie endpointami (SDK: Azure.ResourceManager.MachineLearning)
+using Azure;
 using Azure.Identity;
+using Azure.ResourceManager;
+using Azure.ResourceManager.MachineLearning;
+using Azure.ResourceManager.MachineLearning.Models;
 
 var credential = new DefaultAzureCredential();
-var mlClient = new MachineLearningClient(
-	new Uri("https://<your-workspace-name>.<region>.ml.azure.com"),
-	credential);
+var armClient = new ArmClient(credential);
 
-// Załaduj dane, zdefiniuj eksperyment, wytrenuj model
-// ...
+// Pobierz workspace
+var subscriptionId = Environment.GetEnvironmentVariable("AZURE_SUBSCRIPTION_ID")!;
+var resourceGroup = "my-rg";
+var workspaceName = "my-ml-workspace";
 
-// Publikacja modelu jako endpoint
-var endpoint = new OnlineEndpoint(
-	name: "my-endpoint",
-	description: "Endpoint dla modelu AI"
-);
-mlClient.OnlineEndpoints.CreateOrUpdate(endpoint);
+var workspace = armClient
+    .GetSubscriptionResource(new ResourceIdentifier($"/subscriptions/{subscriptionId}"))
+    .GetResourceGroup(resourceGroup).Value
+    .GetMachineLearningWorkspace(workspaceName).Value;
+
+// Utwórz Online Endpoint
+var endpointData = new MachineLearningOnlineEndpointData(workspace.Data.Location)
+{
+    AuthMode = MachineLearningEndpointAuthMode.Key,
+    Description = "Endpoint dla modelu predykcyjnego"
+};
+
+var endpoint = await workspace.GetMachineLearningOnlineEndpoints()
+    .CreateOrUpdateAsync(WaitUntil.Completed, "my-endpoint", endpointData);
+
+Console.WriteLine($"Endpoint: {endpoint.Value.Data.Properties.ScoringUri}");
+
+// UWAGA: Azure ML SDK dla C# służy głównie do zarządzania zasobami.
+// Do trenowania modeli (AutoML, Jobs, Pipelines) zalecany jest Python SDK v2.
 ```
 
 ## Monitorowanie modeli w produkcji – drift detection

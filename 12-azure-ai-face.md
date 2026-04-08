@@ -24,32 +24,33 @@ Azure AI Face to specjalistyczna usługa do wykrywania, analizy i rozpoznawania 
 
 ## Przykład implementacji (C#)
 ```csharp
-// Przykład użycia Azure AI Face w C#
-using System;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Threading.Tasks;
+// Azure AI Face – Face Detection (SDK: Azure.AI.Vision.Face)
+using Azure;
+using Azure.AI.Vision.Face;
 
-class Program
+var endpoint = new Uri("https://<your-resource>.cognitiveservices.azure.com/");
+var credential = new AzureKeyCredential(Environment.GetEnvironmentVariable("AZURE_AI_FACE_KEY")!);
+
+var client = new FaceClient(endpoint, credential);
+
+var result = await client.DetectAsync(
+    new Uri("https://example.com/photo.jpg"),
+    FaceDetectionModel.Detection03,
+    FaceRecognitionModel.Recognition04,
+    returnFaceId: true,
+    returnFaceAttributes: new[]
+    {
+        FaceAttributeType.HeadPose,
+        FaceAttributeType.Glasses,
+        FaceAttributeType.QualityForRecognition
+        // UWAGA: age, gender, emotion – usunięte przez Microsoft (Responsible AI)
+    });
+
+foreach (var face in result.Value)
 {
-	static async Task Main()
-	{
-		var endpoint = "https://<your-region>.api.cognitive.microsoft.com/face/v1.0/detect";
-		var subscriptionKey = "<your-key>";
-		var imageUrl = "https://example.com/photo.jpg";
-
-		using var client = new HttpClient();
-		client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", subscriptionKey);
-
-		var requestParameters = "returnFaceAttributes=age,gender,emotion";
-		var uri = endpoint + "?" + requestParameters;
-		var content = new StringContent($"{{\"url\":\"{imageUrl}\"}}", Encoding.UTF8, "application/json");
-
-		var response = await client.PostAsync(uri, content);
-		var result = await response.Content.ReadAsStringAsync();
-		Console.WriteLine(result);
-	}
+    Console.WriteLine($"Face ID: {face.FaceId}");
+    Console.WriteLine($"Glasses: {face.FaceAttributes.Glasses}");
+    Console.WriteLine($"Quality: {face.FaceAttributes.QualityForRecognition}");
 }
 ```
 

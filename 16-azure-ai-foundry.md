@@ -53,29 +53,30 @@ Azure AI Foundry to platforma do zarządzania, katalogowania i wdrażania modeli
 
 ## Przykład implementacji (C#)
 ```csharp
-// Rejestracja modelu i publikacja endpointu w Azure ML za pomocą C#
-using Azure.AI.MachineLearning;
-using Azure.AI.MachineLearning.Models;
-using Azure.Identity;
+// Azure AI Foundry – wywołanie modelu z Model Catalog (SDK: Azure.AI.Inference)
+using Azure;
+using Azure.AI.Inference;
 
-var credential = new DefaultAzureCredential();
-var mlClient = new MachineLearningClient(
-	new Uri("https://<your-workspace-name>.<region>.ml.azure.com"),
-	credential);
+var endpoint = new Uri("https://<your-project>.services.ai.azure.com/models");
+var credential = new AzureKeyCredential(Environment.GetEnvironmentVariable("AZURE_AI_FOUNDRY_KEY")!);
 
-// Rejestracja modelu
-var model = new Model(
-	name: "my-model",
-	path: "./model.pkl"
-);
-mlClient.Models.CreateOrUpdate(model);
+var client = new ChatCompletionsClient(endpoint, credential);
 
-// Publikacja modelu jako endpoint
-var endpoint = new OnlineEndpoint(
-	name: "my-endpoint",
-	description: "Endpoint dla modelu AI"
-);
-mlClient.OnlineEndpoints.CreateOrUpdate(endpoint);
+var options = new ChatCompletionsOptions
+{
+    Messages =
+    {
+        new ChatRequestSystemMessage("Jesteś ekspertem AI. Odpowiadaj zwięźle po polsku."),
+        new ChatRequestUserMessage("Wyjaśnij czym jest Prompt Flow w Azure AI Foundry.")
+    },
+    Model = "gpt-4o", // lub Phi-3, Llama, Mistral z Model Catalog
+    Temperature = 0.7f,
+    MaxTokens = 500
+};
+
+var response = await client.CompleteAsync(options);
+Console.WriteLine(response.Value.Content);
+Console.WriteLine($"Model: {response.Value.Model}, Tokeny: {response.Value.Usage.TotalTokens}");
 ```
 
 ## Ważne informacje

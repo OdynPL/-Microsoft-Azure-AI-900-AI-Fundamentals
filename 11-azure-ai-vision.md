@@ -37,33 +37,26 @@ Azure AI Vision to kompleksowa usługa chmurowa umożliwiająca analizę obrazó
 
 ## Przykład implementacji (C#)
 ```csharp
-// Przykład użycia Azure AI Vision w C#
-using System;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Threading.Tasks;
+// Azure AI Vision – Image Analysis (SDK: Azure.AI.Vision.ImageAnalysis)
+using Azure;
+using Azure.AI.Vision.ImageAnalysis;
 
-class Program
-{
-	static async Task Main()
-	{
-		var endpoint = "https://<your-region>.api.cognitive.microsoft.com/vision/v3.2/analyze";
-		var subscriptionKey = "<your-key>";
-		var imageUrl = "https://example.com/image.jpg";
+var endpoint = new Uri("https://<your-resource>.cognitiveservices.azure.com/");
+var credential = new AzureKeyCredential(Environment.GetEnvironmentVariable("AZURE_AI_VISION_KEY")!);
 
-		using var client = new HttpClient();
-		client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", subscriptionKey);
+var client = new ImageAnalysisClient(endpoint, credential);
 
-		var requestParameters = "visualFeatures=Categories,Description,Objects,Tags";
-		var uri = endpoint + "?" + requestParameters;
-		var content = new StringContent($"{{\"url\":\"{imageUrl}\"}}", Encoding.UTF8, "application/json");
+var result = await client.AnalyzeAsync(
+    new Uri("https://example.com/image.jpg"),
+    VisualFeatures.Caption | VisualFeatures.Tags | VisualFeatures.Objects);
 
-		var response = await client.PostAsync(uri, content);
-		var result = await response.Content.ReadAsStringAsync();
-		Console.WriteLine(result);
-	}
-}
+Console.WriteLine($"Caption: {result.Value.Caption.Text} (confidence: {result.Value.Caption.Confidence:P})");
+
+foreach (var tag in result.Value.Tags.Values)
+    Console.WriteLine($"Tag: {tag.Name} ({tag.Confidence:P})");
+
+foreach (var obj in result.Value.Objects.Values)
+    Console.WriteLine($"Object: {obj.Tags[0].Name} at [{obj.BoundingBox.X},{obj.BoundingBox.Y}]");
 ```
 
 ## Ważne informacje

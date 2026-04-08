@@ -27,32 +27,34 @@ Azure AI Speech to usługa umożliwiająca rozpoznawanie mowy, syntezę mowy, t�
 
 ## Przykład implementacji (C#)
 ```csharp
-// Przykład użycia Azure AI Speech (Speech-to-Text) w C#
-using System;
-using System.IO;
-using System.Net.Http;
-using System.Threading.Tasks;
+// Azure AI Speech – Speech-to-Text (SDK: Microsoft.CognitiveServices.Speech)
+using Microsoft.CognitiveServices.Speech;
+using Microsoft.CognitiveServices.Speech.Audio;
 
-class Program
+var speechKey = Environment.GetEnvironmentVariable("AZURE_AI_SPEECH_KEY")!;
+var speechRegion = Environment.GetEnvironmentVariable("AZURE_AI_SPEECH_REGION")!;
+
+var speechConfig = SpeechConfig.FromSubscription(speechKey, speechRegion);
+speechConfig.SpeechRecognitionLanguage = "pl-PL";
+
+// Z pliku audio
+using var audioConfig = AudioConfig.FromWavFileInput("audio.wav");
+using var recognizer = new SpeechRecognizer(speechConfig, audioConfig);
+
+var result = await recognizer.RecognizeOnceAsync();
+
+switch (result.Reason)
 {
-    static async Task Main()
-    {
-        var endpoint = "https://<your-region>.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1";
-        var subscriptionKey = "<your-key>";
-        var audioFilePath = "audio.wav";
-
-        using var client = new HttpClient();
-        client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", subscriptionKey);
-        client.DefaultRequestHeaders.Add("Content-Type", "audio/wav");
-
-        var audioData = await File.ReadAllBytesAsync(audioFilePath);
-        using var content = new ByteArrayContent(audioData);
-        content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("audio/wav");
-
-        var response = await client.PostAsync(endpoint, content);
-        var result = await response.Content.ReadAsStringAsync();
-        Console.WriteLine(result);
-    }
+    case ResultReason.RecognizedSpeech:
+        Console.WriteLine($"Rozpoznano: {result.Text}");
+        break;
+    case ResultReason.NoMatch:
+        Console.WriteLine("Nie rozpoznano mowy.");
+        break;
+    case ResultReason.Canceled:
+        var cancellation = CancellationDetails.FromResult(result);
+        Console.WriteLine($"Anulowano: {cancellation.Reason} – {cancellation.ErrorDetails}");
+        break;
 }
 ```
 

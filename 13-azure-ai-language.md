@@ -37,29 +37,25 @@ Azure AI Language to zaawansowana usługa do przetwarzania i analizy języka nat
 
 ## Przykład implementacji (C#)
 ```csharp
-// Przykład użycia Azure AI Language (Sentiment Analysis) w C#
-using System;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
+// Azure AI Language – Sentiment Analysis (SDK: Azure.AI.TextAnalytics)
+using Azure;
+using Azure.AI.TextAnalytics;
 
-class Program
+var endpoint = new Uri("https://<your-resource>.cognitiveservices.azure.com/");
+var credential = new AzureKeyCredential(Environment.GetEnvironmentVariable("AZURE_AI_LANGUAGE_KEY")!);
+
+var client = new TextAnalyticsClient(endpoint, credential);
+
+var documents = new List<string> { "To jest świetny produkt!", "Obsługa klienta była okropna." };
+
+var results = await client.AnalyzeSentimentBatchAsync(documents, language: "pl");
+
+foreach (var result in results.Value)
 {
-	static async Task Main()
-	{
-		var endpoint = "https://<your-region>.api.cognitive.microsoft.com/text/analytics/v3.2/sentiment";
-		var subscriptionKey = "<your-key>";
-
-		using var client = new HttpClient();
-		client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", subscriptionKey);
-
-		var json = "{\"documents\":[{\"id\":\"1\",\"language\":\"pl\",\"text\":\"To jest świetny produkt!\"}]}";
-		var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-		var response = await client.PostAsync(endpoint, content);
-		var result = await response.Content.ReadAsStringAsync();
-		Console.WriteLine(result);
-	}
+    Console.WriteLine($"Tekst: \"{result.DocumentSentiment.Sentences[0].Text}\"");
+    Console.WriteLine($"  Sentyment: {result.DocumentSentiment.Sentiment}");
+    Console.WriteLine($"  Positive: {result.DocumentSentiment.ConfidenceScores.Positive:P}");
+    Console.WriteLine($"  Negative: {result.DocumentSentiment.ConfidenceScores.Negative:P}");
 }
 ```
 
