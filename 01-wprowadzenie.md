@@ -142,7 +142,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Narrow AI (Weak AI)** | Wąska AI, systemy zaprojektowane do jednego, konkretnego zadania (np. klasyfikacja obrazów, chatbot) |
 | **Strong AI (AGI)** | Silna AI, hipotetyczna sztuczna inteligencja o ogólnych zdolnościach poznawczych porównywalnych do człowieka |
 | **ML (Machine Learning)** | Uczenie maszynowe, algorytmy uczące się na podstawie danych |
-| **Deep Learning** | Głębokie sieci neuronowe |
+| **Deep Learning** | Podzbiór ML wykorzystujący wielowarstwowe sieci neuronowe (2+ warstw ukrytych). Automatycznie uczy się cech z surowych danych (nie wymaga ręcznego feature engineering). Wymaga dużo danych i mocy obliczeniowej (GPU/TPU). Stosowany w: Computer Vision, NLP, Speech, GenAI |
 | **Neural Network (sieć neuronowa)** | Model ML inspirowany mózgiem, złożony z warstw neuronów przetwarzających dane |
 | | 1. **CNN (Convolutional Neural Network)** – analiza obrazów, rozpoznawanie wzorów wizualnych |
 | | ![CNN](assets/nn-cnn.svg) |
