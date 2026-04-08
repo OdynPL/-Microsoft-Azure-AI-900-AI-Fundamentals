@@ -499,7 +499,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Pojęcie** | **Opis** |
 |---|---|
 | **Responsible AI** | Etyczne i bezpieczne wdrażanie AI |
-| **6 filarów Responsible AI (Microsoft)** | 1. **Fairness** – sprawiedliwość, równe traktowanie <br> 2. **Reliability & Safety** – niezawodność i bezpieczeństwo <br> 3. **Privacy & Security** – ochrona danych <br> 4. **Inclusiveness** – dostępność dla wszystkich <br> 5. **Transparency** – przejrzystość działania <br> 6. **Accountability** – odpowiedzialność ludzi za systemy AI |
+| **6 filarów Responsible AI (Microsoft)** | |
 | **Fairness** | Sprawiedliwość, równe traktowanie grup |
 | **Reliability & Safety** | Model działa poprawnie w różnych warunkach; nie powoduje szkody; testowany pod kątem edge cases |
 | **Inclusiveness** | AI dostępne dla wszystkich, w tym osób z niepełnosprawnościami; brak dyskryminacji |
