@@ -14,6 +14,9 @@
 - **Klasteryzacja** nie wymaga etykiet – to uczenie nienadzorowane.
 - **Overfitting** – model działa świetnie na danych treningowych, słabo na nowych.
 - **Precision** i **recall** – nie myl tych metryk!
+- **Azure AI Translator** ≠ **Azure AI Language** – Translator to osobna usługa do tłumaczeń maszynowych.
+- **CLU** (Conversational Language Understanding) to **następca LUIS** – jeśli pytanie mówi o LUIS, odpowiedź to CLU.
+- **Image Classification** = co jest na obrazie, **Object Detection** = co i gdzie (bounding box).
 
 ## Szybkie porównania usług Azure AI
 | Zadanie | Usługa **Azure** | Opis |
@@ -23,8 +26,9 @@
 | Analiza tekstu | **AI Language** | Sentyment, frazy kluczowe, NER (Named Entity Recognition), PII (Personally Identifiable Information), podsumowanie |
 | Rozpoznawanie intencji w chatbocie | **AI Language (CLU)** | Conversational Language Understanding – następca LUIS |
 | Baza Q&A | **AI Language (Question Answering)** | Odpowiedzi na pytania z dokumentów i FAQ |
-| Rozpoznawanie mowy | **AI Speech** | Zamiana mowy na tekst i odwrotnie |
+| Rozpoznawanie mowy | **AI Speech (STT)** | Zamiana mowy na tekst i odwrotnie |
 | Synteza mowy | **AI Speech (TTS)** | Text-to-Speech, Custom Voice |
+| Tłumaczenie tekstu | **AI Translator** | Tłumaczenia 100+ języków, custom translator |
 | Generowanie tekstu/kodu | **Azure OpenAI** | GPT-4, GPT-3.5 – tworzenie treści, kodu, podsumowań |
 | Generowanie obrazów | **Azure OpenAI (DALL-E)** | Text-to-image |
 | Ekstrakcja danych z dokumentów | **AI Document Intelligence** | Faktury, paragony, formularze, dowody tożsamości |
@@ -96,8 +100,10 @@
 | Moje dane są niezbalansowane 95% vs 5% | Class Weighting, SMOTE (Synthetic Minority Over-Sampling Technique), stratified split | Metrics: F1-score, Recall, nie Accuracy |
 | Chcę wyjaśnić decyzję modelu użytkownikowi | SHAP (SHapley Additive exPlanations) / LIME (Local Interpretable Model-agnostic Explanations) + Azure ML Explainability | Feature importance, kontrfaktualne przykłady |
 | Chcę RAG dla danych firmowych FAQ | Azure OpenAI + Azure AI Search | Wektorowa wyszukiwarka + LLM |
+| Tłumaczenie tekstu na wiele języków | Azure AI Translator | Custom Translator, 100+ języków |
 
 ## Najnowsze do zapamiętania (AI-900)
+- **6 zasad Responsible AI** – Fairness, Reliability & Safety, Privacy & Security, Inclusiveness, Transparency, Accountability (zapamiętaj: **FRIPTA** – każde pytanie o etykę AI odwołuje się do jednej z nich)
 - **Few-shot learning** – model uczy się na 1–5 przykładach w promptie
 - **Chain-of-Thought** – prośba o wypisanie kroków rozumowania
 - **Anomaly Detection** – one-class SVM, Isolation Forest, autoencoders

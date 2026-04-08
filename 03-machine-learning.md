@@ -105,10 +105,10 @@
 
 ![Confusion Matrix – macierz pomyłek i metryki](assets/confusion-matrix.svg)
 
-- **Accuracy (dokładność)** – odsetek poprawnych przewidywań.
-- **Precision (precyzja)** – odsetek trafień wśród przewidzianych pozytywnych.
-- **Recall (czułość)** – odsetek wykrytych pozytywnych spośród wszystkich rzeczywistych.
-- **F1-score** – średnia harmoniczna precision i recall.
+- **Accuracy (dokładność)** – odsetek poprawnych przewidywań. **Uwaga na egzaminie**: wysoka accuracy nie oznacza dobrego modelu przy niezbalansowanych danych!
+- **Precision (precyzja)** – odsetek trafień wśród przewidzianych pozytywnych. Ważna gdy **fałszywy alarm jest kosztowny** (np. spam filter – nie chcesz usunąć ważnego maila).
+- **Recall (czułość)** – odsetek wykrytych pozytywnych spośród wszystkich rzeczywistych. Ważna gdy **przeoczenie jest kosztowne** (np. wykrywanie raka – nie możesz przeoczyć chorego).
+- **F1-score** – średnia harmoniczna precision i recall. Używaj gdy obie metryki są ważne.
 - **Mean Square Error (MSE)** – średnia arytmetyczna kwadratów różnic między wartościami rzeczywistymi a przewidywanymi przez model. Im niższa wartość MSE, tym lepsze dopasowanie modelu regresyjnego.
 - **Confusion Matrix (macierz pomyłek)** – tabela pokazująca liczbę poprawnych i błędnych klasyfikacji.
 		- Przykład macierzy pomyłek:
@@ -122,7 +122,7 @@
 	- **False Positive (FP)** – przypadki błędnie zaklasyfikowane jako pozytywne (fałszywy alarm)
 	- **True Negative (TN)** – przypadki poprawnie zaklasyfikowane jako negatywne
 	- **False Negative (FN)** – przypadki błędnie zaklasyfikowane jako negatywne (przeoczenie)
-- **ROC Curve, AUC** – krzywa ROC i pole pod krzywą, metryki oceny skuteczności klasyfikatorów.
+- **ROC Curve, AUC** – krzywa ROC i pole pod krzywą, metryki oceny skuteczności klasyfikatorów. **AUC = 1.0** to idealny model, **AUC = 0.5** to losowy (bezwartościowy). Im wyższe AUC, tym lepiej model odróżnia klasy.
 
 ## Proces ML
 

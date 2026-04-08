@@ -10,6 +10,8 @@
 ## Kluczowe zasady Responsible AI
 ![Zasady Responsible AI – sześć filarów](assets/responsible-ai-principles.svg)
 
+> **Na egzaminie AI-900**: Microsoft definiuje dokładnie **6 zasad** Responsible AI. Zapamiętaj je wszystkie – pytania o nie pojawiają się bardzo często! Nie myl z innymi listami zasad (np. OECD ma 5 zasad).
+
 - **Fairness (sprawiedliwość)** – równe traktowanie wszystkich użytkowników, eliminacja dyskryminacji i biasu.
 - **Reliability & Safety (niezawodność, bezpieczeństwo)** – systemy AI muszą działać zgodnie z założeniami i być odporne na błędy oraz ataki.
 - **Privacy & Security (prywatność, ochrona danych)** – ochrona danych osobowych i zapewnienie bezpieczeństwa informacji.

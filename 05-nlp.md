@@ -33,6 +33,8 @@
 	- **Tłumaczenia maszynowe**
 	- **Wyszukiwanie semantyczne (Semantic Search)** – wyszukiwanie oparte na znaczeniu, nie słowach kluczowych
 
+- **Azure AI Translator** – osobna usługa do tłumaczeń maszynowych tekstu na ponad 100 języków. Obsługuje tłumaczenie dokumentów, custom translator (dostosowanie do branży) i transliterację (zmiana alfabetu). **Uwaga na egzaminie**: Translator to osobna usługa od Azure AI Language!
+
 - **Conversational Language Understanding (CLU)** – następca LUIS. Służy do rozumienia języka naturalnego w chatbotach:
 
 ![CLU – Conversational Language Understanding](assets/clu.svg)

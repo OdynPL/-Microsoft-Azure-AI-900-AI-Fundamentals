@@ -6,6 +6,9 @@
 - **Computer Vision** to dziedzina AI zajmująca się analizą i interpretacją obrazów oraz wideo przez komputer. Pozwala na automatyczne rozpoznawanie, klasyfikowanie i interpretowanie zawartości wizualnej, co znajduje zastosowanie w wielu branżach.
 
 ## Typowe zadania
+
+> **Na egzaminie AI-900**: Rozróżniaj Image Classification (co jest na obrazie?) vs Object Detection (gdzie jest obiekt? + bounding box) vs Segmentation (dokładne piksele obiektu). Każde zadanie daje inny wynik.
+
 - **Przykładowy przepływ Computer Vision:**
 
 ![Computer Vision - przepływ](assets/computer-vision.svg)

@@ -76,9 +76,9 @@ class Program
   - Mowę nienawiści, przemoc, treści seksualne, samookaleczenie
   - Konfigurowalny poziom czułości
 - **Data Privacy w GenAI**:
-  - Dane użytkownika mogą zostać wykorzystane do treningu modelu (zależy od planu)
-  - Należy nie wysyłać danych wrażliwych (NIP, hasła) do OpenAI bez szyfrowania
-  - Azure OpenAI oferuje private deployments
+  - W Azure OpenAI dane **nie są** używane do trenowania modeli Microsoft/OpenAI (dla klientów enterprise).
+  - Należy nie wysyłać danych wrażliwych (NIP, hasła) do OpenAI bez szyfrowania.
+  - Azure OpenAI oferuje private deployments w izolowanej infrastrukturze.
 
 - Integracja z innymi usługami Azure: Logic Apps, Power Automate, Azure AI Search (do RAG).
 - Wymagania dotyczące bezpieczeństwa i zgodności z regulacjami (RODO, GDPR, HIPAA).

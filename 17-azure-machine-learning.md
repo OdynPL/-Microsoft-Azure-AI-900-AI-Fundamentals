@@ -62,8 +62,8 @@ mlClient.OnlineEndpoints.CreateOrUpdate(endpoint);
 ![Drift Detection & Retraining Pipeline](assets/drift-retraining.svg)
 
 - **Model Monitoring (Zlecenia/MLOps)** – ciągłe śledzenie wydajności wdrożonego modelu:
-	- **Real-time metrics**: latency (czas odpowiedzi), throughput (liczba żądań), error rate.
-	- **Data drift**: zmiana rozkładu danych wejściowych w czasie (np. zmiana profilu użytkownika). Model wytrenowany na starych danych może działać gorzej.
+	- **Real-time metrics**: latency (czas odpowiedzi), throughput (liczba żądań/s), error rate.
+	- **Data drift**: zmiana rozkładu danych wejściowych w czasie (np. zmiana profilu użytkownika). Model wytrenowany na starych danych może działać gorzej. **Na egzaminie**: data drift jest najczęściej pytanym typem driftu!
 	- **Model drift**: pogorszenie się wydajności metryki predykcyjnej (accuracy, precision, recall) na nowych danych.
 	- **Prediction drift**: nagła zmiana przewidywań modelu (bez zmiany danych wejściowych).
 - **Scenariusz problemu**:

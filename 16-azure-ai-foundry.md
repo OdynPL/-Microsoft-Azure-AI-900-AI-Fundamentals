@@ -31,7 +31,7 @@ Azure AI Foundry to platforma do zarządzania, katalogowania i wdrażania modeli
   - **Tools** – wyszukiwarka, dostęp do plików, API, Azure DevOps, kod interpreter
 - **Trzy typy agentów**:
   - **Prompt Agents** – bez kodu, tylko instrukcje + narzędzia, szybkie prototypowanie
-  - **Workflow Agents** – deklaratywna orkiestracja, wielokrokowe procesy, YAML, decisje logiczne
+  - **Workflow Agents** – deklaratywna orkiestracja, wielokrokowe procesy, YAML, decyzje logiczne
   - **Hosted Agents** – kod-based (Agent Framework, LangGraph), pełna kontrola nad logiką
 - **Lifecycle agenta**:
   1. **Create** – definiuj w portalu lub kodzie

@@ -49,6 +49,7 @@
 - **Azure AI Face** – usługa do rozpoznawania i analizy twarzy na Azure
 - **Azure AI Language** – usługa do analizy tekstu, NLP na Azure
 - **Azure AI Speech** – rozpoznawanie i synteza mowy na Azure
+- **Azure AI Translator** – osobna usługa do tłumaczeń maszynowych tekstu (100+ języków), custom translator, transliteracja
 - **Azure OpenAI** – dostęp do modeli generatywnych (GPT, DALL-E) na Azure
 - **Azure AI Foundry** – katalog, zarządzanie i wdrażanie modeli AI na Azure
 - **Azure Machine Learning** – platforma do trenowania, wdrażania i monitorowania modeli ML

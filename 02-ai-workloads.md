@@ -87,6 +87,7 @@
 - **Moderacja treści** – wykrywanie i usuwanie nieodpowiednich zdjęć lub tekstów
 
 ## Odpowiedzialna AI (**Responsible AI**)
+Microsoft definiuje **6 kluczowych zasad** Responsible AI (zapamiętaj na egzamin!):
 - Kluczowe zasady:
 	- **Fairness (sprawiedliwość)** – równe traktowanie wszystkich użytkowników, eliminacja biasu
 	- **Inclusiveness (inkluzywność)** – projektowanie AI z myślą o dostępności dla różnych grup

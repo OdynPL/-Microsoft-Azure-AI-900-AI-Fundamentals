@@ -73,7 +73,7 @@
 - **Korzyści**: Aktualne dane (FAQ zmienia się codziennie), wiarygodne źródła, mniejsze halucynacje.
 
 ## Ograniczenia generatywnej AI
-- **Halucynacje (Hallucinations)** – model może generować nieprawdziwe lub zmyślone informacje.
+- **Halucynacje (Hallucinations)** – model może generować nieprawdziwe lub zmyślone informacje. **Na egzaminie**: to najczęściej pytany problem GenAI. Rozwiązanie: RAG + grounding.
 - **Bias** – tendencyjność wyników, model może powielać uprzedzenia obecne w danych treningowych.
 - **Ograniczona kontrola** – trudność w uzyskaniu bardzo precyzyjnych lub zgodnych z oczekiwaniami wyników.
 - **Brak świadomości** – model nie rozumie świata, tylko przewiduje kolejne słowa/elementy na podstawie danych.
