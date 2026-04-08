@@ -96,6 +96,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Pojęcie** | **Opis** |
 |---|---|
 | **Regresja (Regression)** | Przewidywanie wartości liczbowych |
+| **Rodzaje regresji** | **Linear Regression** (prosta liniowa), **Multiple Linear Regression** (wiele cech), **Polynomial Regression** (krzywa), **Decision Tree / Random Forest Regression** (drzewa decyzyjne), **Neural Network Regression** (sieci neuronowe). Metryki: R², MAE, RMSE |
 | **Klasyfikacja (Classification)** | Przypisywanie do kategorii |
 | **Klasteryzacja (Clustering)** | Grupowanie podobnych danych (uczenie nienadzorowane) |
 | **Anomaly Detection** | Wykrywanie obserwacji odbiegających od normy (np. oszustwa, defekty, awarie) |
