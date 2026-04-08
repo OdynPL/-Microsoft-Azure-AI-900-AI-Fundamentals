@@ -34,6 +34,19 @@
 - **Recommendation Systems** – systemy rekomendacyjne (np. filmy, produkty, muzyka)
 - **Speech Analytics** – analiza mowy, rozpoznawanie mówców, transkrypcje
 - **Semantic Search** – wyszukiwanie informacji na podstawie znaczenia, a nie tylko słów kluczowych
+- **Knowledge Mining** – automatyczne wydobywanie wiedzy z dużych zbiorów niestrukturyzowanych danych (dokumenty, e-maile, PDF-y) za pomocą AI
+
+## Knowledge Mining – szczegóły
+
+- **Co to jest**: Proces wydobywania wartościowych informacji z dużych ilości niestrukturyzowanych danych przy użyciu AI (OCR, NLP, entity recognition, key phrase extraction).
+- **Azure AI Search** (dawniej Azure Cognitive Search) – główna usługa do knowledge mining:
+	- **Indexer (indekser)** – eksportuje dokumenty źródłowe do formatu JSON i wstawia je do indeksu wyszukiwania
+	- **Index (indeks)** – przeszukiwalna baza danych, w której przechowywane są przetworzone dane
+	- **Skillset (zestaw umiejętności AI)** – opcjonalny pipeline AI enrichment: OCR, entity recognition, key phrase extraction, language detection, sentiment i inne
+	- Dane wstawiane do indeksu muszą być w formacie **JSON**
+	- **Bez skillset AI** można nadal przeszukiwać **zawartość tekstową** (plain text search) – AI enrichment jest opcjonalne
+- **Typowy pipeline**: Źródło danych (Blob Storage, SQL) → Indexer → AI Skillset (opcjonalnie) → Index → Wyszukiwanie
+- **Knowledge Store** – opcjonalne miejsce do przechowywania wzbogaconych wyników AI (np. w Azure Storage) do dalszej analizy
 
 
 ![Typowe workloady AI](assets/ai-workloads.svg)

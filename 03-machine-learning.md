@@ -40,7 +40,20 @@
 ![Deep Learning](assets/deep-learning.svg)
 
 ## Transformers
+
+> **Na egzaminie AI-900**: „Identify features of the Transformer architecture" jest jawnie wymienione w skills measured. Zapamiętaj kluczowe elementy poniżej!
+
 - **Transformers** – nowoczesna architektura sieci neuronowych oparta na mechanizmie **uwagi (attention)**, który pozwala modelowi skupiać się na najważniejszych fragmentach danych wejściowych. Wykorzystywana m.in. w modelach językowych (np. **GPT**, **BERT**).
+- **Kluczowe elementy architektury Transformer**:
+	- **Tokenizacja (Tokenization)** – tekst wejściowy jest dzielony na tokeny (fragmenty słów lub słowa). Każdy token zostaje zamieniony na liczbę (token ID).
+	- **Embeddings (osadzenia)** – tokeny są zamieniane na wektory liczbowe (embeddingi), które kodują znaczenie semantyczne słów. Podobne słowa mają zbliżone wektory.
+	- **Positional Encoding (kodowanie pozycyjne)** – informacja o pozycji tokenu w sekwencji, ponieważ Transformer przetwarza wszystkie tokeny równocześnie (nie sekwencyjnie jak RNN).
+	- **Self-Attention (samouwaga)** – mechanizm, który ocenia ważność każdego tokenu w kontekście pozostałych tokenów w zdaniu. Dzięki temu model „wie", które słowa są ze sobą powiązane (np. zaimek i jego podmiot).
+	- **Multi-Head Attention** – wiele równoległych mechanizmów attention, z których każdy uczy się innych zależności.
+	- **Encoder (koder)** – przetwarza dane wejściowe i tworzy ich wewnętrzną reprezentację. Używany np. w BERT (do rozumienia tekstu, klasyfikacji, NER).
+	- **Decoder (dekoder)** – generuje dane wyjściowe (token po tokenie). Używany np. w GPT (do generowania tekstu).
+	- **Encoder-Decoder** – połączenie obu, np. w modelach translacyjnych (tłumaczenie języka).
+- **Dlaczego Transformers są ważne**: Zastąpiły wcześniejsze architektury (RNN, LSTM) dzięki równoległemu przetwarzaniu i lepszemu rozumieniu długich zależności w tekście. Stanowią fundament modeli GPT, BERT, Llama, Phi i wszystkich nowoczesnych LLM.
 
 ![Transformers](assets/transformers.svg)
 
@@ -62,6 +75,9 @@
 	- **Zbiór walidacyjny (Validation set)** ~10–15% – służy do oceny modelu **w trakcie treningu**: porównywania wariantów, tuningu hiperparametrów i wykrywania overfittingu.
 	- **Zbiór testowy (Test set)** ~10–15% – używany **tylko raz** na końcu, aby uzyskać obiektywną ocenę końcową modelu na danych, których nigdy nie widział.
 - **Dlaczego dzielimy?** – gdyby model był oceniany na tych samych danych, na których się uczył, wyniki byłyby zawyżone (overfitting). Podział gwarantuje, że mierzymy rzeczywistą zdolność generalizacji.
+
+> **Na egzaminie**: Dane dzieli się losowo na **wiersze (rows)** – NIE na kolumny, NIE features vs labels. Poprawna odpowiedź to „Randomly split the data into rows for training and rows for evaluation".
+
 - **Cross-validation (walidacja krzyżowa)** – technika wielokrotnego podziału danych, w której każdy fragment jest raz zbiorem walidacyjnym – daje bardziej stabilną ocenę.
 
 ## Kluczowe zadania ML
@@ -123,6 +139,9 @@
 	- **True Negative (TN)** – przypadki poprawnie zaklasyfikowane jako negatywne
 	- **False Negative (FN)** – przypadki błędnie zaklasyfikowane jako negatywne (przeoczenie)
 - **ROC Curve, AUC** – krzywa ROC i pole pod krzywą, metryki oceny skuteczności klasyfikatorów. **AUC = 1.0** to idealny model, **AUC = 0.5** to losowy (bezwartościowy). Im wyższe AUC, tym lepiej model odróżnia klasy.
+- **R² (R-Squared / współczynnik determinacji)** – metryka oceny modeli regresyjnych. Mierzy, ile zmienności w danych wyjaśnia model. **R² = 1.0** = idealny, **R² = 0.0** = model nie wyjaśnia nic. Na egzaminie: aby uzyskać najlepszy model regresji w AutoML, ustaw **Primary metric = R2 score**.
+
+> **Na egzaminie**: Confusion Matrix pojawia się w pytaniach typu HOTSPOT – umiej odczytać TP, FP, TN, FN z tabeli i obliczyć Precision = TP/(TP+FP) oraz Recall = TP/(TP+FN).
 
 ## Proces ML
 
@@ -174,6 +193,21 @@
 		- Optymalizuje hiperparametry każdego algorytmu
 	5. **Ranking modeli** – AutoML porównuje wyniki według wybranej metryki (Accuracy, AUC, RMSE itp.) i wskazuje **najlepszy model**
 	6. **Wdrożenie** – najlepszy model można jednym kliknięciem wdrożyć jako **REST API endpoint**
+
+> **Na egzaminie**: AutoML obsługuje **3 typy uczenia nadzorowanego**: Classification, Regression, Time Series Forecasting. Klasteryzacja (Clustering) **NIE** jest dostępna w AutoML — to uczenie nienadzorowane. Aby zapewnić Transparency (przejrzystość) w AutoML, włącz opcję **„Enable Explain best model"** — to poprawna odpowiedź na pytania o Responsible AI w AutoML.
+
+- **Azure ML Designer** – kluczowe moduły egzaminacyjne:
+	- **Split Data** – podział danych na zbiory treningowe i testowe (wymagany przed Score/Evaluate)
+	- **Normalize Data** – skalowanie kolumn numerycznych do wspólnej skali (np. Min-Max normalizacja)
+	- **Clean Missing Data** – uzupełnianie lub usuwanie brakujących wartości
+	- **Select Columns in Dataset** – wybór konkretnych kolumn z zestawu danych
+	- **Train Model** – trenowanie modelu nadzorowanego (klasyfikacja, regresja)
+	- **Train Clustering Model** – trenowanie modelu K-Means
+	- **Score Model** – ocena predykcji na danych testowych (klasyfikacja/regresja)
+	- **Assign Data to Clusters** – przypisanie danych do klastrów (inferencing klastrów)
+	- **Evaluate Model** – obliczanie metryk jakości modelu
+
+> **Na egzaminie**: Przed wdrożeniem modelu jako serwis musisz **utworzyć inference pipeline z training pipeline** (nie klonować pipeline, nie dodawać Evaluate Model). Dla klasteryzacji moduł inferencing to **Assign Data to Clusters** (nie Score Model). K-Means: **Number of Centroids = liczba grup** (np. 3 centroidy = 3 klastry).
 - **Data/Compute** – zarządzanie danymi i mocą obliczeniową w chmurze.
 - **Model Registry** – repozytorium do przechowywania i wersjonowania **własnych** wytrenowanych modeli ML (każdy model ma wersję, metadane, metryki)
 - **Model Catalog (Azure AI Foundry)** – katalog gotowych, **pre-built** modeli do użycia od razu lub fine-tuningu:

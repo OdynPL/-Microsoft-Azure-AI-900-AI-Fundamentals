@@ -114,5 +114,22 @@
 - **XPIA (Cross-Prompt Injection Attacks)** – zaawansowany atak na agenty pobierające z wielu źródeł
 - **Hallucinations** – generowanie przez model fałszywych lub zmyślonych informacji
 - **Guardrails** – safety mechanizmy dla agentów, blokowanie unsafe outputs
+- **Knowledge Mining** – wydobywanie wiedzy z niestrukturyzowanych danych za pomocą AI (OCR, NLP, entity recognition)
+- **Azure AI Search** (dawniej Cognitive Search) – wektorowa baza danych i platforma do wyszukiwania; indexer, index, skillset, knowledge store
+- **Indexer** – komponent Azure AI Search eksportujący dokumenty do JSON i wstawiający je do indeksu
+- **Skillset** – opcjonalny pipeline AI enrichment w Azure AI Search (OCR, NER, key phrase extraction)
+- **Entity Linking** – identyfikacja encji w tekście + powiązanie z bazą wiedzy (np. Wikipedia); różni się od NER linkami do stron zewnętrznych
+- **Stemming** – obcinanie końcówek słów do rdzenia; technika normalizacji tekstu przed analizą częstości
+- **Azure Bot Service** – usługa do budowy i hostowania chatbotów; obsługuje wiele kanałów (Web Chat, Teams, Facebook, Email)
+- **Bot Channels** – kanały komunikacji bota; jeden bot może obsługiwać wiele kanałów jednocześnie
+- **R² (R-Squared)** – współczynnik determinacji; metryka regresji (1.0 = idealny, 0.0 = bezwartościowy)
+- **Inference Pipeline** – pipeline wnioskowania utworzony z training pipeline; wymagany przed wdrożeniem modelu
+- **Normalize Data** – moduł Designera skalujący kolumny numeryczne do wspólnej skali (np. Min-Max)
+- **Split Data** – moduł Designera dzielący dane na zbiory treningowe i testowe
+- **Assign Data to Clusters** – moduł Designera do przypisywania danych do klastrów (inferencing K-Means)
+- **Read API** – API Azure AI Vision do odczytu tekstu z dużych, wielostronicowych dokumentów PDF
+- **Positional Encoding** – kodowanie pozycji tokenu w sekwencji; element architektury Transformer
+- **Self-Attention** – mechanizm Transformer oceniający ważność każdego tokenu w kontekście pozostałych
+- **Encoder/Decoder** – komponenty Transformer: encoder przetwarza wejście (BERT), decoder generuje wyjście (GPT)
 
 [⟵ Poprzedni: Szybka ściąga i pułapki](08-last-minute-cram.md) | [Następny: No-code i low-code ML ⟶](10-no-code-ml.md)

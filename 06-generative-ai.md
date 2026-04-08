@@ -25,6 +25,13 @@
 - **Embeddings** – reprezentacja tekstu/obrazów w postaci wektorów liczbowych, wykorzystywana do wyszukiwania semantycznego i porównywania treści.
 - **Fine-tuning** – dodatkowe trenowanie modelu bazowego na własnych danych, by dostosować go do konkretnego zadania lub branży.
 
+> **Na egzaminie – kluczowe pojęcia GenAI** (sekcja z najwyższą wagą: 20–25%):
+> - **System Message** = służy do definiowania **ograniczeń i stylu** odpowiedzi modelu (nie grounding, nie embeddings, nie tokenization)
+> - **Embeddings** = służą do **wyszukiwania, klasyfikowania i porównywania** źródeł tekstu pod kątem podobieństwa (nie system messages, nie ML)
+> - **Grounding (zakotwiczenie danych)** = powiązanie odpowiedzi z konkretnymi dokumentami/danymi (redukuje halucynacje)
+> - **Tokenization** = dzielenie tekstu na tokeny – to proces przetwarzania, NIE narzędzie do sterowania modelem
+> - **Azure OpenAI in Models Foundry** = usługa AI do integracji z chatami i generowania treści tekstowych
+
 ## Popularne modele
 - **GPT-4 / GPT-4o (OpenAI)** – generowanie tekstu, chatboty, podsumowania, analiza obrazów (multimodal).
 - **DALL-E** – generowanie obrazów na podstawie opisu tekstowego.

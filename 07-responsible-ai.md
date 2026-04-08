@@ -19,6 +19,15 @@
 - **Transparency (przejrzystość)** – możliwość wyjaśnienia, jak AI podejmuje decyzje, jasność działania algorytmów.
 - **Accountability (odpowiedzialność)** – jasne określenie, kto odpowiada za decyzje i skutki działania AI.
 
+> **Na egzaminie – jak rozpoznać zasadę w pytaniu**:
+> - Pytanie o **eliminację biasu i dyskryminacji** → **Fairness**
+> - Pytanie o **stabilność, testy, bezpieczeństwo fizyczne** (np. pojazdy autonomiczne) → **Reliability & Safety**
+> - Pytanie o **ochronę danych, RODO** → **Privacy & Security**
+> - Pytanie o **dostępność dla niepełnosprawnych** → **Inclusiveness**
+> - Pytanie o **wyjaśnienie decyzji AI, ograniczenia modelu, Enable Explain best model** → **Transparency**
+> - Pytanie o **kto odpowiada za decyzje AI** → **Accountability**
+> - W aplikacjach z AI (np. wykrywanie pęknięć szyb): w UI zawsze **informuj o ograniczeniach** i rekomenduj inspekcję profesjonalną → **Transparency**
+
 ## Przykłady zastosowań Responsible AI
 - Eliminacja **biasu (Bias)** w danych – np. usuwanie tendencyjnych przykładów z danych treningowych.
 - **Wyjaśnialność (Explainability)** decyzji AI – stosowanie narzędzi wyjaśniających, dlaczego model podjął daną decyzję (np. SHAP, LIME).

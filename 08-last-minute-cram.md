@@ -17,6 +17,20 @@
 - **Azure AI Translator** ≠ **Azure AI Language** – Translator to osobna usługa do tłumaczeń maszynowych.
 - **CLU** (Conversational Language Understanding) to **następca LUIS** – jeśli pytanie mówi o LUIS, odpowiedź to CLU.
 - **Image Classification** = co jest na obrazie, **Object Detection** = co i gdzie (bounding box).
+- **Entity Recognition** ≠ **Entity Linking** – NER identyfikuje encje, Entity Linking łączy je z bazą wiedzy (np. Wikipedia).
+- **Read API** dla dużych PDF-ów, **OCR API** dla prostych obrazów.
+- **Stemming** = normalizacja słów przed zliczaniem (frequency analysis).
+- **K-Means: Number of Centroids** = liczba klastrów (3 centroidy = 3 grupy).
+- **AutoML**: obsługuje Classification, Regression, Time Series. **NIE** obsługuje Clustering.
+- **Assign Data to Clusters** = moduł do inferencing klasteryzacji (nie Score Model).
+- **Split Data** → moduł wymagany w Designerze do podziału danych przed Score/Evaluate.
+- **Normalize Data** = skalowanie kolumn numerycznych do wspólnej skali (Min-Max).
+- **Inference Pipeline** = musisz go utworzyć z Training Pipeline PRZED wdrożeniem modelu.
+- **Confusion Matrix** = odczytuj TP/FP/TN/FN z tabeli i licz Precision/Recall.
+- **Azure AI Services (Cognitive Services) resource** = jeden klucz i endpoint do wielu usług (Vision + Text + Speech).
+- **Face Detection** = bounding box; **Face Analysis** = wiek, emocje; **Face Identification** = kto to jest (PersonGroup).
+- **Bot**: jeden bot + wiele kanałów (Web Chat, Teams, Facebook). Facebook wymaga app registration.
+- **Translator**: jedno wywołanie z wieloma parametrami „to" dla wielu języków docelowych.
 
 ## Szybkie porównania usług Azure AI
 | Zadanie | Usługa **Azure** | Opis |
@@ -112,5 +126,61 @@
 - **A/B Testing** – traffic split, gradual rollout, business metrics
 - **Model Monitoring** – data drift, model drift, prediction drift
 - **Retraining Strategy** – automatyczne pipeline'y, versioning, A/B test
+
+## Najczęstsze wzorce pytań z prawdziwych egzaminów
+
+### Responsible AI – typowe odpowiedzi
+| Scenariusz | Zasada | Komentarz |
+|---|---|---|
+| Autonomiczne pojazdy rolnicze obok ludzi | **Reliability & Safety** | Bezpieczeństwo ludzi = priorytet |
+| Aplikacja wykrywająca pęknięcia szyb (99% dokładności) | **Transparency** | W UI napisz o ograniczeniach, zawsze polecaj inspekcję profesjonalną |
+| AutoML – zapewnij przejrzystość | **Transparency** | Włącz **„Enable Explain best model"** |
+| Model rekrutacyjny faworyzuje mężczyzn | **Fairness** | Oceń bias, zbierz więcej danych, użyj Fairlearn |
+| Świadomość ograniczeń AI | **Transparency** | Transparency = użytkownik wie jak i z jakimi ograniczeniami działa AI |
+
+### ML – typowe odpowiedzi
+| Pytanie | Poprawna odpowiedź |
+|---|---|
+| Jak dzielić dane na trening/ewaluację? | **Losowo na wiersze (rows)** – nie kolumny, nie features vs labels |
+| Prognoza ceny samochodu (marka, model, silnik, km) | **Regresja** (nie klasyfikacja, nie time series) |
+| Klasyfikacja ryzyka kredytowego (niskie/wysokie) | **Klasyfikacja** |
+| Sentyment tweetów o kampanii | **Klasyfikacja** (nie regresja, nie klasteryzacja) |
+| Najlepsza metryka regresji w AutoML | **R2 score** jako Primary metric |
+| Ile cech i etykiet? (wiek, % tłuszczu → ryzyko cukrzycy) | **2 cechy (features) + 1 etykieta (label)** |
+| Co przed wdrożeniem modelu z Designera? | **Utwórz inference pipeline** z training pipeline |
+| K-Means: 3 grupy? | **Number of Centroids = 3** |
+| Klasteryzacja – inferencing? | **Assign Data to Clusters** (nie Score Model) |
+| Skalowanie kolumn numerycznych | **Normalize Data** |
+| 3 moduły transformacji danych w Designerze | Clean Missing Data, Normalize Data, Select Columns in Dataset |
+| AutoML – jakie typy zadań? | Classification, Regression, Time Series (NIE Clustering) |
+| Po treningu modelu – co dalej? | Deploy to endpoint (nie twórz compute cluster) |
+| Pierwsza rzecz w Azure ML Studio? | Utwórz **workspace**, potem dataset |
+
+### Computer Vision – typowe odpowiedzi
+| Pytanie | Poprawna odpowiedź |
+|---|---|
+| Object Detection zwraca? | **Etykieta klasy + prawdopodobieństwo + bounding box** dla każdego obiektu |
+| Rozpoznać znane budynki? | **Categories z domeną Landmarks** |
+| Lokalizacja obiektów na obrazie? | **Objects** (nie Tags, nie Categories) |
+| Duży PDF – jakie API? | **Read API** (nie OCR API) |
+| Klasyfikacja złamań kości na RTG? | **Image Classification** (nie Object Detection) |
+| Co daje bounding box w Vision? | **Object Detection** (nie Image Analysis, nie Classification) |
+| Pixel-level klasyfikacja? | **Semantic Segmentation** |
+| Deep learning jest podstawą? | **Klasyfikacji obrazów** (nie regresji liniowej) |
+| Custom Vision – jeden zasób? | **Cognitive Services** (jeden klucz dla treningu i predikcji) |
+| Poprawić model CV? | **Dodaj więcej zdjęć** (nie zmniejszaj rozmiaru, nie dodawaj klasy „unknown") |
+
+### NLP – typowe odpowiedzi
+| Pytanie | Poprawna odpowiedź |
+|---|---|
+| Punkty konwersacyjne w tekście? | **Key Phrase Extraction** |
+| Linki do stron do ujednoznacznienia? | **Entity Linking** (nie NER) |
+| Więcej info online o encjach? | **Entity Linking** (nie Key Phrase Extraction) |
+| Czytanie e-maili na głos? | **Text-to-Speech** API |
+| Real-time angielski→hindi? | **Speech** service |
+| Tłumaczenie es→en+fr? | **Jedno wywołanie** Translator z wieloma „to" |
+| Zasób dla Language Understanding? | **Language Service** lub **Cognitive Services** |
+| Kanały bota (Teams + Web Chat)? | **Jeden bot**, dwa kanały (nie dwa boty) |
+| NLP workloady? | Sentiment analysis + translation (NIE OCR, NIE tagi obrazów) |
 
 [⟵ Poprzedni: Responsible AI](07-responsible-ai.md) | [Następny: Glosariusz ⟶](09-glosariusz.md)
