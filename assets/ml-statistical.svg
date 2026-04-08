@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Statistical Methods – Z-score / IQR</text>
+  <!-- Bell curve (normal distribution) -->
+  <path d="M40,145 Q60,145 80,140 Q100,130 120,105 Q140,65 155,42 Q165,35 175,42 Q190,65 210,105 Q225,130 245,140 Q265,145 285,145" fill="#4A90D9" opacity="0.1" stroke="#4A90D9" stroke-width="2"/>
+  <!-- Mean line -->
+  <line x1="165" y1="35" x2="165" y2="150" stroke="#333" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="165" y="162" text-anchor="middle" fill="#333" font-size="8" font-weight="bold">μ (średnia)</text>
+  <!-- Standard deviation markers -->
+  <line x1="110" y1="115" x2="110" y2="150" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="110" y="162" text-anchor="middle" fill="#F59E0B" font-size="7">-2σ</text>
+  <line x1="220" y1="115" x2="220" y2="150" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="220" y="162" text-anchor="middle" fill="#F59E0B" font-size="7">+2σ</text>
+  <!-- Threshold lines -->
+  <line x1="70" y1="140" x2="70" y2="150" stroke="#DC3545" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="70" y="162" text-anchor="middle" fill="#DC3545" font-size="7">-3σ</text>
+  <line x1="260" y1="140" x2="260" y2="150" stroke="#DC3545" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="260" y="162" text-anchor="middle" fill="#DC3545" font-size="7">+3σ</text>
+  <!-- Anomalies beyond threshold -->
+  <circle cx="50" cy="145" r="6" fill="none" stroke="#DC3545" stroke-width="2"/>
+  <circle cx="50" cy="145" r="2.5" fill="#DC3545"/>
+  <text x="50" y="138" text-anchor="middle" fill="#DC3545" font-size="7" font-weight="bold">outlier</text>
+  <circle cx="278" cy="145" r="6" fill="none" stroke="#DC3545" stroke-width="2"/>
+  <circle cx="278" cy="145" r="2.5" fill="#DC3545"/>
+  <text x="278" y="138" text-anchor="middle" fill="#DC3545" font-size="7" font-weight="bold">outlier</text>
+  <!-- Normal zone label -->
+  <rect x="130" y="72" width="70" height="16" rx="3" fill="#D4EDDA" opacity="0.8"/>
+  <text x="165" y="83" text-anchor="middle" fill="#155724" font-size="8" font-weight="bold">Normalne 95%</text>
+  <!-- Anomaly zones -->
+  <rect x="35" y="126" width="30" height="14" rx="3" fill="#F8D7DA" opacity="0.8"/>
+  <text x="50" y="136" text-anchor="middle" fill="#DC3545" font-size="7">2.5%</text>
+  <rect x="262" y="126" width="30" height="14" rx="3" fill="#F8D7DA" opacity="0.8"/>
+  <text x="277" y="136" text-anchor="middle" fill="#DC3545" font-size="7">2.5%</text>
+  <!-- Info -->
+  <rect x="310" y="30" width="160" height="140" rx="6" fill="#fff" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="320" y="48" fill="#333" font-size="10" font-weight="bold">Progi statystyczne</text>
+  <text x="320" y="66" fill="#555" font-size="9" font-weight="bold">Z-score:</text>
+  <text x="320" y="79" fill="#555" font-size="9">z = (x - μ) / σ</text>
+  <text x="320" y="92" fill="#555" font-size="9">|z| &gt; 3 → anomalia</text>
+  <text x="320" y="110" fill="#555" font-size="9" font-weight="bold">IQR (InterQuartile):</text>
+  <text x="320" y="123" fill="#555" font-size="9">IQR = Q3 - Q1</text>
+  <text x="320" y="136" fill="#555" font-size="9">x &lt; Q1-1.5·IQR → outlier</text>
+  <text x="320" y="149" fill="#555" font-size="9">x &gt; Q3+1.5·IQR → outlier</text>
+  <text x="320" y="165" fill="#28A745" font-size="8">Proste, szybkie, interpretowalne</text>
+</svg>

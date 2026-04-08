@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Naive Bayes – klasyfikator probabilistyczny</text>
+  <!-- Email example -->
+  <rect x="20" y="30" width="150" height="55" rx="6" fill="#E8F4FD" stroke="#0078D4" stroke-width="1"/>
+  <text x="30" y="46" fill="#0078D4" font-size="9" font-weight="bold">Email:</text>
+  <text x="30" y="60" fill="#333" font-size="9">"Wygraj darmowe pieniądze!</text>
+  <text x="30" y="73" fill="#333" font-size="9"> Kliknij teraz, oferta gratis"</text>
+  <!-- Tokenize -->
+  <line x1="95" y1="88" x2="95" y2="100" stroke="#333" stroke-width="1"/>
+  <polygon points="95,103 91,97 99,97" fill="#333"/>
+  <!-- Token probabilities -->
+  <rect x="15" y="105" width="160" height="65" rx="6" fill="#fff" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="25" y="120" fill="#333" font-size="9" font-weight="bold">P(słowo | Spam):</text>
+  <text x="25" y="133" fill="#DC3545" font-size="8">"darmowe" → 0.82  "wygraj" → 0.75</text>
+  <text x="25" y="146" fill="#DC3545" font-size="8">"pieniądze" → 0.70  "kliknij" → 0.65</text>
+  <text x="25" y="159" fill="#28A745" font-size="8">"spotkanie" → 0.05  "raport" → 0.02</text>
+  <!-- Bayes formula -->
+  <rect x="195" y="55" width="100" height="50" rx="6" fill="#FFF4E5" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="245" y="72" text-anchor="middle" fill="#92400E" font-size="9" font-weight="bold">Twierdzenie</text>
+  <text x="245" y="85" text-anchor="middle" fill="#92400E" font-size="9" font-weight="bold">Bayesa</text>
+  <text x="245" y="98" text-anchor="middle" fill="#DC3545" font-size="8" font-style="italic">P(Spam|słowa)</text>
+  <!-- Arrow to formula -->
+  <line x1="173" y1="65" x2="192" y2="72" stroke="#333" stroke-width="1"/>
+  <!-- Arrow from formula -->
+  <line x1="297" y1="80" x2="315" y2="80" stroke="#333" stroke-width="1.5"/>
+  <polygon points="318,80 312,76 312,84" fill="#333"/>
+  <!-- Results -->
+  <rect x="320" y="40" width="140" height="35" rx="6" fill="#F8D7DA" stroke="#DC3545" stroke-width="1.5"/>
+  <text x="390" y="55" text-anchor="middle" fill="#721C24" font-size="10" font-weight="bold">SPAM 94.2%</text>
+  <text x="390" y="68" text-anchor="middle" fill="#721C24" font-size="9">→ odrzucony</text>
+  <rect x="320" y="82" width="140" height="30" rx="6" fill="#D4EDDA" stroke="#28A745" stroke-width="1"/>
+  <text x="390" y="97" text-anchor="middle" fill="#155724" font-size="9">Ham 5.8%</text>
+  <text x="390" y="107" text-anchor="middle" fill="#155724" font-size="8">→ przepuszczony</text>
+  <!-- Key property -->
+  <rect x="195" y="120" width="270" height="48" rx="6" fill="#fff" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="205" y="136" fill="#333" font-size="10" font-weight="bold">"Naiwny" = zakłada niezależność cech</text>
+  <text x="205" y="150" fill="#555" font-size="9">Szybki, skuteczny na tekście (spam, sentyment, klasyfikacja)</text>
+  <text x="205" y="162" fill="#555" font-size="9">Działa dobrze nawet przy małym zbiorze danych</text>
+</svg>

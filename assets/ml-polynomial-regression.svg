@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Polynomial Regression – ŷ = w₁x + w₂x² + ... + b</text>
+  <!-- Grid -->
+  <line x1="50" y1="30" x2="50" y2="155" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="100" y1="30" x2="100" y2="155" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="150" y1="30" x2="150" y2="155" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="200" y1="30" x2="200" y2="155" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="250" y1="30" x2="250" y2="155" stroke="#E0E0E0" stroke-width="0.5"/>
+  <!-- Axes -->
+  <line x1="35" y1="155" x2="270" y2="155" stroke="#333" stroke-width="1.5"/>
+  <line x1="35" y1="155" x2="35" y2="25" stroke="#333" stroke-width="1.5"/>
+  <polygon points="270,155 264,151 264,159" fill="#333"/>
+  <polygon points="35,25 31,31 39,31" fill="#333"/>
+  <text x="155" y="172" text-anchor="middle" fill="#555" font-size="9">X</text>
+  <text x="14" y="90" text-anchor="middle" fill="#555" font-size="9" transform="rotate(-90,14,90)">Y</text>
+  <!-- Data points (parabolic pattern) -->
+  <circle cx="45" cy="55" r="4.5" fill="#4A90D9" opacity="0.75"/>
+  <circle cx="60" cy="75" r="4.5" fill="#4A90D9" opacity="0.75"/>
+  <circle cx="78" cy="95" r="4.5" fill="#4A90D9" opacity="0.75"/>
+  <circle cx="95" cy="115" r="4.5" fill="#4A90D9" opacity="0.75"/>
+  <circle cx="110" cy="128" r="4.5" fill="#4A90D9" opacity="0.75"/>
+  <circle cx="130" cy="140" r="4.5" fill="#4A90D9" opacity="0.75"/>
+  <circle cx="145" cy="142" r="4.5" fill="#4A90D9" opacity="0.75"/>
+  <circle cx="160" cy="138" r="4.5" fill="#4A90D9" opacity="0.75"/>
+  <circle cx="178" cy="125" r="4.5" fill="#4A90D9" opacity="0.75"/>
+  <circle cx="195" cy="108" r="4.5" fill="#4A90D9" opacity="0.75"/>
+  <circle cx="215" cy="85" r="4.5" fill="#4A90D9" opacity="0.75"/>
+  <circle cx="235" cy="60" r="4.5" fill="#4A90D9" opacity="0.75"/>
+  <circle cx="255" cy="40" r="4.5" fill="#4A90D9" opacity="0.75"/>
+  <!-- Curved line (parabola) -->
+  <path d="M42,52 Q150,155 260,35" fill="none" stroke="#DC3545" stroke-width="2.5"/>
+  <!-- Dashed straight line (bad fit) -->
+  <line x1="42" y1="105" x2="260" y2="80" stroke="#999" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.5"/>
+  <text x="248" y="92" fill="#999" font-size="8">liniowa (bad fit)</text>
+  <!-- Info -->
+  <rect x="290" y="28" width="178" height="135" rx="6" fill="#fff" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="300" y="46" fill="#333" font-size="11" font-weight="bold">Krzywa wielomianowa</text>
+  <text x="300" y="62" fill="#555" font-size="9">Gdy dane nie są liniowe —</text>
+  <text x="300" y="75" fill="#555" font-size="9">prosta nie pasuje</text>
+  <line x1="304" y1="88" x2="320" y2="88" stroke="#DC3545" stroke-width="2"/>
+  <text x="324" y="92" fill="#333" font-size="9">Krzywa (polynomial)</text>
+  <line x1="304" y1="104" x2="320" y2="104" stroke="#999" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="324" y="108" fill="#333" font-size="9">Prosta (bad fit)</text>
+  <text x="300" y="128" fill="#555" font-size="9">Stopień 2 = parabola</text>
+  <text x="300" y="141" fill="#555" font-size="9">Stopień 3+ = bardziej złożone</text>
+  <text x="300" y="157" fill="#DC3545" font-size="9" font-style="italic">Uwaga: wysoki stopień → overfitting</text>
+</svg>

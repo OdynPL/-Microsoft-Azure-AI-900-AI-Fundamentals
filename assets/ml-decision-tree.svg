@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Decision Tree / Random Forest – klasyfikacja</text>
+  <!-- Tree -->
+  <rect x="90" y="28" width="100" height="22" rx="5" fill="#0078D4" stroke="#005A9E" stroke-width="1"/>
+  <text x="140" y="43" text-anchor="middle" fill="#fff" font-size="8" font-weight="bold">wiek &gt; 30?</text>
+  <!-- Branches -->
+  <line x1="115" y1="50" x2="70" y2="68" stroke="#333" stroke-width="1"/>
+  <text x="82" y="62" fill="#28A745" font-size="8" font-weight="bold">Tak</text>
+  <line x1="165" y1="50" x2="210" y2="68" stroke="#333" stroke-width="1"/>
+  <text x="192" y="62" fill="#DC3545" font-size="8" font-weight="bold">Nie</text>
+  <!-- Left node -->
+  <rect x="25" y="68" width="90" height="22" rx="5" fill="#0078D4" stroke="#005A9E" stroke-width="1"/>
+  <text x="70" y="83" text-anchor="middle" fill="#fff" font-size="8">dochód &gt; 50k?</text>
+  <!-- Right leaf -->
+  <rect x="170" y="68" width="80" height="22" rx="5" fill="#F8D7DA" stroke="#DC3545" stroke-width="1"/>
+  <text x="210" y="83" text-anchor="middle" fill="#721C24" font-size="8" font-weight="bold">NIE kupi</text>
+  <!-- Left branches -->
+  <line x1="50" y1="90" x2="30" y2="108" stroke="#333" stroke-width="1"/>
+  <line x1="90" y1="90" x2="110" y2="108" stroke="#333" stroke-width="1"/>
+  <rect x="2" y="108" width="60" height="22" rx="5" fill="#D4EDDA" stroke="#28A745" stroke-width="1"/>
+  <text x="32" y="123" text-anchor="middle" fill="#155724" font-size="8" font-weight="bold">TAK kupi</text>
+  <rect x="82" y="108" width="60" height="22" rx="5" fill="#F8D7DA" stroke="#DC3545" stroke-width="1"/>
+  <text x="112" y="123" text-anchor="middle" fill="#721C24" font-size="8" font-weight="bold">NIE kupi</text>
+  <!-- Gini label -->
+  <text x="140" y="148" text-anchor="middle" fill="#555" font-size="9">Dzieli dane wg Gini / Entropy</text>
+  <text x="140" y="162" text-anchor="middle" fill="#555" font-size="9">Łatwy do interpretacji!</text>
+  <!-- Random Forest -->
+  <rect x="290" y="30" width="40" height="45" rx="3" fill="#E8F4FD" stroke="#0078D4" stroke-width="1"/>
+  <text x="310" y="48" text-anchor="middle" fill="#0078D4" font-size="7">Tree 1</text>
+  <text x="310" y="60" text-anchor="middle" fill="#28A745" font-size="8" font-weight="bold">TAK</text>
+  <rect x="335" y="30" width="40" height="45" rx="3" fill="#E8F4FD" stroke="#0078D4" stroke-width="1"/>
+  <text x="355" y="48" text-anchor="middle" fill="#0078D4" font-size="7">Tree 2</text>
+  <text x="355" y="60" text-anchor="middle" fill="#DC3545" font-size="8" font-weight="bold">NIE</text>
+  <rect x="380" y="30" width="40" height="45" rx="3" fill="#E8F4FD" stroke="#0078D4" stroke-width="1"/>
+  <text x="400" y="48" text-anchor="middle" fill="#0078D4" font-size="7">Tree 3</text>
+  <text x="400" y="60" text-anchor="middle" fill="#28A745" font-size="8" font-weight="bold">TAK</text>
+  <rect x="425" y="30" width="40" height="45" rx="3" fill="#E8F4FD" stroke="#0078D4" stroke-width="1"/>
+  <text x="445" y="48" text-anchor="middle" fill="#0078D4" font-size="7">Tree N</text>
+  <text x="445" y="60" text-anchor="middle" fill="#28A745" font-size="8" font-weight="bold">TAK</text>
+  <!-- Arrow & vote -->
+  <line x1="370" y1="80" x2="370" y2="97" stroke="#333" stroke-width="1.5"/>
+  <polygon points="370,100 366,94 374,94" fill="#333"/>
+  <text x="370" y="93" text-anchor="end" fill="#555" font-size="8" dx="-12">głosowanie</text>
+  <rect x="330" y="103" width="80" height="22" rx="5" fill="#28A745" stroke="#1E7B34" stroke-width="1.5"/>
+  <text x="370" y="118" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">TAK (3:1)</text>
+  <!-- Info -->
+  <rect x="290" y="130" width="180" height="42" rx="5" fill="#fff" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="300" y="146" fill="#555" font-size="9">Random Forest = wiele drzew</text>
+  <text x="300" y="160" fill="#555" font-size="9">Głosowanie większościowe → wynik</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">K-Means Clustering</text>
+  <!-- Before (left) -->
+  <text x="85" y="35" text-anchor="middle" fill="#999" font-size="10" font-weight="bold">Przed (dane bez etykiet)</text>
+  <!-- All gray points -->
+  <circle cx="50" cy="55" r="3.5" fill="#999" opacity="0.5"/>
+  <circle cx="62" cy="50" r="3.5" fill="#999" opacity="0.5"/>
+  <circle cx="55" cy="65" r="3.5" fill="#999" opacity="0.5"/>
+  <circle cx="70" cy="60" r="3.5" fill="#999" opacity="0.5"/>
+  <circle cx="45" cy="72" r="3.5" fill="#999" opacity="0.5"/>
+  <circle cx="90" cy="120" r="3.5" fill="#999" opacity="0.5"/>
+  <circle cx="100" cy="130" r="3.5" fill="#999" opacity="0.5"/>
+  <circle cx="80" cy="125" r="3.5" fill="#999" opacity="0.5"/>
+  <circle cx="105" cy="115" r="3.5" fill="#999" opacity="0.5"/>
+  <circle cx="95" cy="140" r="3.5" fill="#999" opacity="0.5"/>
+  <circle cx="130" cy="70" r="3.5" fill="#999" opacity="0.5"/>
+  <circle cx="140" cy="55" r="3.5" fill="#999" opacity="0.5"/>
+  <circle cx="148" cy="65" r="3.5" fill="#999" opacity="0.5"/>
+  <circle cx="135" cy="80" r="3.5" fill="#999" opacity="0.5"/>
+  <circle cx="155" cy="75" r="3.5" fill="#999" opacity="0.5"/>
+  <!-- Arrow -->
+  <text x="85" y="165" text-anchor="middle" fill="#555" font-size="8">K=3 (zadaje użytkownik)</text>
+  <line x1="175" y1="90" x2="200" y2="90" stroke="#333" stroke-width="2"/>
+  <polygon points="205,90 199,86 199,94" fill="#333"/>
+  <text x="190" y="80" text-anchor="middle" fill="#555" font-size="8">iteracje</text>
+  <!-- After (right) -->
+  <text x="320" y="35" text-anchor="middle" fill="#333" font-size="10" font-weight="bold">Po (K=3 klastry)</text>
+  <!-- Cluster 1 (blue) -->
+  <circle cx="250" cy="55" r="3.5" fill="#4A90D9" opacity="0.8"/>
+  <circle cx="262" cy="50" r="3.5" fill="#4A90D9" opacity="0.8"/>
+  <circle cx="255" cy="65" r="3.5" fill="#4A90D9" opacity="0.8"/>
+  <circle cx="270" cy="60" r="3.5" fill="#4A90D9" opacity="0.8"/>
+  <circle cx="245" cy="72" r="3.5" fill="#4A90D9" opacity="0.8"/>
+  <rect x="254" y="56" width="6" height="6" fill="#1E40AF" transform="rotate(45,257,59)"/>
+  <!-- Cluster 2 (orange) -->
+  <circle cx="290" cy="120" r="3.5" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="300" cy="130" r="3.5" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="280" cy="125" r="3.5" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="305" cy="115" r="3.5" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="295" cy="140" r="3.5" fill="#F59E0B" opacity="0.8"/>
+  <rect x="291" y="123" width="6" height="6" fill="#92400E" transform="rotate(45,294,126)"/>
+  <!-- Cluster 3 (green) -->
+  <circle cx="340" cy="70" r="3.5" fill="#28A745" opacity="0.8"/>
+  <circle cx="350" cy="55" r="3.5" fill="#28A745" opacity="0.8"/>
+  <circle cx="358" cy="65" r="3.5" fill="#28A745" opacity="0.8"/>
+  <circle cx="345" cy="80" r="3.5" fill="#28A745" opacity="0.8"/>
+  <circle cx="365" cy="75" r="3.5" fill="#28A745" opacity="0.8"/>
+  <rect x="348" y="67" width="6" height="6" fill="#155724" transform="rotate(45,351,70)"/>
+  <!-- Lines to centroids -->
+  <line x1="250" y1="55" x2="257" y2="59" stroke="#4A90D9" stroke-width="0.5" opacity="0.3"/>
+  <line x1="270" y1="60" x2="257" y2="59" stroke="#4A90D9" stroke-width="0.5" opacity="0.3"/>
+  <line x1="290" y1="120" x2="294" y2="126" stroke="#F59E0B" stroke-width="0.5" opacity="0.3"/>
+  <line x1="305" y1="115" x2="294" y2="126" stroke="#F59E0B" stroke-width="0.5" opacity="0.3"/>
+  <!-- Info -->
+  <rect x="220" y="150" width="250" height="24" rx="5" fill="#FFF4E5" stroke="#F59E0B" stroke-width="1"/>
+  <text x="230" y="165" fill="#92400E" font-size="9" font-weight="bold">◆ = centroid</text>
+  <text x="310" y="165" fill="#555" font-size="9">Metryki: Silhouette, Inertia, Elbow</text>
+  <!-- Steps -->
+  <rect x="395" y="42" width="78" height="100" rx="5" fill="#fff" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="405" y="57" fill="#333" font-size="9" font-weight="bold">Algorytm:</text>
+  <text x="405" y="72" fill="#555" font-size="8">1. Losowe centroidy</text>
+  <text x="405" y="85" fill="#555" font-size="8">2. Przypisz punkty</text>
+  <text x="405" y="98" fill="#555" font-size="8">3. Przesuń centroidy</text>
+  <text x="405" y="111" fill="#555" font-size="8">4. Powtórz 2-3</text>
+  <text x="405" y="130" fill="#DC3545" font-size="8">aż do zbieżności</text>
+</svg>

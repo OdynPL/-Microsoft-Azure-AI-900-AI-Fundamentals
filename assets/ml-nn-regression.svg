@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Neural Network Regression</text>
+  <!-- Input layer -->
+  <text x="45" y="32" text-anchor="middle" fill="#555" font-size="9" font-weight="bold">Input</text>
+  <circle cx="45" cy="50" r="14" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="45" y="54" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">x₁</text>
+  <circle cx="45" cy="90" r="14" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="45" y="94" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">x₂</text>
+  <circle cx="45" cy="130" r="14" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="45" y="134" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">x₃</text>
+  <!-- Hidden layer 1 -->
+  <text x="145" y="32" text-anchor="middle" fill="#555" font-size="9" font-weight="bold">Hidden 1</text>
+  <circle cx="145" cy="50" r="12" fill="#0078D4" stroke="#005A9E" stroke-width="1"/>
+  <circle cx="145" cy="82" r="12" fill="#0078D4" stroke="#005A9E" stroke-width="1"/>
+  <circle cx="145" cy="114" r="12" fill="#0078D4" stroke="#005A9E" stroke-width="1"/>
+  <circle cx="145" cy="146" r="12" fill="#0078D4" stroke="#005A9E" stroke-width="1"/>
+  <!-- Hidden layer 2 -->
+  <text x="225" y="32" text-anchor="middle" fill="#555" font-size="9" font-weight="bold">Hidden 2</text>
+  <circle cx="225" cy="60" r="12" fill="#0078D4" stroke="#005A9E" stroke-width="1"/>
+  <circle cx="225" cy="95" r="12" fill="#0078D4" stroke="#005A9E" stroke-width="1"/>
+  <circle cx="225" cy="130" r="12" fill="#0078D4" stroke="#005A9E" stroke-width="1"/>
+  <!-- Output -->
+  <text x="315" y="78" text-anchor="middle" fill="#555" font-size="9" font-weight="bold">Output</text>
+  <circle cx="315" cy="95" r="16" fill="#FFF4E5" stroke="#F59E0B" stroke-width="2"/>
+  <text x="315" y="99" text-anchor="middle" fill="#92400E" font-size="9" font-weight="bold">ŷ</text>
+  <!-- Connections input→h1 (selected) -->
+  <line x1="59" y1="50" x2="133" y2="50" stroke="#4A90D9" stroke-width="0.8" opacity="0.4"/>
+  <line x1="59" y1="50" x2="133" y2="82" stroke="#4A90D9" stroke-width="0.8" opacity="0.4"/>
+  <line x1="59" y1="50" x2="133" y2="114" stroke="#4A90D9" stroke-width="0.8" opacity="0.4"/>
+  <line x1="59" y1="90" x2="133" y2="50" stroke="#4A90D9" stroke-width="0.8" opacity="0.4"/>
+  <line x1="59" y1="90" x2="133" y2="82" stroke="#4A90D9" stroke-width="0.8" opacity="0.4"/>
+  <line x1="59" y1="90" x2="133" y2="114" stroke="#4A90D9" stroke-width="0.8" opacity="0.4"/>
+  <line x1="59" y1="90" x2="133" y2="146" stroke="#4A90D9" stroke-width="0.8" opacity="0.4"/>
+  <line x1="59" y1="130" x2="133" y2="82" stroke="#4A90D9" stroke-width="0.8" opacity="0.4"/>
+  <line x1="59" y1="130" x2="133" y2="114" stroke="#4A90D9" stroke-width="0.8" opacity="0.4"/>
+  <line x1="59" y1="130" x2="133" y2="146" stroke="#4A90D9" stroke-width="0.8" opacity="0.4"/>
+  <!-- Connections h1→h2 -->
+  <line x1="157" y1="50" x2="213" y2="60" stroke="#4A90D9" stroke-width="0.8" opacity="0.4"/>
+  <line x1="157" y1="50" x2="213" y2="95" stroke="#4A90D9" stroke-width="0.8" opacity="0.4"/>
+  <line x1="157" y1="82" x2="213" y2="60" stroke="#4A90D9" stroke-width="0.8" opacity="0.4"/>
+  <line x1="157" y1="82" x2="213" y2="95" stroke="#4A90D9" stroke-width="0.8" opacity="0.4"/>
+  <line x1="157" y1="114" x2="213" y2="95" stroke="#4A90D9" stroke-width="0.8" opacity="0.4"/>
+  <line x1="157" y1="114" x2="213" y2="130" stroke="#4A90D9" stroke-width="0.8" opacity="0.4"/>
+  <line x1="157" y1="146" x2="213" y2="130" stroke="#4A90D9" stroke-width="0.8" opacity="0.4"/>
+  <line x1="157" y1="146" x2="213" y2="95" stroke="#4A90D9" stroke-width="0.8" opacity="0.4"/>
+  <!-- Connections h2→output -->
+  <line x1="237" y1="60" x2="299" y2="95" stroke="#F59E0B" stroke-width="1.2" opacity="0.6"/>
+  <line x1="237" y1="95" x2="299" y2="95" stroke="#F59E0B" stroke-width="1.2" opacity="0.6"/>
+  <line x1="237" y1="130" x2="299" y2="95" stroke="#F59E0B" stroke-width="1.2" opacity="0.6"/>
+  <!-- Info -->
+  <rect x="350" y="28" width="120" height="135" rx="6" fill="#fff" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="360" y="46" fill="#333" font-size="10" font-weight="bold">Sieć neuronowa</text>
+  <text x="360" y="60" fill="#555" font-size="9">Uczy się złożonych</text>
+  <text x="360" y="72" fill="#555" font-size="9">nieliniowych zależności</text>
+  <text x="360" y="90" fill="#555" font-size="9">Wagi (weights)</text>
+  <text x="360" y="102" fill="#555" font-size="9">aktualizowane przez</text>
+  <text x="360" y="114" fill="#555" font-size="9">backpropagation</text>
+  <text x="360" y="132" fill="#DC3545" font-size="9">Wyjście: 1 neuron</text>
+  <text x="360" y="144" fill="#DC3545" font-size="9">= wartość ciągła (ŷ)</text>
+  <text x="360" y="158" fill="#555" font-size="9">Aktywacja: ReLU</text>
+</svg>

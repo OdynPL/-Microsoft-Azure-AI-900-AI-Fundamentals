@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Neural Network Classification</text>
+  <!-- Input -->
+  <text x="40" y="32" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Input</text>
+  <circle cx="40" cy="50" r="13" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="40" y="54" text-anchor="middle" fill="#0078D4" font-size="8">x₁</text>
+  <circle cx="40" cy="85" r="13" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="40" y="89" text-anchor="middle" fill="#0078D4" font-size="8">x₂</text>
+  <circle cx="40" cy="120" r="13" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="40" y="124" text-anchor="middle" fill="#0078D4" font-size="8">x₃</text>
+  <circle cx="40" cy="152" r="10" fill="#E8F4FD" stroke="#0078D4" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="40" y="156" text-anchor="middle" fill="#0078D4" font-size="8">...</text>
+  <!-- Hidden -->
+  <text x="130" y="32" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Hidden</text>
+  <circle cx="130" cy="55" r="11" fill="#0078D4"/>
+  <circle cx="130" cy="82" r="11" fill="#0078D4"/>
+  <circle cx="130" cy="109" r="11" fill="#0078D4"/>
+  <circle cx="130" cy="136" r="11" fill="#0078D4"/>
+  <!-- Softmax -->
+  <text x="215" y="32" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Softmax</text>
+  <rect x="195" y="42" width="40" height="110" rx="6" fill="#FFF4E5" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="215" y="58" text-anchor="middle" fill="#92400E" font-size="8">0.85</text>
+  <text x="215" y="78" text-anchor="middle" fill="#92400E" font-size="8">0.10</text>
+  <text x="215" y="98" text-anchor="middle" fill="#92400E" font-size="8">0.05</text>
+  <text x="215" y="118" text-anchor="middle" fill="#999" font-size="8">Σ=1</text>
+  <text x="215" y="140" text-anchor="middle" fill="#F59E0B" font-size="7" font-weight="bold">softmax</text>
+  <!-- Output classes -->
+  <rect x="250" y="42" width="55" height="22" rx="4" fill="#28A745" stroke="#1E7B34" stroke-width="1.5"/>
+  <text x="277" y="57" text-anchor="middle" fill="#fff" font-size="8" font-weight="bold">Kot 85%</text>
+  <rect x="250" y="70" width="55" height="22" rx="4" fill="#E8F4FD" stroke="#0078D4" stroke-width="1"/>
+  <text x="277" y="85" text-anchor="middle" fill="#0078D4" font-size="8">Pies 10%</text>
+  <rect x="250" y="98" width="55" height="22" rx="4" fill="#E8F4FD" stroke="#0078D4" stroke-width="1"/>
+  <text x="277" y="113" text-anchor="middle" fill="#0078D4" font-size="8">Ptak 5%</text>
+  <!-- Connections -->
+  <line x1="53" y1="50" x2="119" y2="55" stroke="#4A90D9" stroke-width="0.6" opacity="0.4"/>
+  <line x1="53" y1="50" x2="119" y2="82" stroke="#4A90D9" stroke-width="0.6" opacity="0.4"/>
+  <line x1="53" y1="85" x2="119" y2="55" stroke="#4A90D9" stroke-width="0.6" opacity="0.4"/>
+  <line x1="53" y1="85" x2="119" y2="82" stroke="#4A90D9" stroke-width="0.6" opacity="0.4"/>
+  <line x1="53" y1="85" x2="119" y2="109" stroke="#4A90D9" stroke-width="0.6" opacity="0.4"/>
+  <line x1="53" y1="120" x2="119" y2="82" stroke="#4A90D9" stroke-width="0.6" opacity="0.4"/>
+  <line x1="53" y1="120" x2="119" y2="109" stroke="#4A90D9" stroke-width="0.6" opacity="0.4"/>
+  <line x1="53" y1="120" x2="119" y2="136" stroke="#4A90D9" stroke-width="0.6" opacity="0.4"/>
+  <line x1="141" y1="55" x2="195" y2="52" stroke="#4A90D9" stroke-width="0.6" opacity="0.4"/>
+  <line x1="141" y1="82" x2="195" y2="72" stroke="#4A90D9" stroke-width="0.6" opacity="0.4"/>
+  <line x1="141" y1="109" x2="195" y2="92" stroke="#4A90D9" stroke-width="0.6" opacity="0.4"/>
+  <line x1="141" y1="136" x2="195" y2="112" stroke="#4A90D9" stroke-width="0.6" opacity="0.4"/>
+  <!-- Arrows from softmax to classes -->
+  <line x1="235" y1="52" x2="248" y2="52" stroke="#F59E0B" stroke-width="1.5"/>
+  <line x1="235" y1="72" x2="248" y2="80" stroke="#F59E0B" stroke-width="1"/>
+  <line x1="235" y1="92" x2="248" y2="108" stroke="#F59E0B" stroke-width="1"/>
+  <!-- Info -->
+  <rect x="320" y="28" width="150" height="140" rx="6" fill="#fff" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="330" y="46" fill="#333" font-size="10" font-weight="bold">Wieloklasowa NN</text>
+  <text x="330" y="62" fill="#555" font-size="9">Softmax na wyjściu:</text>
+  <text x="330" y="75" fill="#555" font-size="9">każda klasa = P(Y|X)</text>
+  <text x="330" y="88" fill="#555" font-size="9">suma = 1.0</text>
+  <text x="330" y="108" fill="#555" font-size="9">Cross-entropy loss</text>
+  <text x="330" y="121" fill="#555" font-size="9">Backpropagation</text>
+  <text x="330" y="140" fill="#555" font-size="9">Złożone wzorce:</text>
+  <text x="330" y="153" fill="#555" font-size="9">obraz, tekst, mowa</text>
+  <text x="330" y="163" fill="#DC3545" font-size="8">CNN = obrazy, RNN = tekst</text>
+</svg>

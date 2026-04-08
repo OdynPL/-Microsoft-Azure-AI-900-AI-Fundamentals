@@ -166,13 +166,51 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Pojęcie** | **Opis** |
 |---|---|
 | **Regresja (Regression)** | Przewidywanie wartości liczbowych |
-| | 1. **Linear Regression** – prosta liniowa <br> 2. **Multiple Linear Regression** – wiele cech <br> 3. **Polynomial Regression** – krzywa <br> 4. **Decision Tree / Random Forest Regression** – drzewa decyzyjne <br> 5. **Neural Network Regression** – sieci neuronowe |
+| | 1. **Linear Regression** – prosta liniowa |
+| | ![Linear Regression](assets/ml-linear-regression.svg) |
+| | 2. **Multiple Linear Regression** – wiele cech |
+| | ![Multiple Linear Regression](assets/ml-multiple-regression.svg) |
+| | 3. **Polynomial Regression** – krzywa |
+| | ![Polynomial Regression](assets/ml-polynomial-regression.svg) |
+| | 4. **Decision Tree / Random Forest Regression** – drzewa decyzyjne |
+| | ![Decision Tree / Random Forest Regression](assets/ml-tree-regression.svg) |
+| | 5. **Neural Network Regression** – sieci neuronowe |
+| | ![Neural Network Regression](assets/ml-nn-regression.svg) |
 | **Klasyfikacja (Classification)** | Przypisywanie do kategorii |
-| | 1. **Logistic Regression** – klasyfikacja binarna (tak/nie, spam/nie-spam) <br> 2. **Decision Tree / Random Forest** – drzewa decyzyjne i lasy losowe <br> 3. **Support Vector Machine (SVM)** – separacja klas hiperpłaszczyzną <br> 4. **K-Nearest Neighbors (KNN)** – klasyfikacja na podstawie najbliższych sąsiadów <br> 5. **Neural Network Classification** – sieci neuronowe do złożonych wzorców <br> 6. **Naive Bayes** – klasyfikator probabilistyczny (tekst, spam) |
+| | 1. **Logistic Regression** – klasyfikacja binarna (tak/nie, spam/nie-spam) |
+| | ![Logistic Regression](assets/ml-logistic-regression.svg) |
+| | 2. **Decision Tree / Random Forest** – drzewa decyzyjne i lasy losowe |
+| | ![Decision Tree / Random Forest](assets/ml-decision-tree.svg) |
+| | 3. **Support Vector Machine (SVM)** – separacja klas hiperpłaszczyzną |
+| | ![Support Vector Machine](assets/ml-svm.svg) |
+| | 4. **K-Nearest Neighbors (KNN)** – klasyfikacja na podstawie najbliższych sąsiadów |
+| | ![K-Nearest Neighbors](assets/ml-knn.svg) |
+| | 5. **Neural Network Classification** – sieci neuronowe do złożonych wzorców |
+| | ![Neural Network Classification](assets/ml-nn-classification.svg) |
+| | 6. **Naive Bayes** – klasyfikator probabilistyczny (tekst, spam) |
+| | ![Naive Bayes](assets/ml-naive-bayes.svg) |
 | **Klasteryzacja (Clustering)** | Grupowanie podobnych danych (uczenie nienadzorowane) |
-| | 1. **K-Means** – podział na k klastrów wg średnich odległości (najczęstszy na egzaminie) <br> 2. **Hierarchical Clustering** – aglomeracyjne łączenie klastrów w drzewo (dendrogram) <br> 3. **DBSCAN** – klasteryzacja gęstościowa; wykrywa klastry o dowolnym kształcie i szum <br> 4. **Mean Shift** – iteracyjnie przesuwa centroidy do obszarów najwyższej gęstości <br> 5. **Gaussian Mixture Models (GMM)** – klastry jako rozkłady prawdopodobieństwa (miękkie przypisanie) |
+| | 1. **K-Means** – podział na k klastrów wg średnich odległości (najczęstszy na egzaminie) |
+| | ![K-Means](assets/ml-kmeans.svg) |
+| | 2. **Hierarchical Clustering** – aglomeracyjne łączenie klastrów w drzewo (dendrogram) |
+| | ![Hierarchical Clustering](assets/ml-hierarchical.svg) |
+| | 3. **DBSCAN** – klasteryzacja gęstościowa; wykrywa klastry o dowolnym kształcie i szum |
+| | ![DBSCAN](assets/ml-dbscan.svg) |
+| | 4. **Mean Shift** – iteracyjnie przesuwa centroidy do obszarów najwyższej gęstości |
+| | ![Mean Shift](assets/ml-mean-shift.svg) |
+| | 5. **Gaussian Mixture Models (GMM)** – klastry jako rozkłady prawdopodobieństwa (miękkie przypisanie) |
+| | ![Gaussian Mixture Models](assets/ml-gmm.svg) |
 | **Anomaly Detection** | Wykrywanie obserwacji odbiegających od normy (np. oszustwa, defekty, awarie) |
-| | 1. **One-class SVM** – uczy się granic normalnych danych, identyfikuje obserwacje poza nimi <br> 2. **Isolation Forest** – losowe podziały; anomalie łatwiejsze do izolacji <br> 3. **Autoencoder** – sieć neuronowa ucząca się rekonstrukcji; wysoki błąd = anomalia <br> 4. **Statistical Methods (Z-score, IQR)** – progi statystyczne wykrywające outlierów <br> 5. **Azure Anomaly Detector** – gotowa usługa do wykrywania anomalii w szeregach czasowych |
+| | 1. **One-class SVM** – uczy się granic normalnych danych, identyfikuje obserwacje poza nimi |
+| | ![One-class SVM](assets/ml-one-class-svm.svg) |
+| | 2. **Isolation Forest** – losowe podziały; anomalie łatwiejsze do izolacji |
+| | ![Isolation Forest](assets/ml-isolation-forest.svg) |
+| | 3. **Autoencoder** – sieć neuronowa ucząca się rekonstrukcji; wysoki błąd = anomalia |
+| | ![Autoencoder](assets/ml-autoencoder.svg) |
+| | 4. **Statistical Methods (Z-score, IQR)** – progi statystyczne wykrywające outlierów |
+| | ![Statistical Methods](assets/ml-statistical.svg) |
+| | 5. **Azure Anomaly Detector** – gotowa usługa do wykrywania anomalii w szeregach czasowych |
+| | ![Azure Anomaly Detector](assets/ml-azure-anomaly.svg) |
 | **Recommendation Systems** | Systemy rekomendacji przewidujące preferencje użytkownika (Collaborative Filtering, Content-Based, Hybrid) |
 | **Collaborative Filtering** | Rekomendacje bazujące na podobieństwie użytkowników: „użytkownicy podobni do ciebie polubili…" |
 | **Content-Based Filtering** | Rekomendacje porównujące cechy produktów: „produkty podobne do tych, które lubisz" |

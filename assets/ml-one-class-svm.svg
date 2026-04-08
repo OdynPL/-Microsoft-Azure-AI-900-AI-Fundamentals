@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">One-class SVM – granica normalnych danych</text>
+  <!-- Axes -->
+  <line x1="30" y1="165" x2="260" y2="165" stroke="#333" stroke-width="1"/>
+  <line x1="30" y1="165" x2="30" y2="28" stroke="#333" stroke-width="1"/>
+  <!-- Normal data cluster -->
+  <ellipse cx="140" cy="95" rx="60" ry="40" fill="#4A90D9" opacity="0.08"/>
+  <ellipse cx="140" cy="95" rx="60" ry="40" fill="none" stroke="#0078D4" stroke-width="2"/>
+  <circle cx="120" cy="85" r="4" fill="#4A90D9" opacity="0.7"/>
+  <circle cx="135" cy="78" r="4" fill="#4A90D9" opacity="0.7"/>
+  <circle cx="150" cy="92" r="4" fill="#4A90D9" opacity="0.7"/>
+  <circle cx="130" cy="100" r="4" fill="#4A90D9" opacity="0.7"/>
+  <circle cx="148" cy="105" r="4" fill="#4A90D9" opacity="0.7"/>
+  <circle cx="160" cy="88" r="4" fill="#4A90D9" opacity="0.7"/>
+  <circle cx="140" cy="110" r="4" fill="#4A90D9" opacity="0.7"/>
+  <circle cx="118" cy="95" r="4" fill="#4A90D9" opacity="0.7"/>
+  <circle cx="155" cy="100" r="4" fill="#4A90D9" opacity="0.7"/>
+  <circle cx="125" cy="108" r="4" fill="#4A90D9" opacity="0.7"/>
+  <circle cx="165" cy="95" r="4" fill="#4A90D9" opacity="0.7"/>
+  <!-- SVM boundary (slightly larger) -->
+  <ellipse cx="140" cy="95" rx="75" ry="52" fill="none" stroke="#DC3545" stroke-width="2" stroke-dasharray="6,3"/>
+  <!-- Anomalies (outside boundary) -->
+  <circle cx="50" cy="45" r="6" fill="none" stroke="#DC3545" stroke-width="2.5"/>
+  <circle cx="50" cy="45" r="2.5" fill="#DC3545"/>
+  <text x="50" y="37" text-anchor="middle" fill="#DC3545" font-size="7" font-weight="bold">anomalia</text>
+  <circle cx="240" cy="155" r="6" fill="none" stroke="#DC3545" stroke-width="2.5"/>
+  <circle cx="240" cy="155" r="2.5" fill="#DC3545"/>
+  <circle cx="230" cy="40" r="6" fill="none" stroke="#DC3545" stroke-width="2.5"/>
+  <circle cx="230" cy="40" r="2.5" fill="#DC3545"/>
+  <!-- Info -->
+  <rect x="275" y="30" width="195" height="140" rx="6" fill="#fff" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="285" y="48" fill="#333" font-size="11" font-weight="bold">Uczenie na normalnych</text>
+  <text x="285" y="64" fill="#555" font-size="9">Trenowany TYLKO na danych</text>
+  <text x="285" y="77" fill="#555" font-size="9">normalnych (bez anomalii)</text>
+  <text x="285" y="95" fill="#555" font-size="9" font-weight="bold">Jak działa:</text>
+  <text x="285" y="108" fill="#555" font-size="9">Tworzy granicę (boundary)</text>
+  <text x="285" y="121" fill="#555" font-size="9">wokół normalnych obserwacji</text>
+  <text x="285" y="140" fill="#DC3545" font-size="9">Punkt poza granicą = anomalia</text>
+  <text x="285" y="158" fill="#555" font-size="9">Kernel trick → dowolne kształty</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">DBSCAN – klasteryzacja gęstościowa</text>
+  <!-- Axes -->
+  <line x1="30" y1="165" x2="260" y2="165" stroke="#333" stroke-width="1"/>
+  <line x1="30" y1="165" x2="30" y2="28" stroke="#333" stroke-width="1"/>
+  <!-- Dense cluster 1 (irregular shape - blue) -->
+  <circle cx="70" cy="60" r="4" fill="#4A90D9" opacity="0.8"/>
+  <circle cx="82" cy="52" r="4" fill="#4A90D9" opacity="0.8"/>
+  <circle cx="60" cy="48" r="4" fill="#4A90D9" opacity="0.8"/>
+  <circle cx="75" cy="42" r="4" fill="#4A90D9" opacity="0.8"/>
+  <circle cx="90" cy="58" r="4" fill="#4A90D9" opacity="0.8"/>
+  <circle cx="65" cy="70" r="4" fill="#4A90D9" opacity="0.8"/>
+  <circle cx="78" cy="72" r="4" fill="#4A90D9" opacity="0.8"/>
+  <circle cx="55" cy="58" r="4" fill="#4A90D9" opacity="0.8"/>
+  <circle cx="95" cy="48" r="4" fill="#4A90D9" opacity="0.8"/>
+  <!-- Outline cluster 1 -->
+  <ellipse cx="75" cy="58" rx="30" ry="22" fill="none" stroke="#4A90D9" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Dense cluster 2 (moon shape - orange) -->
+  <circle cx="160" cy="120" r="4" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="175" cy="125" r="4" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="190" cy="128" r="4" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="200" cy="120" r="4" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="205" cy="108" r="4" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="195" cy="100" r="4" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="180" cy="112" r="4" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="168" cy="130" r="4" fill="#F59E0B" opacity="0.8"/>
+  <!-- Outline cluster 2 -->
+  <path d="M150,122 Q175,140 200,130 Q215,118 205,98 Q195,92 185,105 Q170,108 155,118 Z" fill="none" stroke="#F59E0B" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Noise points (gray X marks) -->
+  <text x="40" y="135" text-anchor="middle" fill="#999" font-size="14">×</text>
+  <text x="120" y="88" text-anchor="middle" fill="#999" font-size="14">×</text>
+  <text x="235" y="55" text-anchor="middle" fill="#999" font-size="14">×</text>
+  <text x="245" y="145" text-anchor="middle" fill="#999" font-size="14">×</text>
+  <!-- Epsilon circle example -->
+  <circle cx="82" cy="52" r="16" fill="none" stroke="#28A745" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="100" y="41" fill="#28A745" font-size="8" font-weight="bold">ε</text>
+  <text x="107" y="50" fill="#28A745" font-size="7">minPts=3 ✓</text>
+  <!-- Info -->
+  <rect x="275" y="30" width="195" height="140" rx="6" fill="#fff" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="285" y="48" fill="#333" font-size="11" font-weight="bold">Gęstość, nie odległość</text>
+  <text x="285" y="64" fill="#555" font-size="9">Parametry: ε (promień), minPts</text>
+  <text x="285" y="82" fill="#555" font-size="9" font-weight="bold">Typy punktów:</text>
+  <circle cx="292" cy="96" r="4" fill="#4A90D9"/>
+  <text x="302" y="100" fill="#333" font-size="9">Core (≥ minPts w ε)</text>
+  <circle cx="292" cy="112" r="4" fill="#4A90D9" opacity="0.4"/>
+  <text x="302" y="116" fill="#333" font-size="9">Border (w ε od core)</text>
+  <text x="288" y="132" fill="#999" font-size="12">×</text>
+  <text x="302" y="132" fill="#333" font-size="9">Noise / szum (outlier)</text>
+  <text x="285" y="150" fill="#28A745" font-size="9" font-weight="bold">Zalety:</text>
+  <text x="285" y="162" fill="#555" font-size="9">Dowolne kształty + wykrywa szum</text>
+</svg>
