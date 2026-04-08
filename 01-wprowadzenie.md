@@ -403,7 +403,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Entity Recognition (NER)** | Rozpoznawanie encji nazwanych (osoby, miejsca, organizacje, daty) |
 | | 1. **Person** (imiona, nazwiska) <br> 2. **Location** (miasta, kraje, adresy) <br> 3. **Organization** (firmy, instytucje) <br> 4. **DateTime** (daty, godziny, okresy) <br> 5. **Quantity** (liczby, procenty, waluty) <br> 6. **Email** (adresy e-mail) <br> 7. **URL** (adresy internetowe) <br> 8. **IP Address** (adresy IP) <br> 9. **Phone Number** (numery telefonów) |
 | **Entity Linking** | Identyfikacja encji + powiązanie z bazą wiedzy (np. Wikipedia); różni się od NER linkami |
-| **PII Detection** | Wykrywanie danych osobowych w tekście przez **Azure AI Language** – usługa zwraca w odpowiedzi API **redacted text** z PII zastąpionym znakami `*****` (lub wybranym znakiem maskującym). Kategorie: imiona, SSN, nr karty kredytowej, email, telefon, adres, PESEL. Aplikacja nie musi maskować sama – API zwraca gotowy zamaskowany tekst + listę wykrytych encji z pozycjami i confidence score |
+| **PII Detection** | Wykrywanie danych osobowych w tekście przez **Azure AI Language** – usługa zwraca w odpowiedzi API **redacted text** z PII zastąpionym znakami `*****` (lub wybranym znakiem maskującym). <br><br>Kategorie: imiona, SSN, nr karty kredytowej, email, telefon, adres, PESEL. Aplikacja nie musi maskować sama – API zwraca gotowy zamaskowany tekst + listę wykrytych encji z pozycjami i confidence score |
 | **Sentiment Analysis** | Analiza sentymentu (pozytywny, negatywny, neutralny, mieszany) |
 | **Key Phrase Extraction** | Wyodrębnianie najważniejszych fraz i słów kluczowych z tekstu |
 | **Summarization** | Automatyczne streszczanie długich dokumentów lub transkrypcji rozmów |
