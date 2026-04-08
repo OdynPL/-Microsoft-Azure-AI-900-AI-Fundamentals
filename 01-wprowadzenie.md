@@ -440,7 +440,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Fine-tuning** | Dodatkowe trenowanie pre-trenowanego modelu na własnych danych |
 | **MaaS (Model as a Service)** | Serverless API – wdrożenie modelu bez zarządzania infrastrukturą, płatność per token (vs Managed Compute = dedykowane GPU, per hour) |
 | | ![MaaS](assets/genai-maas.svg) |
-| **RAG** | Retrieval Augmented Generation – łączy LLM z zewnętrznymi źródłami danych zamiast polegać na wiedzy treningowej. Pipeline: dokumenty → chunking → embedding → vector index (Azure AI Search); pytanie → embed query → similarity search → top-K docs + prompt → LLM → grounded answer. Korzyści: aktualne dane, mniej halucynacji, cytowanie źródeł, brak potrzeby fine-tuningu. Na egzaminie: RAG to **najważniejsza technika** redukcji halucynacji |
+| **RAG (Retrieval Augmented Generation)** | Retrieval Augmented Generation – łączy LLM z zewnętrznymi źródłami danych zamiast polegać na wiedzy treningowej. Pipeline: dokumenty → chunking → embedding → vector index (Azure AI Search); pytanie → embed query → similarity search → top-K docs + prompt → LLM → grounded answer. Korzyści: aktualne dane, mniej halucynacji, cytowanie źródeł, brak potrzeby fine-tuningu. Na egzaminie: RAG to **najważniejsza technika** redukcji halucynacji |
 | | ![RAG Pipeline](assets/genai-rag-pipeline.svg) |
 | **Grounding (zakotwiczenie)** | Powiązanie odpowiedzi modelu z konkretnymi, zweryfikowanymi dokumentami |
 | **Hallucinations** | Generowanie nieprawdziwych informacji przez model – najczęściej pytany problem GenAI na egzaminie |

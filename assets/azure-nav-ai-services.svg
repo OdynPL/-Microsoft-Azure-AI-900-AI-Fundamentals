@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 110">
+  <rect width="480" height="110" fill="#f8f9fa" rx="8"/>
+  <rect width="480" height="28" fill="#0078D4" rx="8 8 0 0"/>
+  <text x="15" y="19" font-family="Segoe UI, sans-serif" font-size="11" fill="white" font-weight="bold">🔍 Jak znaleźć: Azure AI Services</text>
+
+  <rect x="10" y="40" width="100" height="26" rx="4" fill="#0078D4" opacity="0.15" stroke="#0078D4" stroke-width="1"/>
+  <text x="60" y="57" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#0078D4" font-weight="bold">portal.azure.com</text>
+
+  <text x="115" y="57" font-family="Segoe UI, sans-serif" font-size="13" fill="#0078D4" font-weight="bold">→</text>
+
+  <rect x="127" y="40" width="100" height="26" rx="4" fill="#E8F4FD" stroke="#0078D4" stroke-width="1"/>
+  <text x="177" y="57" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#333">+ Create a resource</text>
+
+  <text x="232" y="57" font-family="Segoe UI, sans-serif" font-size="13" fill="#0078D4" font-weight="bold">→</text>
+
+  <rect x="244" y="40" width="105" height="26" rx="4" fill="#E8F4FD" stroke="#0078D4" stroke-width="1"/>
+  <text x="296" y="57" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#333">AI + Machine Learning</text>
+
+  <text x="354" y="57" font-family="Segoe UI, sans-serif" font-size="13" fill="#0078D4" font-weight="bold">→</text>
+
+  <rect x="366" y="40" width="104" height="26" rx="4" fill="#0078D4" stroke="#0078D4" stroke-width="1"/>
+  <text x="418" y="57" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="white" font-weight="bold">Azure AI services</text>
+
+  <text x="15" y="88" font-family="Segoe UI, sans-serif" font-size="9" fill="#555">💡 Multi-service resource: jeden endpoint i klucz dla Vision, Language, Speech, Face</text>
+  <text x="15" y="101" font-family="Segoe UI, sans-serif" font-size="9" fill="#888">CLI: az cognitiveservices account create --kind CognitiveServices</text>
+</svg>
