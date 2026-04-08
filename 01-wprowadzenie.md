@@ -401,7 +401,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | | 4. **OpenAI text-embedding** – modele embeddingów Azure OpenAI (text-embedding-ada, text-embedding-3) do RAG i wyszukiwania semantycznego |
 | | ![OpenAI text-embedding](assets/emb-openai.svg) |
 | **Entity Recognition (NER)** | Rozpoznawanie encji nazwanych (osoby, miejsca, organizacje, daty) |
-| **NER – kategorie encji (egzamin!)** | Person, Location, Organization, DateTime, Quantity, Email, URL, IP Address, Phone Number – Azure AI Language rozpoznaje te typy automatycznie |
+| | 1. **Person** (imiona, nazwiska) <br> 2. **Location** (miasta, kraje, adresy) <br> 3. **Organization** (firmy, instytucje) <br> 4. **DateTime** (daty, godziny, okresy) <br> 5. **Quantity** (liczby, procenty, waluty) <br> 6. **Email** (adresy e-mail) <br> 7. **URL** (adresy internetowe) <br> 8. **IP Address** (adresy IP) <br> 9. **Phone Number** (numery telefonów) |
 | **Entity Linking** | Identyfikacja encji + powiązanie z bazą wiedzy (np. Wikipedia); różni się od NER linkami |
 | **PII Detection** | Automatyczne wykrywanie i maskowanie danych osobowych (PESEL, email, nr karty) |
 | **Sentiment Analysis** | Analiza sentymentu (pozytywny, negatywny, neutralny, mieszany) |
