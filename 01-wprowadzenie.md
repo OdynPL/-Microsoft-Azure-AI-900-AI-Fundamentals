@@ -397,6 +397,10 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Language Detection** | Automatyczne rozpoznawanie języka tekstu |
 | **Intent Recognition** | Rozpoznawanie intencji użytkownika (np. w chatbocie) |
 | **CLU** | Conversational Language Understanding – następca LUIS; rozpoznawanie intencji i encji |
+| **Utterance** | Wypowiedź użytkownika przekazywana do modelu NLP (np. „Zarezerwuj lot do Paryża na jutro") |
+| **Intent** | Intencja – zamiar użytkownika rozpoznany z utterance (np. BookFlight) |
+| **Entity** | Encja wyodrębniona z utterance – konkretna wartość (np. miasto=Paryż, data=jutro) |
+| **Conversational AI Flow** | Utterance → Intent Recognition → Entity Extraction → Response – egzaminowy przepływ CLU |
 | **Question Answering** | Usługa tworzenia baz wiedzy Q&A z dokumentów, FAQ i stron internetowych |
 | **Speech Recognition** | Rozpoznawanie mowy (Speech-to-Text) |
 | **Speech Synthesis** | Synteza mowy z tekstu (Text-to-Speech) |
@@ -415,6 +419,9 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Generative AI** | Generatywna AI – dziedzina AI tworząca **nowe treści** (tekst, obrazy, kod, muzyka) na podstawie promptów. W przeciwieństwie do tradycyjnej AI (predictive), która analizuje dane i zwraca etykiety/liczby, GenAI **generuje** oryginalne outputy. Bazuje na Foundation Models (GPT, DALL-E, Codex) trenowanych na ogromnych zbiorach danych |
 | | ![Traditional AI vs Generative AI](assets/genai-vs-traditional.svg) |
 | **Multimodal Models** | Modele przetwarzające jednocześnie tekst, obraz i audio (np. GPT-4o) |
+| **DALL-E** | Model generowania obrazów z promptów tekstowych (text-to-image); DALL-E 3 w Azure OpenAI |
+| **Whisper** | Model transkrypcji audio na tekst (speech-to-text); dostępny w Azure OpenAI i Azure AI Speech |
+| **Codex** | Model generowania kodu z języka naturalnego; bazowy dla GitHub Copilot |
 | **Prompt** | Polecenie lub zapytanie przekazywane do modelu generatywnego |
 | **Token** | Najmniejsza jednostka tekstu przetwarzana przez model językowy (~¾ słowa) |
 | **Prompt Engineering** | Tworzenie skutecznych poleceń dla modeli generatywnych |
@@ -440,6 +447,8 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Fine-tuning** | Dodatkowe trenowanie pre-trenowanego modelu na własnych danych |
 | **MaaS (Model as a Service)** | Serverless API – wdrożenie modelu bez zarządzania infrastrukturą, płatność per token (vs Managed Compute = dedykowane GPU, per hour) |
 | | ![MaaS](assets/genai-maas.svg) |
+| **Azure OpenAI Deployment Types** | **Standard** – shared compute, TPM/RPM quota, najczęstszy; **Provisioned (PTU)** – dedykowana przepustowość, stała opłata; **Global** – routing między regionami, najlepsza dostępność |
+| **Azure OpenAI Playground** | Interaktywne środowisko testowe w portalu: **Chat** (rozmowa z modelem), **Completions** (uzupełnianie tekstu), **Assistants** (agenci z narzędziami) – idealne do prototypowania |
 | **RAG (Retrieval Augmented Generation)** | Retrieval Augmented Generation – łączy LLM z zewnętrznymi źródłami danych zamiast polegać na wiedzy treningowej. Pipeline: dokumenty → chunking → embedding → vector index (Azure AI Search); pytanie → embed query → similarity search → top-K docs + prompt → LLM → grounded answer. Korzyści: aktualne dane, mniej halucynacji, cytowanie źródeł, brak potrzeby fine-tuningu. Na egzaminie: RAG to **najważniejsza technika** redukcji halucynacji |
 | | ![RAG Pipeline](assets/genai-rag-pipeline.svg) |
 | **Grounding (zakotwiczenie)** | Powiązanie odpowiedzi modelu z konkretnymi, zweryfikowanymi dokumentami |
@@ -474,12 +483,28 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Chunking** | Dzielenie dużych dokumentów na mniejsze fragmenty przed osadzeniem w embeddings; kluczowe dla RAG |
 | **Integrated Vectorization** | Automatyczne konwertowanie dokumentów na embeddingi w Azure AI Search |
 
+### **Modele w Azure OpenAI – tabela (egzamin!)**
+
+| **Model** | **Typ** | **Zastosowanie** |
+|---|---|---|
+| **GPT-4o / GPT-4** | Text generation | Chat, generowanie tekstu, kod, rozumowanie, analiza obrazów (multimodal) |
+| **GPT-3.5 Turbo** | Text generation | Szybszy i tańszy chat/tekst; mniej zaawansowany niż GPT-4 |
+| **DALL-E 3** | Image generation | Generowanie obrazów z opisów tekstowych (text-to-image) |
+| **Whisper** | Speech-to-text | Transkrypcja audio na tekst |
+| **text-embedding-3-large** | Embeddings | Wektorowa reprezentacja tekstu do RAG i wyszukiwania semantycznego |
+| **Phi-3 / Phi-4** | SLM (Small LM) | Mniejsze modele Microsoftu; tańsze, szybsze, dobre do edge i fine-tuningu |
+
 ### **Responsible AI i etyka**
 
 | **Pojęcie** | **Opis** |
 |---|---|
 | **Responsible AI** | Etyczne i bezpieczne wdrażanie AI |
+| **6 filarów Responsible AI (Microsoft)** | **1. Fairness** – sprawiedliwość, równe traktowanie; **2. Reliability & Safety** – niezawodność i bezpieczeństwo; **3. Privacy & Security** – ochrona danych; **4. Inclusiveness** – dostępność dla wszystkich; **5. Transparency** – przejrzystość działania; **6. Accountability** – odpowiedzialność ludzi za systemy AI |
 | **Fairness** | Sprawiedliwość, równe traktowanie grup |
+| **Reliability & Safety** | Model działa poprawnie w różnych warunkach; nie powoduje szkody; testowany pod kątem edge cases |
+| **Inclusiveness** | AI dostępne dla wszystkich, w tym osób z niepełnosprawnościami; brak dyskryminacji |
+| **Transparency** | Użytkownicy wiedzą, że mają do czynienia z AI; rozumieją jak model podejmuje decyzje |
+| **Accountability** | Ludzie ponoszą odpowiedzialność za systemy AI; wymagane governance, audit, oversight |
 | **Bias** | Tendencyjność modelu wynikająca z danych |
 | **Explainability** | Wyjaśnialność decyzji modelu |
 | **Interpretability** | Możliwość zrozumienia, jak model podejmuje decyzje |
@@ -492,6 +517,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Error Analysis** | Analiza błędów modelu pogrupowana wg cech/podgrup; diagnoza biasu – Azure ML RAI Dashboard |
 | **Causal Analysis** | Analiza przyczynowości: „czy zmiana X powoduje zmianę Y?" (nie tylko korelacja) |
 | **Counterfactual** | Kontrfaktyczne przykłady: „jak zmieniłby się wynik, gdyby…" – wyjaśnienie alternatywnych scenariuszy |
+| **Responsible AI Dashboard** | Zintegrowany panel w Azure ML łączący: Error Analysis, Fairlearn, SHAP, Causal Analysis, Counterfactuals – jedno miejsce do analizy modelu |
 
 ### **Cykl życia modelu i MLOps**
 
@@ -500,6 +526,8 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Model Deployment** | Wdrożenie modelu do środowiska produkcyjnego |
 | **Model Registry** | Repozytorium modeli z wersjonowaniem, metadanymi i metrykami |
 | **Endpoint** | Punkt dostępu do wdrożonego modelu przez REST API (Online = real-time, Batch = wsadowy) |
+| **Online Endpoint (Real-time)** | Inferencing w czasie rzeczywistym; odpowiedź w milisekundach; do aplikacji interaktywnych (chatbot, API) |
+| **Batch Endpoint** | Przetwarzanie dużych zbiorów danych wsadowo (np. co noc); wyniki zapisywane w storage; tańszy |
 | **Monitoring** | Śledzenie skuteczności i działania modelu po wdrożeniu |
 | **Drift** | Zmiana rozkładu danych wejściowych/wyjściowych w czasie, pogarszająca skuteczność modelu |
 | **Data Drift** | Zmiana rozkładu danych wejściowych w produkcji – najpowszechniejszy typ driftu na egzaminie |
@@ -509,6 +537,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Traffic Split (A/B Test)** | Podział ruchu użytkowników między model A i B; stopniowy rollout (10% → 50% → 100%) |
 | **MLOps** | Praktyki DevOps dla modeli ML: CI/CD, wersjonowanie, monitoring, automatyczny retraining |
 | **Audit Trail** | Pełna historia: kto trenował model, kiedy, z jakimi danymi, jakie wyniki – compliance |
+| **Jobs w Azure ML** | **Command Job** – uruchamianie skryptu trenującego; **Pipeline Job** – wielokrokowy workflow; **Sweep Job** – automatyczne przeszukiwanie hiperparametrów |
 
 ### **Narzędzia i usługi Azure**
 
@@ -532,10 +561,27 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **AI Agents** | Aplikacje AI z LLM, instrukcjami i narzędziami, działające autonomicznie (3 typy: Prompt, Workflow, Hosted) |
 | **RBAC** | Role-Based Access Control – kontrola dostępu do zasobów Azure (właściciel, współpracownik, czytelnik) |
 | **Data Assets** | Zarządzanie danymi w Azure ML: rejestracja, wersjonowanie i udostępnianie zbiorów danych zespołom |
-| **Compute Cluster** | Skalowalne klastry obliczeniowe w Azure ML do trenowania modeli |
+| **Compute Instance** | Maszyna wirtualna w Azure ML – do eksperymentów, notebooków, developmentu (1 użytkownik) |
+| **Compute Cluster** | Skalowalne klastry obliczeniowe w Azure ML do trenowania modeli (auto-scale 0→N węzłów) |
+| **Serverless Compute** | Compute on-demand bez tworzenia klastra; Azure ML automatycznie alokuje zasoby na czas Job |
+| **Datastores** | Połączenia do źródeł danych w Azure ML: Blob Storage, Data Lake, Azure SQL – bezpieczne przechowywanie credentials |
 | **Feature Store** | Centralne repozytorium cech ML do ponownego wykorzystania między projektami |
 | **Prompt Flow** | Narzędzie w Azure AI Foundry do orkiestracji pipeline'ów AI, RAG i wielostopniowych aplikacji |
 | **Model Catalog** | Centralna baza modeli w Foundry: GPT, Phi, Llama, Mistral – przeglądanie, ewaluacja, wdrażanie |
+| **Azure AI Video Indexer** | Osobna usługa do analizy wideo: transkrypcja, OCR, face detection, scene detection, topic extraction |
+| **Microsoft Copilot** | Asystent AI w produktach Microsoft (M365 Copilot, Bing Chat, GitHub Copilot); bazuje na GPT + Grounding |
+| **Regions & Availability** | Nie wszystkie usługi AI dostępne w każdym regionie; Azure OpenAI wymaga wybrania regionu z dostępnym modelem |
+
+### **Azure AI Foundry vs Azure Machine Learning Studio (egzamin!)**
+
+| **Aspekt** | **Azure AI Foundry** | **Azure Machine Learning Studio** |
+|---|---|---|
+| **Główne zadanie** | Budowa aplikacji AI (GenAI, RAG, agenci) | Trenowanie i wdrażanie modeli ML |
+| **Typowy użytkownik** | Developer AI, prompt engineer | Data scientist, ML engineer |
+| **Modele** | Model Catalog (GPT, Phi, Llama) – gotowe | AutoML, Designer, własne skrypty – trenujesz sam |
+| **Kluczowe narzędzia** | Prompt Flow, Playground, Model Catalog, Agents | AutoML, Designer, Jobs, Pipelines, Endpoints |
+| **RAG / GenAI** | Natywne wsparcie (Prompt Flow + AI Search) | Możliwe, ale nie główny cel |
+| **Kiedy wybrać** | Chcesz korzystać z gotowych modeli LLM/SLM | Chcesz trenować własne modele ML od zera |
 
 ### **Moduły Azure ML Designer (egzamin!)**
 
