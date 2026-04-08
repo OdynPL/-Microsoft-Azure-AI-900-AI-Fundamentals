@@ -512,6 +512,8 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 
 ### **Narzędzia i usługi Azure**
 
+![Jak znaleźć Azure AI Services](assets/azure-nav-ai-services.svg)
+
 | **Pojęcie** | **Opis** |
 |---|---|
 | **Azure AI Services** | Rodzina gotowych usług AI na platformie Azure (Vision, Language, Speech, Face i inne) |
