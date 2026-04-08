@@ -112,6 +112,8 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Kontrola dostępu** | RBAC, Managed Identity, Private Endpoints, VNet |
 | **Ochrona danych** | Wsparcie dla standardów korporacyjnych i regulacji (np. RODO/GDPR) |
 | **GenAI** | Filtry treści, logowanie, monitorowanie i praktyki Responsible AI |
+| **Transparency Notes** | Microsoft publikuje Transparency Notes dla każdej usługi AI – dokument opisujący możliwości, ograniczenia i wytyczne odpowiedzialnego użycia; egzamin pyta o to w kontekście RAI |
+| **AI Services Containers** | Niektóre usługi (Vision, Language, Speech) można uruchamiać jako kontenery Docker on-premises/edge – offline, niska latencja, data sovereignty; container pobiera model z Azure, wymaga billing endpoint |
 
 ### Koszty i skalowanie
 
@@ -354,6 +356,9 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | | ![Instance Segmentation](assets/cv-instance-segmentation.svg) |
 | **Image Tagging / Captioning** | Automatyczne generowanie tagów i opisów obrazu w języku naturalnym (Azure Vision) |
 | | ![Tagging / Captioning](assets/cv-tagging-captioning.svg) |
+| **Dense Captions** | Generowanie wielu opisów dla różnych regionów jednego obrazu (Azure Vision 4.0 – Image Analysis) |
+| **Smart Cropping** | Inteligentne kadrowanie obrazu z zachowaniem najważniejszych elementów (aspect ratio); Azure Vision 4.0 |
+| **Background Removal** | Usunięcie lub zamiana tła obrazu na przezroczyste; Azure Vision 4.0 (Segment API) |
 | **Depth Estimation** | Szacowanie głębokości sceny z obrazu 2D – mapa odległości (Azure Vision 4.0) |
 | | ![Depth Estimation](assets/cv-depth-estimation.svg) |
 | **Image Embeddings** | Wektorowa reprezentacja obrazu do wyszukiwania podobnych (Azure Vision 4.0 – vectorize endpoint) |
@@ -396,6 +401,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | | 4. **OpenAI text-embedding** – modele embeddingów Azure OpenAI (text-embedding-ada, text-embedding-3) do RAG i wyszukiwania semantycznego |
 | | ![OpenAI text-embedding](assets/emb-openai.svg) |
 | **Entity Recognition (NER)** | Rozpoznawanie encji nazwanych (osoby, miejsca, organizacje, daty) |
+| **NER – kategorie encji (egzamin!)** | Person, Location, Organization, DateTime, Quantity, Email, URL, IP Address, Phone Number – Azure AI Language rozpoznaje te typy automatycznie |
 | **Entity Linking** | Identyfikacja encji + powiązanie z bazą wiedzy (np. Wikipedia); różni się od NER linkami |
 | **PII Detection** | Automatyczne wykrywanie i maskowanie danych osobowych (PESEL, email, nr karty) |
 | **Sentiment Analysis** | Analiza sentymentu (pozytywny, negatywny, neutralny, mieszany) |
@@ -410,6 +416,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Conversational AI Flow** | Utterance → Intent Recognition → Entity Extraction → Response – egzaminowy przepływ CLU |
 | **Multi-turn Conversation** | Rozmowa wieloturowa – chatbot utrzymuje kontekst między kolejnymi wypowiedziami użytkownika (historia konwersacji) |
 | **Question Answering** | Usługa tworzenia baz wiedzy Q&A z dokumentów, FAQ i stron internetowych |
+| **Active Learning (Q&A)** | System sugeruje nowe pary pytanie-odpowiedź na podstawie zapytań użytkowników; poprawia bazę wiedzy bez ręcznego dodawania – Custom Question Answering |
 | **Speech Recognition** | Rozpoznawanie mowy (Speech-to-Text) |
 | **Speech Synthesis** | Synteza mowy z tekstu (Text-to-Speech) |
 | **SSML (Speech Synthesis Markup Language)** | Język znaczników do kontroli TTS: pauzy, intonacja, szybkość, głośność, wybór głosu i języka – XML-based |
@@ -418,6 +425,8 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Custom Speech** | Dostosowanie modelu STT do własnego słownictwa, akcentu lub domeny (np. medyczna) |
 | **Custom Voice** | Tworzenie spersonalizowanego, syntetycznego głosu TTS |
 | **Custom Neural Voice** | Zaawansowana wersja Custom Voice z naturalnym brzmieniem; wymaga **Limited Access** (wniosek do Microsoft) |
+| **Pronunciation Assessment** | Ocena poprawności wymowy w Speech Service: accuracy, fluency, completeness, prosody score – scenariusz nauki języków |
+| **Keyword Recognition** | Rozpoznawanie słowa kluczowego on-device (wake word, np. „Hey Cortana"); niskie opóźnienie, działa offline na urządzeniu edge |
 | **Custom Translator** | Dostosowanie modelu tłumaczenia do specjalistycznego słownictwa (prawo, medycyna) |
 | **Transliteration** | Zmiana alfabetu bez tłumaczenia (np. arabski → łaciński); Azure Translator, ~20 języków |
 | **Batch Transcription** | Masowa, asynchroniczna transkrypcja dużych zbiorów nagrań audio – Azure Speech |
@@ -461,6 +470,8 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Azure OpenAI Playground** | Interaktywne środowisko testowe w portalu: <br> 1. **Chat** – rozmowa z modelem <br> 2. **Completions** – uzupełnianie tekstu <br> 3. **Assistants** – agenci z narzędziami <br> Idealne do prototypowania |
 | **Azure OpenAI vs OpenAI (publiczny)** | Na egzaminie! Różnice: <br> 1. Dane klientów **NIE** są używane do trenowania modeli Microsoft/OpenAI <br> 2. VNet, Private Endpoint, compliance (RODO, HIPAA, SOC2) <br> 3. Content Filters domyślnie włączone <br> 4. Te same modele, ale managed i zabezpieczone przez Microsoft <br> 5. Wymaga zatwierdzenia dostępu |
 | **Azure OpenAI Data Privacy** | „Your data is your data" – dane wysyłane do Azure OpenAI **nie trafiają** do OpenAI, nie są używane do trenowania modeli, nie są udostępniane innym klientom. Dane przetwarzane w wybranym regionie Azure |
+| **Azure OpenAI Abuse Monitoring** | Wszystkie requesty logowane na 30 dni; Microsoft może przeglądać flagowane żądania; można wnioskować o wyłączenie dla zatwierdzonych scenariuszy |
+| **Model Versioning (Azure OpenAI)** | Modele mają wersje (np. `0613`, `1106`, `turbo-2024-04-09`); Microsoft podaje daty wycofania (retirement); auto-upgrade do nowszej wersji jeśli nie zaktualizujesz ręcznie |
 | **RAG (Retrieval Augmented Generation)** | Retrieval Augmented Generation – łączy LLM z zewnętrznymi źródłami danych zamiast polegać na wiedzy treningowej. Pipeline: dokumenty → chunking → embedding → vector index (Azure AI Search); pytanie → embed query → similarity search → top-K docs + prompt → LLM → grounded answer. Korzyści: aktualne dane, mniej halucynacji, cytowanie źródeł, brak potrzeby fine-tuningu. Na egzaminie: RAG to **najważniejsza technika** redukcji halucynacji |
 | | ![RAG Pipeline](assets/genai-rag-pipeline.svg) |
 | **Grounding (zakotwiczenie)** | Powiązanie odpowiedzi modelu z konkretnymi, zweryfikowanymi dokumentami |
@@ -566,6 +577,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Azure AI Document Intelligence** | Ekstrakcja danych z formularzy, faktur, dokumentów (dawniej Form Recognizer) |
 | **Document Intelligence – Prebuilt Models** | Gotowe modele (egzamin!): <br> 1. **prebuilt-invoice** – faktury <br> 2. **prebuilt-receipt** – paragony <br> 3. **prebuilt-idDocument** – dowody, paszporty <br> 4. **prebuilt-businessCard** – wizytówki <br> 5. **prebuilt-layout** – tabele, tekst <br> Nie wymagają trenowania |
 | **Prebuilt vs Custom Model** | **Prebuilt:** gotowy model od Microsoft, działa od razu (Document Intelligence, Custom Vision prebuilt) <br> **Custom:** trenujesz na własnych danych, gdy prebuilt nie pasuje do domeny <br> Egzamin: zawsze preferuj prebuilt jeśli wystarczy |
+| **Custom Model Workflow (Doc Intelligence)** | Label (oznacz pola) → Train (wytrenuj model) → Test (oceń wyniki) → Deploy (wdróż do produkcji); Document Intelligence Studio do no-code |
 | **Azure AI Content Safety** | Filtrowanie szkodliwych treści: mowy nienawiści, przemocy, treści seksualnych |
 | **Azure AI Search** | Wektorowa baza danych i platforma wyszukiwania (indexer, index, skillset); kluczowa dla RAG |
 | **Custom Vision** | Trenowanie własnych modeli klasyfikacji/detekcji obrazów bez kodu |
@@ -647,16 +659,6 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Fluency** | Czy odpowiedź brzmi naturalnie i poprawnie językowo |
 | **Relevance** | Czy odpowiedź odnosi się do pytania |
 | **Groundedness** | Czy odpowiedź jest oparta na dostarczonych źródłach/dokumentach (nie zmyślona) |
-
-## Zakres egzaminu
-
-| **Domena** | **Udział w egzaminie** |
-|---|---|
-| **Podstawy AI i ML (AI Workloads)** | 15–20% |
-| **Machine Learning na Azure** | 15-20% |
-| **Computer Vision** | 15–20% |
-| **Natural Language Processing (NLP)** | 15–20% |
-| **Generatywna AI** | 20–25% |
 
 ---
 
