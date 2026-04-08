@@ -10,51 +10,71 @@
 
 Platforma **Microsoft Azure** oferuje szeroki zestaw gotowych usług AI, które pozwalają szybko wdrażać rozwiązania sztucznej inteligencji bez konieczności budowania modeli od zera:
 
-- **Azure AI Vision** – analiza obrazów i wideo, klasyfikacja, detekcja obiektów, OCR, rozpoznawanie twarzy.
-- **Azure AI Face** – rozpoznawanie i analiza twarzy (np. identyfikacja, emocje).
-- **Azure AI Language** – przetwarzanie języka naturalnego: analiza tekstu, ekstrakcja kluczowych fraz, rozpoznawanie encji, analiza sentymentu, tłumaczenia.
-- **Azure AI Speech** – rozpoznawanie i synteza mowy, zamiana tekstu na mowę i odwrotnie.
-- **Azure OpenAI** – dostęp do zaawansowanych modeli generatywnych (np. GPT, DALL-E) do generowania tekstu, obrazów, kodu.
-- **Azure AI Foundry** – katalog modeli AI, zarządzanie i wdrażanie modeli, integracja z innymi usługami.
-- **Azure Machine Learning** – platforma do trenowania, wdrażania i zarządzania własnymi modelami ML, automatyzacja procesów ML (AutoML), rejestr modeli, endpointy.
+| **Usługa** | **Opis** |
+|---|---|
+| **Azure AI Vision** | Analiza obrazów i wideo, klasyfikacja, detekcja obiektów, OCR, rozpoznawanie twarzy |
+| **Azure AI Face** | Rozpoznawanie i analiza twarzy (np. identyfikacja, emocje) |
+| **Azure AI Language** | Przetwarzanie języka naturalnego: analiza tekstu, ekstrakcja kluczowych fraz, rozpoznawanie encji, analiza sentymentu, tłumaczenia |
+| **Azure AI Speech** | Rozpoznawanie i synteza mowy, zamiana tekstu na mowę i odwrotnie |
+| **Azure OpenAI** | Dostęp do zaawansowanych modeli generatywnych (np. GPT, DALL-E) do generowania tekstu, obrazów, kodu |
+| **Azure AI Foundry** | Katalog modeli AI, zarządzanie i wdrażanie modeli, integracja z innymi usługami |
+| **Azure Machine Learning** | Platforma do trenowania, wdrażania i zarządzania własnymi modelami ML, automatyzacja procesów ML (AutoML), rejestr modeli, endpointy |
 
-Każda z tych usług posiada gotowe API, które można łatwo zintegrować z aplikacjami biznesowymi, stronami internetowymi czy chatbotami. Usługi te są szeroko wykorzystywane w zadaniach takich jak: rozpoznawanie obrazów, analiza tekstu, automatyzacja obsługi klienta, generowanie treści, digitalizacja dokumentów czy monitorowanie bezpieczeństwa.
+Każda z tych usług posiada gotowe API, które można łatwo zintegrować z aplikacjami biznesowymi, stronami internetowymi czy chatbotami.
 
 ## Azure AI Services - co warto wiedzieć
 
 **Azure AI Services** (historycznie: Cognitive Services) to rodzina gotowych modeli AI udostępnianych jako usługi chmurowe przez REST API i SDK. Z perspektywy egzaminu AI-900 najważniejsze jest rozumienie, kiedy wybrać gotową usługę AI Services, a kiedy budować model samodzielnie w Azure Machine Learning.
 
 ### Jak to działa w praktyce
-- Tworzysz zasób w Azure (portal/CLI/Bicep/Terraform).
-- Otrzymujesz **endpoint** i sposób autoryzacji (klucz API lub Entra ID).
-- Aplikacja wysyła dane do endpointu (tekst, obraz, audio, prompt).
-- Usługa zwraca wynik inferencji (np. sentyment, transkrypcja, tagi obrazu, odpowiedź modelu).
+
+| **Krok** | **Opis** |
+|---|---|
+| **1. Tworzenie zasobu** | Tworzysz zasób w Azure (portal / CLI / Bicep / Terraform) |
+| **2. Autoryzacja** | Otrzymujesz **endpoint** i sposób autoryzacji (klucz API lub Entra ID) |
+| **3. Wysyłanie danych** | Aplikacja wysyła dane do endpointu (tekst, obraz, audio, prompt) |
+| **4. Wynik inferencji** | Usługa zwraca wynik (np. sentyment, transkrypcja, tagi obrazu, odpowiedź modelu) |
 
 ### Typy zasobów
-- **Single-service resource** - zasób dla jednej usługi (np. sam Language lub sam Speech).
-- **Multi-service resource** - jeden wspólny zasób dla wielu usług AI Services.
-- **Azure OpenAI resource** - osobny typ zasobu dla modeli OpenAI wdrażanych na Azure.
+
+| **Typ zasobu** | **Opis** |
+|---|---|
+| **Single-service resource** | Zasób dla jednej usługi (np. sam Language lub sam Speech) |
+| **Multi-service resource** | Jeden wspólny zasób dla wielu usług AI Services |
+| **Azure OpenAI resource** | Osobny typ zasobu dla modeli OpenAI wdrażanych na Azure |
 
 ### Kiedy Azure AI Services, a kiedy Azure Machine Learning?
-- **Azure AI Services**: gdy chcesz szybko wdrożyć gotowe AI bez trenowania modelu od zera.
-- **Azure Machine Learning**: gdy potrzebujesz pełnej kontroli nad danymi, treningiem, eksperymentami i MLOps (Machine Learning Operations).
+
+| **Opcja** | **Kiedy wybrać** |
+|---|---|
+| **Azure AI Services** | Gdy chcesz szybko wdrożyć gotowe AI bez trenowania modelu od zera |
+| **Azure Machine Learning** | Gdy potrzebujesz pełnej kontroli nad danymi, treningiem, eksperymentami i MLOps |
 
 ### Bezpieczeństwo i zgodność
-- Uwierzytelnianie: klucze API lub Microsoft Entra ID (rekomendowane w środowisku produkcyjnym).
-- Kontrola dostępu: RBAC, Managed Identity, Private Endpoints, VNet.
-- Ochrona danych i zgodność: wsparcie dla standardów korporacyjnych i regulacji (np. RODO/GDPR).
-- Dla GenAI: filtry treści, logowanie, monitorowanie i praktyki Responsible AI.
+
+| **Obszar** | **Opis** |
+|---|---|
+| **Uwierzytelnianie** | Klucze API lub Microsoft Entra ID (rekomendowane w środowisku produkcyjnym) |
+| **Kontrola dostępu** | RBAC, Managed Identity, Private Endpoints, VNet |
+| **Ochrona danych** | Wsparcie dla standardów korporacyjnych i regulacji (np. RODO/GDPR) |
+| **GenAI** | Filtry treści, logowanie, monitorowanie i praktyki Responsible AI |
 
 ### Koszty i skalowanie
-- Rozliczanie przeważnie za liczbę żądań, tokeny, sekundy audio lub strony dokumentów.
-- Różne warstwy cenowe (tiers), limity i throughput zależne od usługi i regionu.
-- Skalowanie odbywa się po stronie platformy - aplikacja korzysta z gotowego endpointu.
+
+| **Aspekt** | **Opis** |
+|---|---|
+| **Rozliczanie** | Przeważnie za liczbę żądań, tokeny, sekundy audio lub strony dokumentów |
+| **Warstwy cenowe** | Różne tiers, limity i throughput zależne od usługi i regionu |
+| **Skalowanie** | Po stronie platformy – aplikacja korzysta z gotowego endpointu |
 
 ### Typowe scenariusze biznesowe
-- **Contact center**: Speech-to-Text + Sentiment + podsumowanie rozmów.
-- **Digitalizacja dokumentów**: OCR + Document Intelligence + walidacja danych.
-- **Moderacja treści**: Vision/Language + Azure AI Content Safety.
-- **Asystent firmowy**: Azure OpenAI + RAG (np. Azure AI Search) + polityki Responsible AI.
+
+| **Scenariusz** | **Usługi** |
+|---|---|
+| **Contact center** | Speech-to-Text + Sentiment + podsumowanie rozmów |
+| **Digitalizacja dokumentów** | OCR + Document Intelligence + walidacja danych |
+| **Moderacja treści** | Vision/Language + Azure AI Content Safety |
+| **Asystent firmowy** | Azure OpenAI + RAG (np. Azure AI Search) + polityki Responsible AI |
 
 ## Najważniejsze pojęcia AI na egzaminie
 
@@ -68,11 +88,13 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **ML (Machine Learning)** | Uczenie maszynowe, algorytmy uczące się na podstawie danych |
 | **Deep Learning** | Głębokie sieci neuronowe |
 | **Neural Network (sieć neuronowa)** | Model ML inspirowany mózgiem, złożony z warstw neuronów przetwarzających dane |
+| | 1. **CNN (Convolutional Neural Network)** – analiza obrazów, rozpoznawanie wzorów wizualnych <br> 2. **RNN (Recurrent Neural Network)** – dane sekwencyjne, tekst, szeregi czasowe <br> 3. **LSTM (Long Short-Term Memory)** – ulepszona RNN, lepsza pamięć długoterminowa <br> 4. **GAN (Generative Adversarial Network)** – generator + dyskryminator; tworzenie obrazów, deepfake <br> 5. **Autoencoder** – kompresja i rekonstrukcja danych; anomaly detection, denoising <br> 6. **Transformer** – mechanizm attention; podstawa GPT, BERT (najważniejsza na egzaminie) |
 | **Supervised Learning** | Uczenie nadzorowane (dane z etykietami) |
 | **Unsupervised Learning** | Uczenie nienadzorowane (grupowanie bez etykiet) |
 | **Reinforcement Learning** | Uczenie ze wzmocnieniem (nagrody i kary) |
 | **Weights (wagi)** | Parametry modelu neuronowego aktualizowane podczas treningu; definiują siłę połączeń między neuronami |
-| **Activation Function** | Funkcja aktywacji w neuronach (ReLU, Sigmoid, Tanh) wprowadzająca nieliniowość do modelu |
+| **Activation Function** | Funkcja aktywacji w neuronach wprowadzająca nieliniowość do modelu |
+| | 1. **ReLU (Rectified Linear Unit)** – najczęstsza; f(x)=max(0,x); szybka, prosta <br> 2. **Sigmoid** – wyjście 0–1; używana w klasyfikacji binarnej (warstwa wyjściowa) <br> 3. **Tanh** – wyjście -1 do 1; lepsza od Sigmoid w warstwach ukrytych <br> 4. **Softmax** – normalizuje wyjścia do prawdopodobieństw (suma=1); klasyfikacja wieloklasowa <br> 5. **Leaky ReLU** – wariant ReLU; przepuszcza małe wartości ujemne (zapobiega „martwym neuronom”) |
 | **Parameters (parametry modelu)** | Całkowita liczba wag i bias'ów w modelu (np. GPT-4 ma setki miliardów parametrów) |
 
 ### **Architektura Transformer i modele językowe**
@@ -125,7 +147,8 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Class Weighting** | Przypisanie wyższych wag mniejszościowej klasie, by model lepiej ją rozpoznawał |
 | **SMOTE** | Synthetic Minority Over-Sampling Technique – syntetyczne generowanie przykładów klasy mniejszościowej |
 | **Stratified Split** | Podział danych z zachowaniem proporcji klas w każdym zbiorze |
-| **Data Augmentation** | Sztuczne zwiększanie liczby przykładów przez modyfikacje danych (np. obrót obrazu, synonimy) |
+| **Data Augmentation** | Sztuczne zwiększanie liczby przykładów przez modyfikacje danych |
+| | 1. **Obraz: Flip / Rotation** – odbicie lustrzane, obrót <br> 2. **Obraz: Crop / Resize** – wycinanie fragmentów, zmiana rozmiaru <br> 3. **Obraz: Color Jitter** – losowe zmiany jasności, kontrastu, nasycenia <br> 4. **Tekst: Synonym Replacement** – zamiana słów na synonimy <br> 5. **Tekst: Back-Translation** – tłumaczenie na inny język i z powrotem |
 | **Normalization** | Skalowanie wartości cech do wspólnego zakresu (np. 0–1); ważne dla algorytmów opartych na odległościach |
 | **One-hot Encoding** | Zamiana kategorii na wektory binarne (np. kolor: czerwony → [1,0,0], zielony → [0,1,0]) |
 
@@ -137,9 +160,11 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Hyperparameter (hiperparametr)** | Parametr ustawiany przed treningiem (np. learning rate, liczba epok), w odróżnieniu od wag uczonych automatycznie |
 | **Epoch (epoka)** | Jedno pełne przejście przez cały zbiór treningowy podczas trenowania modelu |
 | **Loss Function (funkcja straty)** | Miara błędu modelu; cel treningu to jej minimalizacja |
+| | 1. **MSE (Mean Squared Error)** – regresja; średnia kwadratów błędów <br> 2. **Cross-Entropy (Log Loss)** – klasyfikacja; mierzy różnicę między przewidywanym a rzeczywistym rozkładem <br> 3. **Binary Cross-Entropy** – klasyfikacja binarna (2 klasy) <br> 4. **Categorical Cross-Entropy** – klasyfikacja wieloklasowa <br> 5. **MAE (Mean Absolute Error)** – regresja; mniej wrażliwa na outliery niż MSE |
 | **Gradient Descent** | Algorytm optymalizacji minimalizujący funkcję straty poprzez iteracyjne dopasowywanie wag |
 | **Backpropagation** | Mechanizm propagacji błędu wstecz w sieci neuronowej, do obliczania gradientów i aktualizacji wag |
-| **Regularization** | Techniki zapobiegające overfittingowi (np. L1, L2, Dropout) |
+| **Regularization** | Techniki zapobiegające overfittingowi |
+| | 1. **L1 (Lasso)** – dodaje sumę wart. bezwzględnych wag do loss; zeruje nieistotne cechy (feature selection) <br> 2. **L2 (Ridge)** – dodaje sumę kwadratów wag do loss; zmniejsza wagi, ale nie zeruje <br> 3. **Elastic Net** – kombinacja L1 + L2 <br> 4. **Dropout** – losowe wyłączanie neuronów podczas treningu; zapobiega współzależności <br> 5. **Early Stopping** – zatrzymanie treningu, gdy metryka walidacyjna przestaje się poprawiać |
 | **Overfitting / Underfitting** | Przeuczenie (zbyt dobre dopasowanie do treningu) / niedouczenie (zbyt proste wzorce) |
 | **Transfer Learning** | Wykorzystanie modelu wytrenowanego na jednym zadaniu do przyspieszenia nauki na innym |
 | **Cross-Validation (K-fold)** | Wielokrotny podział danych na k zbiorów; każdy pełni rolę testu raz – bardziej stabilna ocena modelu |
@@ -171,11 +196,13 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 |---|---|
 | **Computer Vision** | Analiza i interpretacja obrazów/wideo |
 | **Image Classification** | Klasyfikacja obrazów – co jest na obrazie |
+| | 1. **Binary Classification** – dwie kategorie (np. kot/pies, zdrowy/chory) <br> 2. **Multi-class Classification** – wiele kategorii, jeden label na obraz (np. kot, pies, ptak) <br> 3. **Multi-label Classification** – wiele tagów na obraz (np. „plaża” + „zachód słońca” + „ludzie”) |
 | **Object Detection** | Detekcja obiektów – klasa + prawdopodobieństwo + bounding box |
 | **Bounding Box** | Prostokąt otaczający wykryty obiekt na obrazie (x, y, szerokość, wysokość) |
 | **OCR (Optical Character Recognition)** | Rozpoznawanie tekstu na obrazach |
 | **Semantic Segmentation** | Klasyfikacja każdego piksela obrazu do kategorii (np. droga, budynek, niebo) |
 | **Face Recognition** | Rozpoznawanie twarzy |
+| | 1. **Face Detection** – wykrywanie twarzy na obrazie + atrybuty (wiek, okulary, emocje) <br> 2. **Face Verification** – porównanie 1:1 – „czy to ta sama osoba?” <br> 3. **Face Identification** – porównanie 1:N – „kto to jest?” (wymaga PersonGroup) <br> 4. **Face Grouping** – grupowanie podobnych twarzy ze zbioru zdjęć <br> 5. **Find Similar** – wyszukiwanie twarzy podobnych do podanej |
 | **Face Liveness Detection** | Wykrywanie żywej osoby (ochrona przed atakami zdjęciowymi / deepfake) – Limited Access |
 | **PersonGroup** | Grupa osób w Face API z wieloma zdjęciami; wymagana do Face Identification |
 | **Limited Access Policy** | Niektóre funkcje AI (identyfikacja twarzy) wymagają formalnej zgody Microsoft |
@@ -191,6 +218,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Lematyzacja (Lemmatization)** | Sprowadzanie słów do formy podstawowej |
 | **Stemming** | Obcinanie końcówek słów do rdzenia; normalizacja tekstu przed analizą częstości |
 | **Embeddingi (Embeddings)** | Reprezentacja tekstu w postaci wektorów liczbowych |
+| | 1. **Word2Vec** – klasyczny; każde słowo = jeden wektor (nie rozróżnia kontekstu) <br> 2. **GloVe** – Global Vectors; wektory na bazie statystyk współwystępowania słów <br> 3. **BERT Embeddings** – kontekstowe; to samo słowo ma różny wektor zależnie od zdania <br> 4. **OpenAI text-embedding** – modele embeddingów Azure OpenAI (text-embedding-ada, text-embedding-3) do RAG i wyszukiwania semantycznego |
 | **Entity Recognition (NER)** | Rozpoznawanie encji nazwanych (osoby, miejsca, organizacje, daty) |
 | **Entity Linking** | Identyfikacja encji + powiązanie z bazą wiedzy (np. Wikipedia); różni się od NER linkami |
 | **PII Detection** | Automatyczne wykrywanie i maskowanie danych osobowych (PESEL, email, nr karty) |
@@ -220,6 +248,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Prompt** | Polecenie lub zapytanie przekazywane do modelu generatywnego |
 | **Token** | Najmniejsza jednostka tekstu przetwarzana przez model językowy (~¾ słowa) |
 | **Prompt Engineering** | Tworzenie skutecznych poleceń dla modeli generatywnych |
+| | 1. **Zero-shot** – bez przykładów; model radzi sobie sam <br> 2. **One-shot** – jeden przykład w promptie <br> 3. **Few-shot** – kilka przykładów (1–5) w promptie <br> 4. **Chain-of-Thought (CoT)** – krok po kroku; poprawia rozumowanie <br> 5. **System Message** – instrukcja definiująca rolę i ograniczenia modelu <br> 6. **Retrieval Augmented Generation (RAG)** – wzbogacenie promptu danymi z bazy wiedzy |
 | **Zero-shot learning** | Model radzi sobie z zadaniem, którego nie widział podczas treningu |
 | **Few-shot learning** | Model uczy się na bardzo małej liczbie przykładów (1–5 w promptie) |
 | **Chain-of-Thought** | Technika zachęcająca model do wypisania kroków rozumowania (poprawia dokładność) |
@@ -231,7 +260,8 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **RAG** | Retrieval Augmented Generation – łączy LLM z zewnętrznymi źródłami wiedzy; redukuje halucynacje |
 | **Grounding (zakotwiczenie)** | Powiązanie odpowiedzi modelu z konkretnymi, zweryfikowanymi dokumentami |
 | **Hallucinations** | Generowanie nieprawdziwych informacji przez model |
-| **Content Filters** | Mechanizmy Azure OpenAI blokujące szkodliwe treści (przemoc, mowa nienawiści) |
+| **Content Filters** | Mechanizmy Azure OpenAI blokujące szkodliwe treści |
+| | 1. **Hate (nienawiść)** – mowa nienawiści, dyskryminacja grup <br> 2. **Violence (przemoc)** – treści promujące przemoc fizyczną <br> 3. **Sexual (treści seksualne)** – treści dla dorosłych <br> 4. **Self-harm (samookaleczenie)** – treści promujące samookaleczenie <br> 5. **Jailbreak detection** – wykrywanie prób obejścia ograniczeń modelu <br> Severity levels: Safe, Low, Medium, High |
 | **Prompt Injection** | Atak polegający na wstrzyknięciu złośliwych instrukcji w danych wejściowych |
 | **XPIA** | Cross-Prompt Injection Attacks – atak przez wstrzyknięcie instrukcji w jedno ze źródeł RAG agenta |
 | **Hybrid Search** | Kombinacja vector search (semantyka) + keyword search (dokładne słowa) – lepsze wyniki niż każde osobno |
@@ -346,11 +376,14 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Groundedness** | Czy odpowiedź jest oparta na dostarczonych źródłach/dokumentach (nie zmyślona) |
 
 ## Zakres egzaminu
-- Podstawy **AI** i **ML**
-- **Computer Vision**
-- **Natural Language Processing (NLP)**
-- **Generatywna AI**
-- **Responsible AI**
+
+| **Domena** | **Udział w egzaminie** |
+|---|---|
+| **Podstawy AI i ML (AI Workloads)** | 15–20% |
+| **Machine Learning na Azure** | 15-20% |
+| **Computer Vision** | 15–20% |
+| **Natural Language Processing (NLP)** | 15–20% |
+| **Generatywna AI** | 20–25% |
 
 ---
 
