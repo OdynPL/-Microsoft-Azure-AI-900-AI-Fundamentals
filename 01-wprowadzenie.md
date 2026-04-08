@@ -549,6 +549,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Pojęcie** | **Opis** |
 |---|---|
 | **Model Deployment** | Wdrożenie modelu do środowiska produkcyjnego |
+| | 1. **Managed Online Endpoint** – real-time REST API zarządzany przez Azure ML; auto-scaling, blue/green deployment <br> 2. **Kubernetes Online Endpoint** – wdrożenie na AKS (Azure Kubernetes Service); pełna kontrola nad infrastrukturą <br> 3. **Batch Endpoint** – przetwarzanie wsadowe dużych zbiorów; wyniki do storage <br> 4. **Serverless API (MaaS)** – modele z Model Catalog (Foundry) bez zarządzania compute; płatność per token <br> 5. **Container (Docker)** – eksport modelu do kontenera; deploy gdzie chcesz (edge, on-prem, inny cloud) |
 | **Model Registry** | Repozytorium modeli z wersjonowaniem, metadanymi i metrykami |
 | **Endpoint** | Punkt dostępu do wdrożonego modelu przez REST API (Online = real-time, Batch = wsadowy) |
 | **Online Endpoint (Real-time)** | Inferencing w czasie rzeczywistym; odpowiedź w milisekundach; do aplikacji interaktywnych (chatbot, API) |
