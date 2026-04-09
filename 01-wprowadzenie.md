@@ -262,6 +262,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | | 6. **Naive Bayes** – klasyfikator probabilistyczny (tekst, spam) |
 | | ![Naive Bayes](assets/ml-naive-bayes.svg) |
 | **Klasteryzacja (Clustering)** | Grupowanie podobnych danych bez etykiet (uczenie nienadzorowane). |
+| **Silhouette Score** | Miara jakości klasteryzacji: ocenia, jak dobrze obiekty pasują do swojego klastra w porównaniu do innych klastrów (wartość od -1 do 1). |
 | | 1. **K-Means** – podział na k klastrów wg średnich odległości (najczęstszy na egzaminie) |
 | | ![K-Means](assets/ml-kmeans.svg) |
 | | 2. **Hierarchical Clustering** – aglomeracyjne łączenie klastrów w drzewo (dendrogram) |
