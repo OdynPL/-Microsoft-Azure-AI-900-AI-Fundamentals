@@ -89,6 +89,49 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **3. Wysyłanie danych** | Aplikacja wysyła dane do endpointu (tekst, obraz, audio, prompt) |
 | **4. Wynik inferencji** | Usługa zwraca wynik (np. sentyment, transkrypcja, tagi obrazu, odpowiedź modelu) |
 
+### Confidence Score (wynik pewności)
+
+Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score** – wartość liczbową od **0.0 do 1.0** (czyli 0–100%) określającą, jak pewny jest model swojej predykcji.
+
+| **Aspekt** | **Opis** |
+|---|---|
+| **Czym jest** | Prawdopodobieństwo poprawności wyniku zwróconego przez model AI; im bliżej 1.0, tym większa pewność modelu |
+| **Zakres** | Od 0.0 (brak pewności) do 1.0 (pełna pewność); może być wyrażony jako ułamek (0.95) lub procent (95%) |
+| **Threshold (próg)** | Aplikacja powinna definiować **próg minimalny** (np. 0.7) – wyniki poniżej progu są odrzucane lub oznaczane do ręcznej weryfikacji |
+| **Nie jest prawdopodobieństwem w sensie statystycznym** | Confidence score to wewnętrzna ocena modelu, nie gwarancja poprawności; wynik 0.9 nie oznacza 90% szans na poprawność w sensie częstościowym |
+| **Gdzie występuje** | Praktycznie w każdej usłudze Azure AI Services |
+
+**Przykłady w usługach Azure AI:**
+
+| **Usługa** | **Co zwraca confidence score** |
+|---|---|
+| **Azure AI Vision** | Tagi obrazu, podpisy (caption), detekcja obiektów – każdy wynik z osobnym score |
+| **Azure AI Face** | Weryfikacja twarzy (czy to ta sama osoba), identyfikacja (kto to jest), atrybuty twarzy |
+| **Azure AI Language** | Sentiment analysis (score per kategoria: positive/negative/neutral), NER, PII detection, language detection, CLU (intent + entities) |
+| **Azure AI Speech** | Pronunciation assessment (accuracy score), rozpoznawanie mówcy (speaker recognition) |
+| **Custom Vision** | Klasyfikacja i detekcja obiektów – każda predykcja z confidence score |
+| **Azure AI Document Intelligence** | Rozpoznane pola formularzy i dokumentów – każde pole z confidence score |
+| **Azure AI Content Safety** | Severity score (0–6) dla kategorii: hate, violence, sexual, self-harm |
+
+**Przykład odpowiedzi API (JSON):**
+
+```json
+{
+  "documents": [
+    {
+      "sentiment": "positive",
+      "confidenceScores": {
+        "positive": 0.98,
+        "neutral": 0.01,
+        "negative": 0.01
+      }
+    }
+  ]
+}
+```
+
+> **Egzamin:** Pytania o confidence score pojawiają się w kontekście interpretacji wyników API. Zapamiętaj: (1) zawsze sprawdzaj confidence score przed podjęciem decyzji, (2) ustal threshold odpowiedni dla scenariusza biznesowego (np. medycyna wymaga wyższego progu niż tagowanie zdjęć), (3) niski confidence score = model nie jest pewny → potrzebna weryfikacja człowieka (human-in-the-loop).
+
 ### Typy zasobów
 
 | **Typ zasobu** | **Opis** |
