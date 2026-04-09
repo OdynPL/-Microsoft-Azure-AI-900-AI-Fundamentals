@@ -490,7 +490,6 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | **Whisper** | Model AI zamieniający mowę na tekst. |
 | **Codex** | Model AI generujący kod z poleceń tekstowych. |
 | **Prompt** | Polecenie lub zapytanie przekazywane do modelu AI. |
-| |  |
 | | 1. <b>Instruction prompt</b> – polecenie, co model ma zrobić<br>2. <b>Input prompt</b> – tekst wejściowy do analizy lub generowania<br>3. <b>Few-shot prompt</b> – z przykładami poprawnych odpowiedzi<br>4. <b>Chain-of-thought prompt</b> – z prośbą o pokazanie rozumowania<br>5. <b>Negative prompting</b> – określenie, czego model NIE powinien generować<br>6. <b>System prompt</b> – ustawia styl, rolę lub ograniczenia modelu |
 | **Token** | Najmniejsza jednostka tekstu przetwarzana przez model językowy. |
 | **Prompt Engineering** | Sztuka tworzenia skutecznych poleceń dla modeli AI. |
