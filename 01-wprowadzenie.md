@@ -510,6 +510,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | **Chain-of-Thought** | Technika wymuszająca wypisanie kroków rozumowania przez model. |
 | **System Message** | Instrukcja określająca rolę i ograniczenia modelu AI. |
 | **Temperature** | Parametr określający losowość odpowiedzi modelu AI. |
+| | Temperatura przyjmuje wartości od 0 (odpowiedzi deterministyczne) do 1 (większa losowość); typowe zakresy to 0–1, czasem do 2. |
 | **Top-p (Nucleus Sampling)** | Parametr kontrolujący różnorodność odpowiedzi modelu. |
 | **Context Window** | Maksymalna liczba tokenów, które model może przetworzyć naraz. |
 | **Fine-tuning** | Dodatkowe trenowanie modelu na własnych danych. |
