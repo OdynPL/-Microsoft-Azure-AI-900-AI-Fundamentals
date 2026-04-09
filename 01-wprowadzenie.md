@@ -568,6 +568,8 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 |---|---|
 | **Responsible AI** | Etyczne i bezpieczne wdrażanie oraz używanie AI. |
 | | 1. **Fairness** – sprawiedliwość, równe traktowanie <br> 2. **Reliability & Safety** – niezawodność i bezpieczeństwo <br> 3. **Privacy & Security** – ochrona danych <br> 4. **Inclusiveness** – dostępność dla wszystkich <br> 5. **Transparency** – przejrzystość działania <br> 6. **Accountability** – odpowiedzialność ludzi za systemy AI |
+| **Responsible AI Process (Microsoft)** | Kluczowe etapy wdrażania Responsible AI w GenAI:<br>1. Identyfikacja potencjalnych szkód<br>2. Pomiar szkód<br>3. Łagodzenie ryzyk<br>4. Planowanie wdrożenia |
+| | ![Responsible AI Process](assets/rai-process.svg) |
 | **Fairness** | Sprawiedliwe i równe traktowanie wszystkich przez AI. |
 | **Reliability & Safety** | Model działa poprawnie i nie powoduje szkód. |
 | **Inclusiveness** | AI dostępne dla wszystkich, bez wykluczeń. |
