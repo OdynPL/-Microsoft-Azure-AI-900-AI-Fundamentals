@@ -436,6 +436,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | **NLP** | Przetwarzanie i analiza języka naturalnego przez AI. |
 | **Tokenizacja (Tokenization)** | Dzielenie tekstu na mniejsze elementy (tokeny). |
 | **Token** | Token to najczęściej słowo, fragment słowa (subword), znak interpunkcyjny lub pojedynczy znak. Token może zawierać litery, cyfry, znaki specjalne – zależnie od modelu NLP. W nowoczesnych modelach (np. BERT, GPT) tokeny to często subwordy, np. "fantastyczny" → "fant", "astyczny". |
+| **Token** | Token to mały kawałek tekstu: słowo, część słowa, znak lub znak interpunkcyjny. W nowoczesnych modelach (np. BERT, GPT) tokeny to często fragmenty słów. |
 | **Lematyzacja (Lemmatization)** | Sprowadzanie słów do ich podstawowej formy. |
 | **Stemming** | Obcinanie końcówek słów do rdzenia dla uproszczenia analizy. |
 | **Embeddingi (Embeddings)** | Zamiana tekstu na wektory liczbowe do analizy przez modele. |
