@@ -706,6 +706,45 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 
 ---
 
+# AI-901: Nowości i różnice względem AI-900
+
+Od 30.06.2026 AI-900 zastępuje AI-901. Nowy egzamin kładzie nacisk na Foundry, agentów, orkiestrację, ewaluację GenAI i bezpieczeństwo promptów. Poniżej najważniejsze nowe pojęcia i zmiany (ultra-zwięzłe, jednozdaniowe definicje):
+
+### **Nowe pojęcia i narzędzia AI-901**
+
+| **Pojęcie** | **Opis** |
+|---|---|
+| **Microsoft Foundry** | Nowa platforma do budowy, wdrażania i zarządzania aplikacjami AI (GenAI, RAG, agenci). |
+| **Prompt Flow** | Narzędzie do projektowania, testowania i orkiestracji pipeline'ów GenAI i agentów. |
+| **Model Catalog (Foundry)** | Centralna baza gotowych modeli (GPT, Phi, Llama, Mistral) do wdrażania i testowania. |
+| **Hosted Agents** | Agenci AI z własną logiką, wdrażani i zarządzani w Foundry. |
+| **Foundry IQ** | Baza wiedzy dla agentów, integracja z Azure AI Search (vector store). |
+| **Guardrails (Foundry)** | Zestaw zabezpieczeń: filtry treści, ochrona przed prompt injection, walidacja outputu, grounding detection. |
+| **Prompt Injection Defense** | Mechanizmy wykrywające i blokujące próby manipulacji promptem (jailbreak, XPIA). |
+| **Output Validation** | Automatyczna weryfikacja formatu, długości i poprawności odpowiedzi agenta. |
+| **Grounding Detection** | Sprawdzanie, czy odpowiedź agenta jest oparta na dostarczonych źródłach. |
+| **PII Redaction** | Automatyczne maskowanie danych osobowych w odpowiedziach agentów. |
+| **Rate Limiting** | Ograniczanie liczby żądań do agentów (TPM/RPM) dla bezpieczeństwa. |
+| **Blocklists** | Listy zabronionych słów/fraz definiowane przez organizację. |
+| **PTU (Provisioned Throughput Unit)** | Dedykowana przepustowość dla wdrożeń modeli w Foundry, stała opłata. |
+| **Global Deployment** | Wdrażanie modeli z automatycznym routingiem między regionami. |
+| **Serverless API (Foundry)** | Udostępnianie modeli przez API bez zarządzania infrastrukturą, płatność per token. |
+| **Ewaluacja agentów GenAI** | Ocena agentów na podstawie metryk: coherence, groundedness, relevance, fluency. |
+| **XPIA (Cross-Prompt Injection Attacks)** | Ataki polegające na wstrzyknięciu instrukcji w jedno ze źródeł agenta (np. dokument RAG). |
+| **Orkiestracja agentów** | Projektowanie złożonych przepływów decyzyjnych i integracji narzędzi w Foundry. |
+| **Foundry vs ML Studio** | Foundry: GenAI, agenci, RAG, orkiestracja; ML Studio: trenowanie własnych modeli ML. |
+
+### **Nowe metryki i ewaluacja GenAI (AI-901)**
+
+| **Metryka** | **Opis** |
+|---|---|
+| **Coherence** | Spójność i logiczność odpowiedzi agenta. |
+| **Fluency** | Naturalność i poprawność językowa odpowiedzi agenta. |
+| **Relevance** | Trafność odpowiedzi względem pytania i kontekstu. |
+| **Groundedness** | Oparcie odpowiedzi na dostarczonych źródłach (brak halucynacji). |
+
+---
+
 
 ![Przegląd usług Azure AI](assets/azure-ai-overview.svg)
 
