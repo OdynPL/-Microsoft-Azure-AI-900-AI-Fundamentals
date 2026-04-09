@@ -181,12 +181,12 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **AI (Artificial Intelligence)** | Sztuczna inteligencja, systemy naśladujące ludzkie zdolności poznawcze |
-| **Narrow AI (Weak AI)** | Wąska AI, systemy zaprojektowane do jednego, konkretnego zadania (np. klasyfikacja obrazów, chatbot) |
-| **Strong AI (AGI)** | Silna AI, hipotetyczna sztuczna inteligencja o ogólnych zdolnościach poznawczych porównywalnych do człowieka |
-| **ML (Machine Learning)** | Uczenie maszynowe, algorytmy uczące się na podstawie danych |
-| **Deep Learning** | Podzbiór ML wykorzystujący wielowarstwowe sieci neuronowe (2+ warstw ukrytych). Automatycznie uczy się cech z surowych danych (nie wymaga ręcznego feature engineering). Wymaga dużo danych i mocy obliczeniowej (GPU/TPU). Stosowany w: Computer Vision, NLP, Speech, GenAI |
-| **Neural Network (sieć neuronowa)** | Model ML inspirowany mózgiem, złożony z warstw neuronów przetwarzających dane |
+| **AI (Artificial Intelligence)** | Systemy naśladujące ludzkie myślenie i działanie. |
+| **Narrow AI (Weak AI)** | AI do jednego zadania, np. rozpoznawania obrazów lub chatbotów. |
+| **Strong AI (AGI)** | AI o ogólnych zdolnościach poznawczych jak człowiek (hipotetyczna). |
+| **ML (Machine Learning)** | Algorytmy uczące się na podstawie danych do przewidywania lub klasyfikacji. |
+| **Deep Learning** | ML z wielowarstwowymi sieciami neuronowymi, automatycznie uczącymi się cech z dużych danych. |
+| **Neural Network (sieć neuronowa)** | Model z warstw neuronów przetwarzających dane, inspirowany mózgiem. |
 | | 1. **CNN (Convolutional Neural Network)** – analiza obrazów, rozpoznawanie wzorów wizualnych |
 | | ![CNN](assets/nn-cnn.svg) |
 | | 2. **RNN (Recurrent Neural Network)** – dane sekwencyjne, tekst, szeregi czasowe |
@@ -220,23 +220,23 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **Transformer** | Nowoczesna architektura sieci neuronowej (podstawa GPT, BERT); korzysta z mechanizmu self-attention |
-| **Self-Attention** | Mechanizm pozwalający modelowi oceniać ważność każdego tokenu w kontekście pozostałych |
-| **Positional Encoding** | Kodowanie pozycji tokenu w sekwencji; pozwala Transformerowi rozumieć kolejność słów |
-| **Encoder / Decoder** | Komponenty Transformer: encoder przetwarza wejście (np. BERT), decoder generuje wyjście (np. GPT) |
-| **LLM (Large Language Model)** | Duży model językowy (np. GPT-4) trenowany na ogromnych zbiorach tekstu |
-| **Foundation Model** | Duży, wstępnie wytrenowany model AI, który można adaptować do wielu zadań (np. GPT, BERT, DALL-E) |
-| **SLM (Small Language Model)** | Mały model językowy (np. Microsoft Phi-3) – mniej parametrów, szybszy, tańszy, idealny do urządzeń edge |
-| **Multi-Head Attention** | Wiele równoległych mechanizmów attention w Transformer; każdy uczy się innych zależności między tokenami |
-| **RNN / LSTM** | Recurrent Neural Networks / Long Short-Term Memory – starsze architektury sekwencyjne, poprzedniki Transformera |
-| **BERT** | Bidirectional Encoder Representations from Transformers – model encoder do analizy tekstu (NER, sentyment, Q&A) |
-| **GPT** | Generative Pre-trained Transformer – model decoder do generowania tekstu (chatboty, treści, kod) |
+| **Transformer** | Architektura sieci neuronowej z mechanizmem self-attention, podstawa GPT/BERT. |
+| **Self-Attention** | Mechanizm oceny ważności tokenów względem siebie w sekwencji. |
+| **Positional Encoding** | Dodaje informację o kolejności tokenów w sekwencji do modelu. |
+| **Encoder / Decoder** | Encoder przetwarza wejście, decoder generuje wyjście (np. BERT, GPT). |
+| **LLM (Large Language Model)** | Duży model językowy trenowany na ogromnych zbiorach tekstu (np. GPT-4). |
+| **Foundation Model** | Wstępnie wytrenowany model AI do wielu zadań (np. GPT, BERT, DALL-E). |
+| **SLM (Small Language Model)** | Mały, szybki model językowy do edge i prostych zadań (np. Phi-3). |
+| **Multi-Head Attention** | Równoległe mechanizmy attention uczące się różnych zależności. |
+| **RNN / LSTM** | Starsze sieci sekwencyjne, poprzedzające Transformera. |
+| **BERT** | Model encoder do analizy tekstu (NER, sentyment, Q&A). |
+| **GPT** | Model decoder do generowania tekstu, kodu, rozmów (chatboty). |
 
 ### **Zadania ML i typy problemów**
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **Regresja (Regression)** | Przewidywanie wartości liczbowych |
+| **Regresja (Regression)** | Przewidywanie wartości liczbowych na podstawie danych wejściowych. |
 | | 1. **Linear Regression** – prosta liniowa |
 | | ![Linear Regression](assets/ml-linear-regression.svg) |
 | | 2. **Multiple Linear Regression** – wiele cech |
@@ -247,7 +247,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | | ![Decision Tree / Random Forest Regression](assets/ml-tree-regression.svg) |
 | | 5. **Neural Network Regression** – sieci neuronowe |
 | | ![Neural Network Regression](assets/ml-nn-regression.svg) |
-| **Klasyfikacja (Classification)** | Przypisywanie do kategorii |
+| **Klasyfikacja (Classification)** | Przypisywanie danych do określonych kategorii. |
 | | 1. **Logistic Regression** – klasyfikacja binarna (tak/nie, spam/nie-spam) |
 | | ![Logistic Regression](assets/ml-logistic-regression.svg) |
 | | 2. **Decision Tree / Random Forest** – drzewa decyzyjne i lasy losowe |
@@ -260,7 +260,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | | ![Neural Network Classification](assets/ml-nn-classification.svg) |
 | | 6. **Naive Bayes** – klasyfikator probabilistyczny (tekst, spam) |
 | | ![Naive Bayes](assets/ml-naive-bayes.svg) |
-| **Klasteryzacja (Clustering)** | Grupowanie podobnych danych (uczenie nienadzorowane) |
+| **Klasteryzacja (Clustering)** | Grupowanie podobnych danych bez etykiet (uczenie nienadzorowane). |
 | | 1. **K-Means** – podział na k klastrów wg średnich odległości (najczęstszy na egzaminie) |
 | | ![K-Means](assets/ml-kmeans.svg) |
 | | 2. **Hierarchical Clustering** – aglomeracyjne łączenie klastrów w drzewo (dendrogram) |
@@ -271,7 +271,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | | ![Mean Shift](assets/ml-mean-shift.svg) |
 | | 5. **Gaussian Mixture Models (GMM)** – klastry jako rozkłady prawdopodobieństwa (miękkie przypisanie) |
 | | ![Gaussian Mixture Models](assets/ml-gmm.svg) |
-| **Anomaly Detection** | Wykrywanie obserwacji odbiegających od normy (np. oszustwa, defekty, awarie) |
+| **Anomaly Detection** | Wykrywanie nietypowych, odstających przypadków w danych. |
 | | 1. **One-class SVM** – uczy się granic normalnych danych, identyfikuje obserwacje poza nimi |
 | | ![One-class SVM](assets/ml-one-class-svm.svg) |
 | | 2. **Isolation Forest** – losowe podziały; anomalie łatwiejsze do izolacji |
@@ -282,7 +282,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | | ![Statistical Methods](assets/ml-statistical.svg) |
 | | 5. **Azure Anomaly Detector** – gotowa usługa do wykrywania anomalii w szeregach czasowych |
 | | ![Azure Anomaly Detector](assets/ml-azure-anomaly.svg) |
-| **Recommendation Systems** | Systemy rekomendacji przewidujące preferencje użytkownika (Collaborative Filtering, Content-Based, Hybrid) |
+| **Recommendation Systems** | Systemy przewidujące, co użytkownik może polubić na podstawie danych lub podobieństw. |
 | **Collaborative Filtering** | Rekomendacje bazujące na podobieństwie użytkowników: „użytkownicy podobni do ciebie polubili…" |
 | **Content-Based Filtering** | Rekomendacje porównujące cechy produktów: „produkty podobne do tych, które lubisz" |
 | **Time Series Forecasting** | Prognozowanie wartości w czasie (sprzedaż, temperatura); obsługiwane przez AutoML |
@@ -293,14 +293,14 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **Feature (cecha)** | Pojedyncza właściwość lub atrybut wykorzystywany przez model ML do nauki (np. wiek, płeć, liczba transakcji) |
-| **Label (etykieta)** | Prawidłowa odpowiedź przypisana do przykładu w uczeniu nadzorowanym (np. spam/nie-spam) |
+| **Feature (cecha)** | Pojedyncza właściwość lub atrybut wykorzystywany przez model ML do nauki. |
+| **Label (etykieta)** | Poprawna odpowiedź przypisana do przykładu w uczeniu nadzorowanym. |
 | **Feature Engineering** | Przygotowanie i wybór cech |
 | **Data Labeling** | Etykietowanie danych |
-| **Training Set** | Zbiór danych do trenowania modelu (~70–80% danych); dane z etykietami (supervised) lub bez (unsupervised) – np. tabele CSV, obrazy, tekst, audio |
-| **Validation Set** | Zbiór do oceny modelu podczas treningu i doboru hiperparametrów (~10–15%) |
-| **Test Set** | Zbiór do końcowej, niezależnej oceny modelu (~10–15%) |
-| **Data Imbalance** | Nierównomierny rozkład klas w zbiorze danych (np. 95% klasy A, 5% klasy B) |
+| **Training Set** | Dane używane do nauki modelu (największa część zbioru). |
+| **Validation Set** | Dane do oceny modelu podczas treningu i doboru parametrów. |
+| **Test Set** | Dane do końcowej, niezależnej oceny skuteczności modelu. |
+| **Data Imbalance** | Nierówny rozkład klas w danych, utrudniający naukę modelu. |
 | **Class Weighting** | Przypisanie wyższych wag mniejszościowej klasie, by model lepiej ją rozpoznawał |
 | **SMOTE** | Synthetic Minority Over-Sampling Technique – syntetyczne generowanie przykładów klasy mniejszościowej |
 | **Stratified Split** | Podział danych z zachowaniem proporcji klas w każdym zbiorze |
@@ -315,17 +315,17 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | | ![Synonym Replacement](assets/aug-synonym.svg) |
 | | 5. **Tekst: Back-Translation** – tłumaczenie na inny język i z powrotem |
 | | ![Back-Translation](assets/aug-back-translation.svg) |
-| **Normalization** | Skalowanie wartości cech do wspólnego zakresu (np. 0–1); ważne dla algorytmów opartych na odległościach |
-| **One-hot Encoding** | Zamiana kategorii na wektory binarne (np. kolor: czerwony → [1,0,0], zielony → [0,1,0]) |
+| **Normalization** | Skalowanie cech do wspólnego zakresu, by poprawić działanie modelu. |
+| **One-hot Encoding** | Zamiana kategorii na wektory binarne do użycia w ML. |
 
 ### **Proces trenowania i optymalizacja**
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **Inference (wnioskowanie)** | Użycie wytrenowanego modelu do generowania predykcji na nowych danych |
-| **Hyperparameter (hiperparametr)** | Parametr ustawiany przed treningiem (np. learning rate, liczba epok), w odróżnieniu od wag uczonych automatycznie |
-| **Epoch (epoka)** | Jedno pełne przejście przez cały zbiór treningowy podczas trenowania modelu |
-| **Loss Function (funkcja straty)** | Miara błędu modelu; cel treningu to jej minimalizacja |
+| **Inference (wnioskowanie)** | Generowanie przewidywań przez wytrenowany model na nowych danych. |
+| **Hyperparameter (hiperparametr)** | Parametr ustalany przed treningiem, wpływający na naukę modelu. |
+| **Epoch (epoka)** | Jedno pełne przejście przez dane treningowe podczas nauki modelu. |
+| **Loss Function (funkcja straty)** | Miara błędu modelu, którą minimalizujemy podczas treningu. |
 | | 1. **MSE (Mean Squared Error)** – regresja; średnia kwadratów błędów |
 | | ![MSE](assets/loss-mse.svg) |
 | | 2. **Cross-Entropy (Log Loss)** – klasyfikacja; mierzy różnicę między przewidywanym a rzeczywistym rozkładem |
@@ -336,9 +336,9 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | | ![Categorical Cross-Entropy](assets/loss-categorical-ce.svg) |
 | | 5. **MAE (Mean Absolute Error)** – regresja; mniej wrażliwa na outliery niż MSE |
 | | ![MAE](assets/loss-mae.svg) |
-| **Gradient Descent** | Algorytm optymalizacji minimalizujący funkcję straty poprzez iteracyjne dopasowywanie wag |
-| **Backpropagation** | Mechanizm propagacji błędu wstecz w sieci neuronowej, do obliczania gradientów i aktualizacji wag |
-| **Regularization** | Techniki zapobiegające overfittingowi |
+| **Gradient Descent** | Algorytm optymalizujący model przez stopniowe zmniejszanie błędu. |
+| **Backpropagation** | Obliczanie i rozprzestrzenianie błędu w sieci neuronowej w celu aktualizacji wag. |
+| **Regularization** | Techniki zapobiegające przeuczeniu modelu. |
 | | 1. **L1 (Lasso)** – dodaje sumę wart. bezwzględnych wag do loss; zeruje nieistotne cechy (feature selection) |
 | | ![L1 Lasso](assets/reg-l1-lasso.svg) |
 | | 2. **L2 (Ridge)** – dodaje sumę kwadratów wag do loss; zmniejsza wagi, ale nie zeruje |
@@ -349,10 +349,10 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | | ![Dropout](assets/reg-dropout.svg) |
 | | 5. **Early Stopping** – zatrzymanie treningu, gdy metryka walidacyjna przestaje się poprawiać |
 | | ![Early Stopping](assets/reg-early-stopping.svg) |
-| **Overfitting (przeuczenie)** | Model zbyt dobrze dopasowany do danych treningowych; świetne wyniki na treningu, słabe na nowych danych |
-| **Underfitting (niedouczenie)** | Model zbyt prosty, nie wychwytuje wzorców; słabe wyniki zarówno na treningu, jak i na nowych danych |
-| **Transfer Learning** | Wykorzystanie modelu wytrenowanego na jednym zadaniu do przyspieszenia nauki na innym |
-| **Cross-Validation (K-fold)** | Wielokrotny podział danych na k zbiorów; każdy pełni rolę testu raz – bardziej stabilna ocena modelu |
+| **Overfitting (przeuczenie)** | Model działa świetnie na treningu, ale słabo na nowych danych. |
+| **Underfitting (niedouczenie)** | Model zbyt prosty, nie uczy się wzorców z danych. |
+| **Transfer Learning** | Wykorzystanie modelu wytrenowanego na innym zadaniu do przyspieszenia nauki. |
+| **Cross-Validation (K-fold)** | Wielokrotny podział danych na k części dla stabilnej oceny modelu. |
 | **Inference Pipeline** | Pipeline wnioskowania utworzony z training pipeline; wymagany przed wdrożeniem modelu do produkcji |
 | **Pipeline ML** | Sekwencja kroków przetwarzania danych i trenowania modelu |
 
@@ -360,55 +360,55 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **True Positive (TP)** | Przypadek poprawnie zaklasyfikowany jako pozytywny |
-| **False Positive (FP)** | Przypadek błędnie zaklasyfikowany jako pozytywny (fałszywy alarm) |
-| **True Negative (TN)** | Przypadek poprawnie zaklasyfikowany jako negatywny |
-| **False Negative (FN)** | Przypadek błędnie zaklasyfikowany jako negatywny (przeoczenie) |
-| **Accuracy** | Dokładność – odsetek poprawnych przewidywań |
-| **Precision** | Precyzja – odsetek trafień wśród przewidzianych pozytywnych |
-| **Recall** | Czułość – odsetek wykrytych pozytywnych |
-| **F1-score** | Średnia harmoniczna Precision i Recall |
-| **Confusion Matrix** | Macierz pomyłek – tabela TP/FP/TN/FN |
-| **ROC Curve, AUC** | Krzywa ROC i pole pod krzywą – ocena klasyfikatora binarnego |
-| **MSE (Mean Square Error)** | Średnia kwadratów różnic między wartościami rzeczywistymi a przewidywanymi |
-| **R² (R-Squared)** | Współczynnik determinacji; metryka regresji od 0 do 1 (1.0 = model idealny) |
-| **MAE (Mean Absolute Error)** | Średnia wartość bezwzględna błędów predykcji |
-| **RMSE (Root Mean Square Error)** | Pierwiastek z MSE; metryka w tych samych jednostkach co zmienna docelowa |
+| **True Positive (TP)** | Poprawnie wykryty przypadek pozytywny przez model. |
+| **False Positive (FP)** | Przypadek błędnie oznaczony jako pozytywny (fałszywy alarm). |
+| **True Negative (TN)** | Poprawnie wykryty przypadek negatywny przez model. |
+| **False Negative (FN)** | Przypadek błędnie oznaczony jako negatywny (przeoczenie). |
+| **Accuracy** | Odsetek poprawnych przewidywań modelu. |
+| **Precision** | Odsetek trafień wśród przewidzianych pozytywnych przypadków. |
+| **Recall** | Odsetek wykrytych przypadków pozytywnych. |
+| **F1-score** | Średnia harmoniczna Precision i Recall. |
+| **Confusion Matrix** | Tabela pokazująca liczbę TP, FP, TN, FN. |
+| **ROC Curve, AUC** | Krzywa i pole pod nią oceniające skuteczność klasyfikatora binarnego. |
+| **MSE (Mean Square Error)** | Średnia kwadratów różnic między wartościami rzeczywistymi a przewidywanymi. |
+| **R² (R-Squared)** | Współczynnik pokazujący, jak dobrze model tłumaczy zmienność danych. |
+| **MAE (Mean Absolute Error)** | Średnia wartość bezwzględna błędów predykcji modelu. |
+| **RMSE (Root Mean Square Error)** | Pierwiastek z MSE, metryka w jednostkach zmiennej docelowej. |
 | **Metryki wg typu zadania (egzamin!)** | **Classification:** Accuracy, Precision, Recall, F1, AUC, Confusion Matrix <br> **Regression:** MSE, MAE, RMSE, R² <br> **Clustering:** Silhouette Score, Average Distance to Cluster Center |
 
 ### **Computer Vision**
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **Computer Vision** | Analiza i interpretacja obrazów/wideo |
-| **Image Classification** | Klasyfikacja obrazów – co jest na obrazie |
+| **Computer Vision** | Analiza i interpretacja obrazów oraz wideo przez AI. |
+| **Image Classification** | Przypisywanie obrazów do kategorii na podstawie zawartości. |
 | | 1. **Binary Classification** – dwie kategorie (np. kot/pies, zdrowy/chory) |
 | | ![Binary Classification](assets/cv-binary-class.svg) |
 | | 2. **Multi-class Classification** – wiele kategorii, jeden label na obraz (np. kot, pies, ptak) |
 | | ![Multi-class Classification](assets/cv-multiclass.svg) |
 | | 3. **Multi-label Classification** – wiele tagów na obraz (np. „plaża" + „zachód słońca" + „ludzie") |
 | | ![Multi-label Classification](assets/cv-multilabel.svg) |
-| **Object Detection** | Detekcja obiektów – klasa + prawdopodobieństwo + bounding box |
+| **Object Detection** | Wykrywanie i lokalizacja obiektów na obrazie wraz z prawdopodobieństwem. |
 | | ![Object Detection](assets/cv-object-detection.svg) |
-| **Bounding Box** | Prostokąt otaczający wykryty obiekt na obrazie (x, y, szerokość, wysokość) |
-| **OCR (Optical Character Recognition)** | Rozpoznawanie tekstu na obrazach |
+| **Bounding Box** | Prostokąt wyznaczający położenie obiektu na obrazie. |
+| **OCR (Optical Character Recognition)** | Automatyczne rozpoznawanie tekstu na obrazach. |
 | | ![OCR](assets/cv-ocr.svg) |
-| **Semantic Segmentation** | Klasyfikacja każdego piksela obrazu do kategorii (np. droga, budynek, niebo) |
+| **Semantic Segmentation** | Przypisywanie każdemu pikselowi obrazu odpowiedniej kategorii. |
 | | ![Semantic Segmentation](assets/cv-semantic-segmentation.svg) |
-| **Instance Segmentation** | Segmentacja z rozróżnianiem instancji – każdy obiekt ma unikalny ID (pies1 ≠ pies2) |
+| **Instance Segmentation** | Segmentacja z rozróżnieniem poszczególnych obiektów na obrazie. |
 | | ![Instance Segmentation](assets/cv-instance-segmentation.svg) |
-| **Image Tagging / Captioning** | Automatyczne generowanie tagów i opisów obrazu w języku naturalnym (Azure Vision) |
+| **Image Tagging / Captioning** | Automatyczne nadawanie tagów i opisów obrazom przez AI. |
 | | ![Tagging / Captioning](assets/cv-tagging-captioning.svg) |
-| **Dense Captions** | Generowanie wielu opisów dla różnych regionów jednego obrazu (Azure Vision 4.0 – Image Analysis) |
-| **Smart Cropping** | Inteligentne kadrowanie obrazu z zachowaniem najważniejszych elementów (aspect ratio); Azure Vision 4.0 |
-| **Background Removal** | Usunięcie lub zamiana tła obrazu na przezroczyste; Azure Vision 4.0 (Segment API) |
-| **Depth Estimation** | Szacowanie głębokości sceny z obrazu 2D – mapa odległości (Azure Vision 4.0) |
+| **Dense Captions** | Wiele opisów dla różnych fragmentów obrazu. |
+| **Smart Cropping** | Automatyczne kadrowanie obrazu z zachowaniem kluczowych elementów. |
+| **Background Removal** | Usuwanie lub zamiana tła obrazu na przezroczyste. |
+| **Depth Estimation** | Szacowanie głębokości sceny na podstawie obrazu 2D. |
 | | ![Depth Estimation](assets/cv-depth-estimation.svg) |
-| **Image Embeddings** | Wektorowa reprezentacja obrazu do wyszukiwania podobnych (Azure Vision 4.0 – vectorize endpoint) |
+| **Image Embeddings** | Wektorowa reprezentacja obrazu do wyszukiwania podobnych. |
 | | ![Image Embeddings](assets/cv-image-embeddings.svg) |
-| **Video Analysis** | Analiza wideo: śledzenie obiektów, detekcja scen, ekstrakcja metadanych (Azure Video Indexer) |
+| **Video Analysis** | Analiza wideo: śledzenie obiektów, detekcja scen, ekstrakcja metadanych. |
 | | ![Video Analysis](assets/cv-video-analysis.svg) |
-| **Face Recognition** | Rozpoznawanie twarzy |
+| **Face Recognition** | Automatyczne rozpoznawanie i analiza twarzy na obrazach. |
 | | 1. **Face Detection** – wykrywanie twarzy na obrazie + atrybuty (wiek, okulary, emocje) |
 | | ![Face Detection](assets/face-detection.svg) |
 | | 2. **Face Verification** – porównanie 1:1 – „czy to ta sama osoba?" |
@@ -430,11 +430,11 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **NLP** | Przetwarzanie języka naturalnego |
-| **Tokenizacja (Tokenization)** | Dzielenie tekstu na słowa/elementy |
-| **Lematyzacja (Lemmatization)** | Sprowadzanie słów do formy podstawowej |
-| **Stemming** | Obcinanie końcówek słów do rdzenia; normalizacja tekstu przed analizą częstości |
-| **Embeddingi (Embeddings)** | Reprezentacja tekstu w postaci wektorów liczbowych |
+| **NLP** | Przetwarzanie i analiza języka naturalnego przez AI. |
+| **Tokenizacja (Tokenization)** | Dzielenie tekstu na mniejsze elementy (tokeny). |
+| **Lematyzacja (Lemmatization)** | Sprowadzanie słów do ich podstawowej formy. |
+| **Stemming** | Obcinanie końcówek słów do rdzenia dla uproszczenia analizy. |
+| **Embeddingi (Embeddings)** | Zamiana tekstu na wektory liczbowe do analizy przez modele. |
 | | 1. **Word2Vec** – klasyczny; każde słowo = jeden wektor (nie rozróżnia kontekstu) |
 | | ![Word2Vec](assets/emb-word2vec.svg) |
 | | 2. **GloVe** – Global Vectors; wektory na bazie statystyk współwystępowania słów |
@@ -443,50 +443,50 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | | ![BERT Embeddings](assets/emb-bert.svg) |
 | | 4. **OpenAI text-embedding** – modele embeddingów Azure OpenAI (text-embedding-ada, text-embedding-3) do RAG i wyszukiwania semantycznego |
 | | ![OpenAI text-embedding](assets/emb-openai.svg) |
-| **Entity Recognition (NER)** | Rozpoznawanie encji nazwanych (osoby, miejsca, organizacje, daty) |
+| **Entity Recognition (NER)** | Automatyczne wykrywanie nazw własnych w tekście. |
 | | 1. **Person** (imiona, nazwiska) <br> 2. **Location** (miasta, kraje, adresy) <br> 3. **Organization** (firmy, instytucje) <br> 4. **DateTime** (daty, godziny, okresy) <br> 5. **Quantity** (liczby, procenty, waluty) <br> 6. **Email** (adresy e-mail) <br> 7. **URL** (adresy internetowe) <br> 8. **IP Address** (adresy IP) <br> 9. **Phone Number** (numery telefonów) |
-| **Entity Linking** | Identyfikacja encji + powiązanie z bazą wiedzy (np. Wikipedia); różni się od NER linkami |
-| **PII Detection** | Wykrywanie danych osobowych w tekście przez **Azure AI Language** – usługa zwraca w odpowiedzi API **redacted text** z PII zastąpionym znakami `*****` (lub wybranym znakiem maskującym). <br><br>Kategorie: imiona, SSN, nr karty kredytowej, email, telefon, adres, PESEL. Aplikacja nie musi maskować sama – API zwraca gotowy zamaskowany tekst + listę wykrytych encji z pozycjami i confidence score |
-| **Sentiment Analysis** | Analiza sentymentu (pozytywny, negatywny, neutralny, mieszany) |
-| **Key Phrase Extraction** | Wyodrębnianie najważniejszych fraz i słów kluczowych z tekstu |
-| **Summarization** | Automatyczne streszczanie długich dokumentów lub transkrypcji rozmów |
-| **Language Detection** | Automatyczne rozpoznawanie języka tekstu |
-| **Intent Recognition** | Rozpoznawanie intencji użytkownika (np. w chatbocie) |
-| **CLU** | Conversational Language Understanding – następca LUIS; rozpoznawanie intencji i encji |
-| **Utterance** | Wypowiedź użytkownika przekazywana do modelu NLP (np. „Zarezerwuj lot do Paryża na jutro") |
-| **Intent** | Intencja – zamiar użytkownika rozpoznany z utterance (np. BookFlight) |
-| **Entity** | Encja wyodrębniona z utterance – konkretna wartość (np. miasto=Paryż, data=jutro) |
-| **Conversational AI Flow** | Utterance → Intent Recognition → Entity Extraction → Response – egzaminowy przepływ CLU |
-| **Multi-turn Conversation** | Rozmowa wieloturowa – chatbot utrzymuje kontekst między kolejnymi wypowiedziami użytkownika (historia konwersacji) |
-| **Question Answering** | Usługa tworzenia baz wiedzy Q&A z dokumentów, FAQ i stron internetowych |
-| **Active Learning (Q&A)** | System sugeruje nowe pary pytanie-odpowiedź na podstawie zapytań użytkowników; poprawia bazę wiedzy bez ręcznego dodawania – Custom Question Answering |
-| **Speech Recognition** | Rozpoznawanie mowy (Speech-to-Text) |
-| **Speech Synthesis** | Synteza mowy z tekstu (Text-to-Speech) |
-| **SSML (Speech Synthesis Markup Language)** | Język znaczników do kontroli TTS: pauzy, intonacja, szybkość, głośność, wybór głosu i języka – XML-based |
-| **Speech Translation** | Tłumaczenie mowy w czasie rzeczywistym: speech-to-text + translation + text-to-speech |
-| **Speaker Recognition** | Identyfikacja/weryfikacja osoby na podstawie głosu (kto mówi, nie co mówi) |
-| **Custom Speech** | Dostosowanie modelu STT do własnego słownictwa, akcentu lub domeny (np. medyczna) |
-| **Custom Voice** | Tworzenie spersonalizowanego, syntetycznego głosu TTS |
-| **Custom Neural Voice** | Zaawansowana wersja Custom Voice z naturalnym brzmieniem; wymaga **Limited Access** (wniosek do Microsoft) |
-| **Pronunciation Assessment** | Ocena poprawności wymowy w Speech Service: accuracy, fluency, completeness, prosody score – scenariusz nauki języków |
-| **Keyword Recognition** | Rozpoznawanie słowa kluczowego on-device (wake word, np. „Hey Cortana"); niskie opóźnienie, działa offline na urządzeniu edge |
-| **Custom Translator** | Dostosowanie modelu tłumaczenia do specjalistycznego słownictwa (prawo, medycyna) |
-| **Transliteration** | Zmiana alfabetu bez tłumaczenia (np. arabski → łaciński); Azure Translator, ~20 języków |
-| **Batch Transcription** | Masowa, asynchroniczna transkrypcja dużych zbiorów nagrań audio – Azure Speech |
+| **Entity Linking** | Łączenie wykrytych encji z bazą wiedzy (np. Wikipedia). |
+| **PII Detection** | Automatyczne wykrywanie i maskowanie danych osobowych w tekście. |
+| **Sentiment Analysis** | Określanie, czy tekst jest pozytywny, negatywny czy neutralny. |
+| **Key Phrase Extraction** | Automatyczne wyodrębnianie kluczowych fraz z tekstu. |
+| **Summarization** | Automatyczne skracanie i streszczanie długich tekstów. |
+| **Language Detection** | Automatyczne rozpoznawanie języka tekstu przez AI. |
+| **Intent Recognition** | Rozpoznawanie celu lub zamiaru użytkownika w tekście. |
+| **CLU** | Usługa rozpoznawania intencji i encji w rozmowach (następca LUIS). |
+| **Utterance** | Wypowiedź użytkownika analizowana przez model NLP. |
+| **Intent** | Zamiar użytkownika rozpoznany z wypowiedzi. |
+| **Entity** | Wartość wyodrębniona z wypowiedzi użytkownika (np. miasto, data). |
+| **Conversational AI Flow** | Przepływ: wypowiedź → intencja → encje → odpowiedź. |
+| **Multi-turn Conversation** | Rozmowa, w której chatbot pamięta kontekst kilku wypowiedzi. |
+| **Question Answering** | Usługa odpowiadania na pytania na podstawie bazy wiedzy. |
+| **Active Learning (Q&A)** | System automatycznie sugeruje nowe pytania i odpowiedzi do bazy Q&A. |
+| **Speech Recognition** | Automatyczne zamienianie mowy na tekst. |
+| **Speech Synthesis** | Zamiana tekstu na mowę przez AI. |
+| **SSML (Speech Synthesis Markup Language)** | Znaczniki XML do sterowania syntezą mowy (pauzy, głos, tempo). |
+| **Speech Translation** | Tłumaczenie mowy na inny język w czasie rzeczywistym. |
+| **Speaker Recognition** | Rozpoznawanie osoby na podstawie jej głosu. |
+| **Custom Speech** | Dostosowanie rozpoznawania mowy do własnych potrzeb i słownictwa. |
+| **Custom Voice** | Tworzenie własnego, syntetycznego głosu do TTS. |
+| **Custom Neural Voice** | Bardzo realistyczny, spersonalizowany głos TTS (wymaga zgody Microsoft). |
+| **Pronunciation Assessment** | Ocena poprawności wymowy użytkownika przez AI. |
+| **Keyword Recognition** | Rozpoznawanie słów-kluczy na urządzeniu, np. „Hey Cortana”. |
+| **Custom Translator** | Tłumaczenie tekstu z uwzględnieniem specjalistycznego słownictwa. |
+| **Transliteration** | Zamiana alfabetu tekstu bez tłumaczenia (np. arabski → łaciński). |
+| **Batch Transcription** | Masowa transkrypcja wielu plików audio na tekst. |
 
 ### **Generatywna AI**
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **Generative AI** | AI tworzaca **nowe treści** (tekst, obrazy, kod) z promptów – w odróżnieniu od Traditional AI, która **analizuje** dane i zwraca predykcje (etykiety/liczby), GenAI **generuje** oryginalne outputy |
+| **Generative AI** | AI generująca nowe treści (tekst, obrazy, kod) na podstawie promptów. |
 | | ![Traditional AI vs Generative AI](assets/genai-vs-traditional.svg) |
-| **Multimodal Models** | Modele przetwarzające jednocześnie tekst, obraz i audio (np. GPT-4o) |
-| **DALL-E** | Model generowania obrazów z promptów tekstowych (text-to-image); DALL-E 3 w Azure OpenAI |
-| **Whisper** | Model transkrypcji audio na tekst (speech-to-text); dostępny w Azure OpenAI i Azure AI Speech |
-| **Codex** | Model generowania kodu z języka naturalnego; bazowy dla GitHub Copilot |
-| **Prompt** | Polecenie lub zapytanie przekazywane do modelu generatywnego |
-| **Token** | Najmniejsza jednostka tekstu przetwarzana przez model językowy (~¾ słowa) |
-| **Prompt Engineering** | Tworzenie skutecznych poleceń dla modeli generatywnych |
+| **Multimodal Models** | Modele obsługujące tekst, obraz i dźwięk jednocześnie. |
+| **DALL-E** | Model AI generujący obrazy na podstawie opisu tekstowego. |
+| **Whisper** | Model AI zamieniający mowę na tekst. |
+| **Codex** | Model AI generujący kod z poleceń tekstowych. |
+| **Prompt** | Polecenie lub zapytanie przekazywane do modelu AI. |
+| **Token** | Najmniejsza jednostka tekstu przetwarzana przez model językowy. |
+| **Prompt Engineering** | Sztuka tworzenia skutecznych poleceń dla modeli AI. |
 | | 1. **Zero-shot** – bez przykładów; model radzi sobie sam |
 | | ![Zero-shot](assets/pe-zero-shot.svg) |
 | | 2. **One-shot** – jeden przykład w promptie |
@@ -499,26 +499,26 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | | ![System Message](assets/pe-system-message.svg) |
 | | 6. **Retrieval Augmented Generation (RAG)** – wzbogacenie promptu danymi z bazy wiedzy |
 | | ![RAG](assets/pe-rag.svg) |
-| **Zero-shot learning** | Model radzi sobie z zadaniem, którego nie widział podczas treningu |
-| **Few-shot learning** | Model uczy się na bardzo małej liczbie przykładów (1–5 w promptie) |
-| **Chain-of-Thought** | Technika zachęcająca model do wypisania kroków rozumowania (poprawia dokładność) |
-| **System Message** | Instrukcja na początku sesji definiująca rolę, ton i ograniczenia modelu |
-| **Temperature** | Parametr losowości: 0 = deterministyczny, 1+ = kreatywny |
-| **Top-p (Nucleus Sampling)** | Alternatywny parametr kontrolujący różnorodność odpowiedzi |
-| **Context Window** | Maksymalna liczba tokenów przetwarzana jednorazowo przez model (np. 128k dla GPT-4o) |
-| **Fine-tuning** | Dodatkowe trenowanie pre-trenowanego modelu na własnych danych |
-| **MaaS (Model as a Service)** | Serverless API – wdrożenie modelu bez zarządzania infrastrukturą, płatność per token (vs Managed Compute = dedykowane GPU, per hour) |
+| **Zero-shot learning** | Model wykonuje zadanie, którego nie widział podczas treningu. |
+| **Few-shot learning** | Model uczy się na kilku przykładach podanych w promptach. |
+| **Chain-of-Thought** | Technika wymuszająca wypisanie kroków rozumowania przez model. |
+| **System Message** | Instrukcja określająca rolę i ograniczenia modelu AI. |
+| **Temperature** | Parametr określający losowość odpowiedzi modelu AI. |
+| **Top-p (Nucleus Sampling)** | Parametr kontrolujący różnorodność odpowiedzi modelu. |
+| **Context Window** | Maksymalna liczba tokenów, które model może przetworzyć naraz. |
+| **Fine-tuning** | Dodatkowe trenowanie modelu na własnych danych. |
+| **MaaS (Model as a Service)** | Udostępnianie modelu przez API bez zarządzania infrastrukturą. |
 | | ![MaaS](assets/genai-maas.svg) |
 | **Azure OpenAI Deployment Types** | 1. **Standard** – shared compute, TPM/RPM quota, najczęstszy <br> 2. **Provisioned (PTU)** – dedykowana przepustowość, stała opłata <br> 3. **Global** – routing między regionami, najlepsza dostępność |
-| **Azure OpenAI Playground** | Interaktywne środowisko testowe w portalu: <br> 1. **Chat** – rozmowa z modelem <br> 2. **Completions** – uzupełnianie tekstu <br> 3. **Assistants** – agenci z narzędziami <br> Idealne do prototypowania |
-| **Azure OpenAI vs OpenAI (publiczny)** | Na egzaminie! Różnice: <br> 1. Dane klientów **NIE** są używane do trenowania modeli Microsoft/OpenAI <br> 2. VNet, Private Endpoint, compliance (RODO, HIPAA, SOC2) <br> 3. Content Filters domyślnie włączone <br> 4. Te same modele, ale managed i zabezpieczone przez Microsoft <br> 5. Wymaga zatwierdzenia dostępu |
-| **Azure OpenAI Data Privacy** | „Your data is your data" – dane wysyłane do Azure OpenAI **nie trafiają** do OpenAI, nie są używane do trenowania modeli, nie są udostępniane innym klientom. Dane przetwarzane w wybranym regionie Azure |
-| **Azure OpenAI Abuse Monitoring** | Wszystkie requesty logowane na 30 dni; Microsoft może przeglądać flagowane żądania; można wnioskować o wyłączenie dla zatwierdzonych scenariuszy |
-| **Model Versioning (Azure OpenAI)** | Modele mają wersje (np. `0613`, `1106`, `turbo-2024-04-09`); Microsoft podaje daty wycofania (retirement); auto-upgrade do nowszej wersji jeśli nie zaktualizujesz ręcznie |
-| **RAG (Retrieval Augmented Generation)** | Retrieval Augmented Generation – łączy LLM z zewnętrznymi źródłami danych zamiast polegać na wiedzy treningowej. Pipeline: dokumenty → chunking → embedding → vector index (Azure AI Search); pytanie → embed query → similarity search → top-K docs + prompt → LLM → grounded answer. Korzyści: aktualne dane, mniej halucynacji, cytowanie źródeł, brak potrzeby fine-tuningu. Na egzaminie: RAG to **najważniejsza technika** redukcji halucynacji |
+| **Azure OpenAI Playground** | Portal do testowania i prototypowania modeli OpenAI na Azure. |
+| **Azure OpenAI vs OpenAI (publiczny)** | Azure OpenAI: dane klientów nie są trenowane, compliance, content filters, wymaga zgody. |
+| **Azure OpenAI Data Privacy** | Dane klientów nie są używane do trenowania modeli i nie opuszczają regionu Azure. |
+| **Azure OpenAI Abuse Monitoring** | Wszystkie żądania są logowane i monitorowane pod kątem nadużyć. |
+| **Model Versioning (Azure OpenAI)** | Modele mają wersje i daty wycofania, można je aktualizować ręcznie. |
+| **RAG (Retrieval Augmented Generation)** | Technika łącząca LLM z zewnętrznymi danymi, by odpowiedzi były aktualne i oparte na źródłach. |
 | | ![RAG Pipeline](assets/genai-rag-pipeline.svg) |
-| **Grounding (zakotwiczenie)** | Powiązanie odpowiedzi modelu z konkretnymi, zweryfikowanymi dokumentami |
-| **Hallucinations** | Generowanie nieprawdziwych informacji przez model – najczęściej pytany problem GenAI na egzaminie |
+| **Grounding (zakotwiczenie)** | Powiązanie odpowiedzi modelu z konkretnymi, zweryfikowanymi źródłami. |
+| **Hallucinations** | Model generuje nieprawdziwe informacje (halucynacje). |
 | | ![Hallucinations](assets/genai-hallucinations.svg) |
 | | 1. **Factual Hallucination** – fałszywe fakty, daty, nazwiska (np. „stolica Australii to Sydney") |
 | | ![Factual Hallucination](assets/hal-factual.svg) |
@@ -530,7 +530,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | | ![Context Hallucination](assets/hal-context.svg) |
 | | 5. **Autocomplete Hallucination** – generuje token „bo statystycznie pasuje", nie sprawdza prawdziwości |
 | | ![Autocomplete Hallucination](assets/hal-autocomplete.svg) |
-| **Content Filters** | Mechanizmy Azure OpenAI blokujące szkodliwe treści |
+| **Content Filters** | Mechanizmy blokujące szkodliwe treści w odpowiedziach AI. |
 | | 1. **Hate (nienawiść)** – mowa nienawiści, dyskryminacja grup |
 | | ![Hate](assets/cf-hate.svg) |
 | | 2. **Violence (przemoc)** – treści promujące przemoc fizyczną |
@@ -542,12 +542,12 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | | 5. **Jailbreak detection** – wykrywanie prób obejścia ograniczeń modelu |
 | | ![Jailbreak](assets/cf-jailbreak.svg) |
 | | Severity levels: Safe, Low, Medium, High |
-| **Prompt Injection** | Atak polegający na wstrzyknięciu złośliwych instrukcji w danych wejściowych |
+| **Prompt Injection** | Atak polegający na wstrzyknięciu złośliwych instrukcji do promptu. |
 | **XPIA** | Cross-Prompt Injection Attacks – atak przez wstrzyknięcie instrukcji w jedno ze źródeł RAG agenta |
-| **Hybrid Search** | Kombinacja vector search (semantyka) + keyword search (dokładne słowa) – lepsze wyniki niż każde osobno |
-| **Vector Store** | Baza danych przechowująca embeddingi; Azure AI Search pełni rolę vector store dla RAG |
-| **Chunking** | Dzielenie dużych dokumentów na mniejsze fragmenty przed osadzeniem w embeddings; kluczowe dla RAG |
-| **Integrated Vectorization** | Automatyczne konwertowanie dokumentów na embeddingi w Azure AI Search |
+| **Hybrid Search** | Połączenie wyszukiwania semantycznego i słów kluczowych dla lepszych wyników. |
+| **Vector Store** | Baza danych przechowująca embeddingi do wyszukiwania semantycznego. |
+| **Chunking** | Dzielenie dokumentów na mniejsze fragmenty do analizy przez AI. |
+| **Integrated Vectorization** | Automatyczne zamienianie dokumentów na embeddingi w Azure AI Search. |
 
 ### **Modele w Azure OpenAI – tabela (egzamin!)**
 
@@ -564,48 +564,48 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **Responsible AI** | Etyczne i bezpieczne wdrażanie AI |
+| **Responsible AI** | Etyczne i bezpieczne wdrażanie oraz używanie AI. |
 | | 1. **Fairness** – sprawiedliwość, równe traktowanie <br> 2. **Reliability & Safety** – niezawodność i bezpieczeństwo <br> 3. **Privacy & Security** – ochrona danych <br> 4. **Inclusiveness** – dostępność dla wszystkich <br> 5. **Transparency** – przejrzystość działania <br> 6. **Accountability** – odpowiedzialność ludzi za systemy AI |
-| **Fairness** | Sprawiedliwość, równe traktowanie grup |
-| **Reliability & Safety** | Model działa poprawnie w różnych warunkach; nie powoduje szkody; testowany pod kątem edge cases |
-| **Inclusiveness** | AI dostępne dla wszystkich, w tym osób z niepełnosprawnościami; brak dyskryminacji |
-| **Transparency** | Użytkownicy wiedzą, że mają do czynienia z AI; rozumieją jak model podejmuje decyzje |
-| **Accountability** | Ludzie ponoszą odpowiedzialność za systemy AI; wymagane governance, audit, oversight |
-| **Bias** | Tendencyjność modelu wynikająca z danych |
-| **Explainability** | Wyjaśnialność decyzji modelu |
-| **Interpretability** | Możliwość zrozumienia, jak model podejmuje decyzje |
-| **Compliance** | Zgodność z regulacjami (np. RODO/GDPR) |
-| **Data Privacy** | Ochrona prywatności i bezpieczeństwa danych |
-| **SHAP** | SHapley Additive exPlanations – technika pokazująca wpływ każdej cechy na predykcję modelu |
-| **LIME** | Local Interpretable Model-agnostic Explanations – lokalne wyjaśnienia decyzji modelu |
-| **Feature Importance** | Ranking cech wg wpływu na wynik modelu; obliczany przez SHAP/LIME |
-| **Fairlearn** | Open-source narzędzie do pomiaru i poprawy sprawiedliwości modeli; w Azure ML RAI Dashboard |
-| **Error Analysis** | Analiza błędów modelu pogrupowana wg cech/podgrup; diagnoza biasu – Azure ML RAI Dashboard |
-| **Causal Analysis** | Analiza przyczynowości: „czy zmiana X powoduje zmianę Y?" (nie tylko korelacja) |
-| **Counterfactual** | Kontrfaktyczne przykłady: „jak zmieniłby się wynik, gdyby…" – wyjaśnienie alternatywnych scenariuszy |
-| **Responsible AI Dashboard** | Zintegrowany panel w Azure ML łączący: Error Analysis, Fairlearn, SHAP, Causal Analysis, Counterfactuals – jedno miejsce do analizy modelu |
-| **Human-in-the-Loop** | Człowiek w pętli decyzyjnej – kluczowa zasada RAI: AI wspiera, ale człowiek podejmuje ostateczną decyzję (zwłaszcza w medycynie, prawie, finansach) |
-| **Responsible AI Impact Assessment** | Microsoft wymaga oceny wpływu AI przed wdrożeniem: identyfikacja ryzyk, potencjalnych szkód i grup dotkniętych |
+| **Fairness** | Sprawiedliwe i równe traktowanie wszystkich przez AI. |
+| **Reliability & Safety** | Model działa poprawnie i nie powoduje szkód. |
+| **Inclusiveness** | AI dostępne dla wszystkich, bez wykluczeń. |
+| **Transparency** | Użytkownicy wiedzą, że korzystają z AI i jak działa model. |
+| **Accountability** | Odpowiedzialność ludzi za decyzje i działanie AI. |
+| **Bias** | Model faworyzuje pewne grupy przez dane lub algorytm. |
+| **Explainability** | Możliwość wyjaśnienia, jak model podjął decyzję. |
+| **Interpretability** | Możliwość zrozumienia działania modelu przez człowieka. |
+| **Compliance** | Zgodność AI z przepisami i regulacjami. |
+| **Data Privacy** | Ochrona prywatności i bezpieczeństwa danych użytkowników. |
+| **SHAP** | Technika pokazująca wpływ cech na predykcję modelu. |
+| **LIME** | Technika lokalnego wyjaśniania decyzji modelu. |
+| **Feature Importance** | Ranking cech według ich wpływu na wynik modelu. |
+| **Fairlearn** | Narzędzie do pomiaru i poprawy sprawiedliwości modeli AI. |
+| **Error Analysis** | Analiza błędów modelu według cech i grup użytkowników. |
+| **Causal Analysis** | Analiza, czy zmiana jednej cechy powoduje zmianę wyniku. |
+| **Counterfactual** | Przykłady pokazujące, jak zmiana cechy wpływa na wynik modelu. |
+| **Responsible AI Dashboard** | Panel w Azure ML do analizy sprawiedliwości, błędów i wyjaśnialności modeli. |
+| **Human-in-the-Loop** | Człowiek podejmuje ostateczną decyzję, AI tylko wspiera. |
+| **Responsible AI Impact Assessment** | Ocena ryzyk i wpływu AI przed wdrożeniem (wymóg Microsoft). |
 
 ### **Cykl życia modelu i MLOps**
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **Model Deployment** | Wdrożenie modelu do środowiska produkcyjnego |
+| **Model Deployment** | Wdrożenie modelu do produkcji, by mógł obsługiwać żądania. |
 | | 1. **Managed Online Endpoint** – real-time REST API zarządzany przez Azure ML; auto-scaling, blue/green deployment <br> 2. **Kubernetes Online Endpoint** – wdrożenie na AKS (Azure Kubernetes Service); pełna kontrola nad infrastrukturą <br> 3. **Batch Endpoint** – przetwarzanie wsadowe dużych zbiorów; wyniki do storage <br> 4. **Serverless API (MaaS)** – modele z Model Catalog (Foundry) bez zarządzania compute; płatność per token <br> 5. **Container (Docker)** – eksport modelu do kontenera; deploy gdzie chcesz (edge, on-prem, inny cloud) |
-| **Model Registry** | Repozytorium modeli z wersjonowaniem, metadanymi i metrykami |
-| **Endpoint** | Punkt dostępu do wdrożonego modelu przez REST API (Online = real-time, Batch = wsadowy) |
-| **Online Endpoint (Real-time)** | Inferencing w czasie rzeczywistym; odpowiedź w milisekundach; do aplikacji interaktywnych (chatbot, API) |
-| **Batch Endpoint** | Przetwarzanie dużych zbiorów danych wsadowo (np. co noc); wyniki zapisywane w storage; tańszy |
-| **Monitoring** | Śledzenie skuteczności i działania modelu po wdrożeniu |
-| **Drift** | Zmiana rozkładu danych wejściowych/wyjściowych w czasie, pogarszająca skuteczność modelu |
-| **Data Drift** | Zmiana rozkładu danych wejściowych w produkcji – najpowszechniejszy typ driftu na egzaminie |
-| **Model Drift** | Pogorszenie metryki predykcyjnej (accuracy, precision) na nowych danych |
-| **Prediction Drift** | Nagła zmiana przewidywań modelu bez zmian w danych wejściowych |
-| **Retraining** | Ponowne trenowanie modelu na nowych danych |
-| **Traffic Split (A/B Test)** | Podział ruchu użytkowników między model A i B; stopniowy rollout (10% → 50% → 100%) |
-| **MLOps** | Praktyki DevOps dla modeli ML: CI/CD, wersjonowanie, monitoring, automatyczny retraining |
-| **Audit Trail** | Pełna historia: kto trenował model, kiedy, z jakimi danymi, jakie wyniki – compliance |
+| **Model Registry** | Repozytorium do przechowywania i wersjonowania modeli ML. |
+| **Endpoint** | Adres API do komunikacji z wdrożonym modelem. |
+| **Online Endpoint (Real-time)** | Punkt API do natychmiastowych predykcji modelu. |
+| **Batch Endpoint** | Punkt API do przetwarzania dużych zbiorów danych wsadowo. |
+| **Monitoring** | Śledzenie skuteczności i poprawności działania modelu po wdrożeniu. |
+| **Drift** | Zmiana rozkładu danych lub wyników modelu w czasie. |
+| **Data Drift** | Zmiana rozkładu danych wejściowych w produkcji. |
+| **Model Drift** | Pogorszenie skuteczności modelu na nowych danych. |
+| **Prediction Drift** | Nagła zmiana przewidywań modelu bez zmian w danych wejściowych. |
+| **Retraining** | Ponowne trenowanie modelu na nowych danych, by poprawić skuteczność. |
+| **Traffic Split (A/B Test)** | Podział ruchu między różne modele do testowania skuteczności. |
+| **MLOps** | Praktyki DevOps dla ML: automatyzacja, wersjonowanie, monitoring modeli. |
+| **Audit Trail** | Historia zmian i treningów modelu dla zgodności i audytu. |
 | **Jobs w Azure ML** | 1. **Command Job** – uruchamianie skryptu trenującego <br> 2. **Pipeline Job** – wielokrokowy workflow <br> 3. **Sweep Job** – automatyczne przeszukiwanie hiperparametrów |
 
 ### **Narzędzia i usługi Azure**
@@ -614,37 +614,37 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **Azure AI Services** | Rodzina gotowych usług AI na platformie Azure (Vision, Language, Speech, Face i inne) |
-| **AutoML (Automated ML)** | Automatyczny dobór algorytmu i hiperparametrów (klasyfikacja, regresja, time series; NIE clustering) |
-| **Designer** | Graficzny interfejs drag & drop w Azure ML do budowy pipeline'ów ML bez kodu |
-| **Azure AI Translator** | Osobna usługa do tłumaczeń maszynowych tekstu (100+ języków) |
-| **Azure AI Document Intelligence** | Ekstrakcja danych z formularzy, faktur, dokumentów (dawniej Form Recognizer) |
-| **Document Intelligence – Prebuilt Models** | Gotowe modele (egzamin!): <br> 1. **prebuilt-invoice** – faktury <br> 2. **prebuilt-receipt** – paragony <br> 3. **prebuilt-idDocument** – dowody, paszporty <br> 4. **prebuilt-businessCard** – wizytówki <br> 5. **prebuilt-layout** – tabele, tekst <br> Nie wymagają trenowania |
-| **Prebuilt vs Custom Model** | **Prebuilt:** gotowy model od Microsoft, działa od razu (Document Intelligence, Custom Vision prebuilt) <br> **Custom:** trenujesz na własnych danych, gdy prebuilt nie pasuje do domeny <br> Egzamin: zawsze preferuj prebuilt jeśli wystarczy |
-| **Custom Model Workflow (Doc Intelligence)** | Label (oznacz pola) → Train (wytrenuj model) → Test (oceń wyniki) → Deploy (wdróż do produkcji); Document Intelligence Studio do no-code |
-| **Azure AI Content Safety** | Filtrowanie szkodliwych treści: mowy nienawiści, przemocy, treści seksualnych |
-| **Azure AI Search** | Wektorowa baza danych i platforma wyszukiwania (indexer, index, skillset); kluczowa dla RAG |
-| **Custom Vision** | Trenowanie własnych modeli klasyfikacji/detekcji obrazów bez kodu |
-| **Azure Bot Service** | Usługa do budowy chatbotów; jeden bot obsługuje wiele kanałów (Web Chat, Teams, Facebook) |
-| **Copilot Studio** | Platforma no-code do budowy chatbotów i agentów AI (dawniej Power Virtual Agents) |
-| **Bot Service vs Copilot Studio** | **Bot Service:** dla developerów, kod w C#/JS/Python, pełna kontrola <br> **Copilot Studio:** no-code, użytkownicy biznesowi, szybkie prototypowanie <br> Egzamin: Copilot Studio = no-code, Bot Service = pro-code |
-| **AI Builder** | Narzędzia AI w Power Platform dla użytkowników biznesowych |
-| **Knowledge Mining** | Wydobywanie wiedzy z niestrukturyzowanych danych za pomocą AI (OCR, NLP, wzbogacanie) |
-| **Knowledge Mining Pipeline** | Trójstopniowy wzorzec (egzamin!): <br> 1. **Ingest** – źródła: Blob, SQL, Cosmos DB <br> 2. **Enrich** – AI Skillset: OCR, NER, key phrases, language detection <br> 3. **Explore** – Search Index, Dashboard, Power BI |
-| **Vector Search** | Wyszukiwanie na bazie podobieństwa embeddingów (semantyczne, nie słowa kluczowe) |
-| **AI Agents** | Aplikacje AI z LLM, instrukcjami i narzędziami, działające autonomicznie (3 typy: Prompt, Workflow, Hosted) |
-| **RBAC** | Role-Based Access Control – kontrola dostępu do zasobów Azure (właściciel, współpracownik, czytelnik) |
-| **Data Assets** | Zarządzanie danymi w Azure ML: rejestracja, wersjonowanie i udostępnianie zbiorów danych zespołom |
-| **Compute Instance** | Maszyna wirtualna w Azure ML – do eksperymentów, notebooków, developmentu (1 użytkownik) |
-| **Compute Cluster** | Skalowalne klastry obliczeniowe w Azure ML do trenowania modeli (auto-scale 0→N węzłów) |
-| **Serverless Compute** | Compute on-demand bez tworzenia klastra; Azure ML automatycznie alokuje zasoby na czas Job |
-| **Datastores** | Połączenia do źródeł danych w Azure ML: Blob Storage, Data Lake, Azure SQL – bezpieczne przechowywanie credentials |
-| **Feature Store** | Centralne repozytorium cech ML do ponownego wykorzystania między projektami |
-| **Prompt Flow** | Narzędzie w Azure AI Foundry do orkiestracji pipeline'ów AI, RAG i wielostopniowych aplikacji |
-| **Model Catalog** | Centralna baza modeli w Foundry: GPT, Phi, Llama, Mistral – przeglądanie, ewaluacja, wdrażanie |
-| **Azure AI Video Indexer** | Osobna usługa do analizy wideo: transkrypcja, OCR, face detection, scene detection, topic extraction |
-| **Microsoft Copilot** | Asystent AI w produktach Microsoft (M365 Copilot, Bing Chat, GitHub Copilot); bazuje na GPT + Grounding |
-| **Regions & Availability** | Nie wszystkie usługi AI dostępne w każdym regionie; Azure OpenAI wymaga wybrania regionu z dostępnym modelem |
+| **Azure AI Services** | Gotowe usługi AI na platformie Azure (np. Vision, Language, Speech). |
+| **AutoML (Automated ML)** | Automatyczny dobór algorytmu i parametrów dla ML. |
+| **Designer** | Graficzny interfejs do budowy pipeline'ów ML bez kodu. |
+| **Azure AI Translator** | Usługa do tłumaczeń maszynowych tekstu na wiele języków. |
+| **Azure AI Document Intelligence** | Usługa do ekstrakcji danych z dokumentów i formularzy. |
+| **Document Intelligence – Prebuilt Models** | Gotowe modele do ekstrakcji danych z różnych typów dokumentów. |
+| **Prebuilt vs Custom Model** | Prebuilt: gotowy model, Custom: trenujesz na własnych danych. |
+| **Custom Model Workflow (Doc Intelligence)** | Oznacz pola → trenuj model → testuj → wdrażaj do produkcji. |
+| **Azure AI Content Safety** | Usługa do filtrowania szkodliwych treści (nienawiść, przemoc, seks). |
+| **Azure AI Search** | Wektorowa baza danych i platforma wyszukiwania, kluczowa dla RAG. |
+| **Custom Vision** | Usługa do trenowania własnych modeli klasyfikacji obrazów bez kodu. |
+| **Azure Bot Service** | Usługa do budowy chatbotów obsługujących wiele kanałów. |
+| **Copilot Studio** | Platforma no-code do budowy chatbotów i agentów AI. |
+| **Bot Service vs Copilot Studio** | Bot Service: dla developerów, Copilot Studio: no-code dla biznesu. |
+| **AI Builder** | Narzędzia AI w Power Platform dla użytkowników biznesowych. |
+| **Knowledge Mining** | Wydobywanie wiedzy z niestrukturyzowanych danych przez AI. |
+| **Knowledge Mining Pipeline** | Ingest (dane) → Enrich (AI) → Explore (wyszukiwanie/analiza). |
+| **Vector Search** | Wyszukiwanie na podstawie podobieństwa embeddingów (semantycznie). |
+| **AI Agents** | Autonomiczne aplikacje AI z LLM, instrukcjami i narzędziami. |
+| **RBAC** | Kontrola dostępu do zasobów Azure na podstawie ról. |
+| **Data Assets** | Rejestracja, wersjonowanie i udostępnianie danych w Azure ML. |
+| **Compute Instance** | Maszyna wirtualna w Azure ML do eksperymentów i developmentu. |
+| **Compute Cluster** | Skalowalne klastry obliczeniowe do trenowania modeli ML. |
+| **Serverless Compute** | Obliczenia na żądanie bez tworzenia klastra w Azure ML. |
+| **Datastores** | Połączenia do źródeł danych w Azure ML (Blob, SQL, Data Lake). |
+| **Feature Store** | Repozytorium cech ML do ponownego wykorzystania w projektach. |
+| **Prompt Flow** | Narzędzie do orkiestracji pipeline'ów AI i RAG w Foundry. |
+| **Model Catalog** | Baza modeli AI w Foundry do przeglądania i wdrażania. |
+| **Azure AI Video Indexer** | Usługa do analizy wideo: transkrypcja, OCR, rozpoznawanie twarzy. |
+| **Microsoft Copilot** | Asystent AI w produktach Microsoft, bazujący na GPT. |
+| **Regions & Availability** | Dostępność usług AI zależy od regionu Azure. |
 
 ### **Azure AI Foundry vs Azure Machine Learning Studio (egzamin!)**
 
@@ -661,48 +661,48 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **Split Data** | Dzieli dane na zbiory treningowe i testowe; wymagany przed Score/Evaluate |
-| **Normalize Data** | Skaluje kolumny numeryczne do wspólnego zakresu (Min-Max, Z-score) |
-| **Clean Missing Data** | Obsługa brakujących wartości (usunięcie wierszy, średnia, mediana) |
-| **Select Columns in Dataset** | Wybór konkretnych kolumn z zestawu danych do dalszego przetwarzania |
-| **Train Model** | Trenowanie modelu na danych treningowych (logistic regression, decision tree itp.) |
-| **Train Clustering Model** | Trenowanie modelu klasteryzacji (K-Means); oddzielny od Train Model |
-| **Score Model** | Predykcja modelu na danych testowych; zwraca przewidywania |
-| **Evaluate Model** | Ocena modelu (Confusion Matrix, metryki); zasilany wyjściem Score Model |
-| **Assign Data to Clusters** | Przypisanie nowych danych do klastrów K-Means; do inferencing klasteryzacji (NIE Score Model!) |
+| **Split Data** | Dzieli dane na zbiory treningowe i testowe. |
+| **Normalize Data** | Skaluje dane numeryczne do wspólnego zakresu. |
+| **Clean Missing Data** | Obsługa brakujących danych (usuwanie, uzupełnianie). |
+| **Select Columns in Dataset** | Wybór kolumn do dalszego przetwarzania danych. |
+| **Train Model** | Trenowanie modelu ML na danych treningowych. |
+| **Train Clustering Model** | Trenowanie modelu klasteryzacji (np. K-Means). |
+| **Score Model** | Generowanie przewidywań modelu na danych testowych. |
+| **Evaluate Model** | Ocena skuteczności modelu na podstawie metryk. |
+| **Assign Data to Clusters** | Przypisanie nowych danych do klastrów przez model klasteryzacji. |
 
 ### **Komponenty Azure AI Search**
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **Indexer** | Eksportuje dokumenty źródłowe do JSON i wstawia je do indeksu wyszukiwania |
-| **Index** | Struktura przechowująca wyszukiwalne dane; zawiera pola z atrybutami (searchable, filterable) |
-| **Skillset** | Opcjonalny pipeline AI enrichment: OCR, NER, key phrase extraction, language detection |
-| **Knowledge Store** | Miejsce w Azure Storage do przechowywania wzbogaconych wyników AI (tabele, blob) |
-| **Semantic Ranker** | AI-based re-ranking wyników wyszukiwania w Azure AI Search; poprawia trafność przez rozumienie kontekstu zapytania (nie tylko keyword match) |
+| **Indexer** | Przetwarza i ładuje dane do indeksu wyszukiwania. |
+| **Index** | Struktura przechowująca dane do wyszukiwania. |
+| **Skillset** | Zestaw AI do wzbogacania danych (OCR, NER, frazy, język). |
+| **Knowledge Store** | Miejsce do przechowywania wzbogaconych wyników AI. |
+| **Semantic Ranker** | AI poprawiający trafność wyników wyszukiwania przez rozumienie kontekstu. |
 
 ### **Agenci AI – szczegóły**
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **Prompt Agents** | Typ agenta: bez kodu, instrukcje + tools – szybkie prototypowanie w portalu Foundry |
-| **Workflow Agents** | Typ agenta: orkiestracja w YAML; wielokrokowe procesy, decyzje logiczne |
-| **Hosted Agents** | Typ agenta: kod-based (Agent Framework, LangGraph); pełna kontrola nad logiką |
-| **Agent Tools** | Narzędzia agentów: web search, file search, memory, code interpreter, custom API |
-| **MCP (Model Context Protocol)** | Standard integracji narzędzi z agentami – unified interface dla tool discovery i execution |
-| **Agent Lifecycle** | Create → Test → Trace → Evaluate → Publish → Monitor |
-| **Foundry IQ** | Knowledge base dla agentów; integracja z Azure AI Search (vector store) |
-| **Guardrails** | Mechanizmy bezpieczeństwa agentów: content filters, prompt injection defense, output validation |
+| **Prompt Agents** | Agenci AI bez kodu, oparte na instrukcjach i narzędziach. |
+| **Workflow Agents** | Agenci AI orkiestrujący procesy w YAML. |
+| **Hosted Agents** | Agenci AI z pełną kontrolą logiki, oparci o kod. |
+| **Agent Tools** | Narzędzia agentów: web/file search, memory, code interpreter, API. |
+| **MCP (Model Context Protocol)** | Standard integracji narzędzi z agentami AI. |
+| **Agent Lifecycle** | Cykl życia agenta: tworzenie, test, śledzenie, ocena, publikacja, monitoring. |
+| **Foundry IQ** | Baza wiedzy dla agentów, zintegrowana z Azure AI Search. |
+| **Guardrails** | Mechanizmy bezpieczeństwa agentów: filtry treści, ochrona przed atakami, walidacja. |
 | | 1. **Content Filters** – blokowanie szkodliwych treści (hate, violence, sexual, self-harm) na wejściu i wyjściu <br> 2. **Prompt Injection Defense** – wykrywanie prób manipulacji instrukcjami modelu (jailbreak, XPIA) <br> 3. **Output Validation** – weryfikacja formatu, długości i poprawności odpowiedzi przed zwróceniem <br> 4. **Grounding Detection** – sprawdzanie czy odpowiedź jest oparta na źródłach (nie halucynacja) <br> 5. **PII Redaction** – automatyczne maskowanie danych osobowych w odpowiedziach <br> 6. **Rate Limiting** – ograniczenie liczby żądań (TPM/RPM) zapobiegające nadużyciom <br> 7. **Blocklists** – niestandardowe listy zabronionych słów/fraz definiowane przez organizację |
 
 ### **Metryki ewaluacji GenAI i agentów**
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **Coherence** | Czy odpowiedź jest spójna i logiczna |
-| **Fluency** | Czy odpowiedź brzmi naturalnie i poprawnie językowo |
-| **Relevance** | Czy odpowiedź odnosi się do pytania |
-| **Groundedness** | Czy odpowiedź jest oparta na dostarczonych źródłach/dokumentach (nie zmyślona) |
+| **Coherence** | Spójność i logiczność odpowiedzi AI. |
+| **Fluency** | Naturalność i poprawność językowa odpowiedzi AI. |
+| **Relevance** | Trafność odpowiedzi względem pytania. |
+| **Groundedness** | Oparcie odpowiedzi AI na dostarczonych źródłach. |
 
 ---
 
