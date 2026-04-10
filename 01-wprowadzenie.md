@@ -100,7 +100,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Model Catalog (Foundry)** | Centralna baza gotowych modeli (GPT, Phi, Llama, Mistral) do wdrażania i testowania. |
 | **Foundry IQ** | Baza wiedzy dla agentów, zintegrowana z Azure AI Search (vector store). |
 | **Guardrails (Foundry)** | Zestaw zabezpieczeń: filtry treści, ochrona przed prompt injection, walidacja outputu, grounding detection. |
-| **Prompt Injection Defense** | Mechanizmy wykrywające i blokujące próby manipulacji promptem (jailbreak, XPIA). |
+| **Prompt Injection Defense** | Mechanizmy wykrywające i blokujące próby manipulacji promptem (jailbreak, XPIA).<br><ol><li><b>Content Filters</b> – blokują szkodliwe lub niepożądane treści w promptach i odpowiedziach</li><li><b>Prompt Validation</b> – sprawdza format, długość i zgodność promptu z polityką</li><li><b>Blocklists</b> – listy zakazanych słów i fraz</li><li><b>Grounding Detection</b> – sprawdza, czy odpowiedź jest oparta na dozwolonych źródłach</li><li><b>Jailbreak Detection</b> – wykrywa próby obejścia ograniczeń modelu</li><li><b>Rate Limiting</b> – ogranicza liczbę żądań, by utrudnić ataki automatyczne</li></ol> |
 | **Output Validation** | Automatyczna weryfikacja formatu, długości i poprawności odpowiedzi agenta. |
 | **Grounding Detection** | Sprawdzanie, czy odpowiedź agenta jest oparta na dostarczonych źródłach. |
 | **PII Redaction** | Automatyczne maskowanie danych osobowych w odpowiedziach agentów. |
@@ -636,7 +636,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | | ![Sexual](assets/cf-sexual.svg) |
 | | 4. **Self-harm (samookaleczenie)** – treści promujące samookaleczenie |
 | | ![Self-harm](assets/cf-self-harm.svg) |
-| | 5. **Jailbreak detection** – wykrywanie prób obejścia ograniczeń modelu |
+| | 5. **Jailbreak detection** – wykrywanie próby obejścia ograniczeń modelu |
 | | ![Jailbreak](assets/cf-jailbreak.svg) |
 | | Severity levels: Safe, Low, Medium, High |
 | **Prompt Injection** | Atak polegający na wstrzyknięciu złośliwych instrukcji do promptu. |
@@ -796,7 +796,19 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | **Agent Lifecycle** | Cykl życia agenta: tworzenie, test, śledzenie, ocena, publikacja, monitoring. |
 | **Foundry IQ** | Baza wiedzy dla agentów, zintegrowana z Azure AI Search. |
 | **Guardrails (Foundry)** | Zestaw zabezpieczeń: filtry treści, ochrona przed prompt injection, walidacja outputu, grounding detection. |
-| | 1. **Content Filters** – blokowanie szkodliwych treści (hate, violence, sexual, self-harm) na wejściu i wyjściu <br> 2. **Prompt Injection Defense** – wykrywanie prób manipulacji instrukcjami modelu (jailbreak, XPIA) <br> 3. **Output Validation** – weryfikacja formatu, długości i poprawności odpowiedzi przed zwróceniem <br> 4. **Grounding Detection** – sprawdzanie czy odpowiedź jest oparta na dostarczonych źródłach <br> 5. **PII Redaction** – automatyczne maskowanie danych osobowych w odpowiedziach <br> 6. **Rate Limiting** – ograniczanie liczby żądań (TPM/RPM) zapobiegające nadużyciom <br> 7. **Blocklists** – niestandardowe listy zabronionych słów/fraz definiowane przez organizację |
+| **Prompt Injection Defense** | Mechanizmy wykrywające i blokujące próby manipulacji promptem (jailbreak, XPIA).<br><ol><li><b>Content Filters</b> – blokują szkodliwe lub niepożądane treści w promptach i odpowiedziach</li><li><b>Prompt Validation</b> – sprawdza format, długość i zgodność promptu z polityką</li><li><b>Blocklists</b> – listy zakazanych słów i fraz</li><li><b>Grounding Detection</b> – sprawdza, czy odpowiedź jest oparta na dozwolonych źródłach</li><li><b>Jailbreak Detection</b> – wykrywa próby obejścia ograniczeń modelu</li><li><b>Rate Limiting</b> – ogranicza liczbę żądań, by utrudnić ataki automatyczne</li></ol> |
+| **Output Validation** | Automatyczna weryfikacja formatu, długości i poprawności odpowiedzi agenta. |
+| **Grounding Detection** | Sprawdzanie, czy odpowiedź agenta jest oparta na dostarczonych źródłach. |
+| **PII Redaction** | Automatyczne maskowanie danych osobowych w odpowiedziach agentów. |
+| **Rate Limiting** | Ograniczanie liczby żądań do agentów (TPM/RPM) dla bezpieczeństwa. |
+| **Blocklists** | Listy zabronionych słów/fraz definiowane przez organizację. |
+| **PTU (Provisioned Throughput Unit)** | Dedykowana przepustowość dla wdrożeń modeli w Foundry, stała opłata. |
+| **Global Deployment** | Wdrażanie modeli z automatycznym routingiem między regionami. |
+| **Serverless API (Foundry)** | Udostępnianie modeli przez API bez zarządzania infrastrukturą, płatność per token. |
+| **Ewaluacja agentów GenAI** | Ocena agentów na podstawie metryk: coherence, groundedness, relevance, fluency. |
+| **XPIA (Cross-Prompt Injection Attacks)** | Ataki polegające na wstrzyknięciu instrukcji w jedno ze źródeł agenta (np. dokument RAG). |
+| **Orkiestracja agentów** | Projektowanie złożonych przepływów decyzyjnych i integracji narzędzi w Foundry. |
+| **Foundry vs ML Studio** | Foundry: GenAI, agenci, RAG, orkiestracja; ML Studio: trenowanie własnych modeli ML. |
 
 ### **Metryki ewaluacji GenAI i agentów**
 
