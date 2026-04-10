@@ -453,6 +453,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | **Instance Segmentation** | Segmentacja z rozróżnieniem poszczególnych obiektów na obrazie. |
 | | ![Instance Segmentation](assets/cv-instance-segmentation.svg) |
 | **Image Tagging / Captioning** | Automatyczne nadawanie tagów i opisów obrazom przez AI. |
+| **Tagging (Tagowanie)** | Przypisywanie obiektom, obrazom lub tekstom słów-kluczy (tagów), które opisują ich zawartość lub cechy. Ułatwia wyszukiwanie, kategoryzację i analizę danych. |
 | | ![Tagging / Captioning](assets/cv-tagging-captioning.svg) |
 | **Dense Captions** | Wiele opisów dla różnych fragmentów obrazu. |
 | **Smart Cropping** | Automatyczne kadrowanie obrazu z zachowaniem kluczowych elementów. |
