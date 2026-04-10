@@ -548,10 +548,9 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | **Language Detection** | Automatyczne rozpoznawanie języka tekstu przez AI. |
 | **Intent Recognition** | Rozpoznawanie celu lub zamiaru użytkownika w tekście. |
 | **CLU** | Usługa rozpoznawania intencji i encji w rozmowach (następca LUIS). |
-| **Utterance** | Wypowiedź użytkownika analizowana przez model NLP. |
-| **Intent** | Zamiar użytkownika rozpoznany z wypowiedzi. |
-| **Entity** | Wartość wyodrębniona z wypowiedzi użytkownika (np. miasto, data). |
-| | Główne typy entity w NLP:<br>1. <b>Regular expression entity</b> – wykrywa dane o określonym wzorcu (np. numer lotu, e-mail, telefon)<br>2. <b>Machine learned entity</b> – wykrywa encje na podstawie wytrenowanego modelu ML<br>3. <b>Prebuilt entity</b> – gotowe typy, np. data, lokalizacja, waluta<br>4. <b>List entity</b> – rozpoznaje wartości z ustalonej listy (np. marki, produkty) |
+| **Utterance** | Przykładowa wypowiedź użytkownika analizowana przez model NLP (np. "Jaka jest pogoda?", "Pokaż prognozę na jutro"). |
+| **Intent** | Zamiar użytkownika rozpoznany z wypowiedzi (np. uzyskanie prognozy pogody, zamówienie pizzy). |
+| **Entity** | Konkretna informacja wyodrębniana z wypowiedzi, która doprecyzowuje intencję (np. miasto, data, rodzaj pizzy). |
 | **Conversational AI Flow** | Przepływ: wypowiedź → intencja → encje → odpowiedź. |
 | **Multi-turn Conversation** | Rozmowa, w której chatbot pamięta kontekst kilku wypowiedzi. |
 | **Question Answering** | Usługa odpowiadania na pytania na podstawie bazy wiedzy. |
