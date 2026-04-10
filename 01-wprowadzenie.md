@@ -88,7 +88,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Explainability w praktyce** | Praktyczne zastosowanie SHAP, LIME, Responsible AI Dashboard do wyjaśniania decyzji modeli. |
 | **Fine-tuning** | Dodatkowe trenowanie foundation modelu (np. GPT, DALL-E) na własnych danych, dostosowanie do specyficznych zadań. |
 | **Data Privacy & Security** | Ochrona danych, data residency, privacy by design, compliance (np. RODO, HIPAA), mechanizmy anonimizacji i pseudonimizacji. |
-| **AI Solution Lifecycle** | Pełny cykl życia rozwiązania AI. |
+| **AI Solution Lifecycle** | Pełny cykl życia rozwiązania AI:  <ul><li>analiza biznesowa</li><li>development</li><li>testy</li><li>deployment</li><li>monitoring</li><li>retraining</li></ul> |
 |  • analiza biznesowa → development → testy → deployment → monitoring → retraining |  |
 | **Responsible AI Impact Assessment** | Praktyczna ocena wpływu wdrożenia AI, checklisty, dokumentacja, wymagania Microsoft. |
 | **AI Governance** | Polityki, role, odpowiedzialności, procesy zarządzania AI w organizacji. |
