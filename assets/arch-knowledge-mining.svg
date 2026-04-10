@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 200">
+  <g font-family="Segoe UI,Arial" font-size="14">
+    <!-- Źródła -->
+    <rect x="20" y="60" width="120" height="80" fill="#fffde7" stroke="#fbc02d" rx="10"/>
+    <text x="80" y="95" text-anchor="middle" fill="#fbc02d" font-size="14" dominant-baseline="middle">Źródła danych</text>
+    <text x="80" y="125" text-anchor="middle" fill="#fbc02d" font-size="11" dominant-baseline="middle">np. dokumenty</text>
+    <path d="M140 100 H180" stroke="#888" marker-end="url(#arrow)"/>
+    <!-- Enrichment -->
+    <rect x="180" y="60" width="120" height="80" fill="#e8f5e9" stroke="#388e3c" rx="10"/>
+    <text x="240" y="95" text-anchor="middle" fill="#388e3c" font-size="14" dominant-baseline="middle">AI Enrichment</text>
+    <text x="240" y="125" text-anchor="middle" fill="#388e3c" font-size="11" dominant-baseline="middle">np. OCR, NER</text>
+    <path d="M300 100 H340" stroke="#888" marker-end="url(#arrow)"/>
+    <!-- Wyszukiwanie -->
+    <rect x="340" y="60" width="120" height="80" fill="#f3e5f5" stroke="#8e24aa" rx="10"/>
+    <text x="400" y="95" text-anchor="middle" fill="#8e24aa" font-size="14" dominant-baseline="middle">Wyszukiwanie</text>
+    <text x="400" y="125" text-anchor="middle" fill="#8e24aa" font-size="11" dominant-baseline="middle">np. semantyka</text>
+    <path d="M460 100 H500" stroke="#888" marker-end="url(#arrow)"/>
+    <!-- Użytkownik -->
+    <rect x="500" y="60" width="120" height="80" fill="#e3f2fd" stroke="#1976d2" rx="10"/>
+    <text x="560" y="95" text-anchor="middle" fill="#1976d2" font-size="14" dominant-baseline="middle">Użytkownik</text>
+    <text x="560" y="125" text-anchor="middle" fill="#1976d2" font-size="11" dominant-baseline="middle">np. portal</text>
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" fill="#888" />
+      </marker>
+    </defs>
+  </g>
+</svg>

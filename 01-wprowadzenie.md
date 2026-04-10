@@ -76,6 +76,32 @@ Platforma **Microsoft Azure** oferuje szeroki zestaw gotowych usług AI, które 
 
 Każda z tych usług posiada gotowe API, które można łatwo zintegrować z aplikacjami biznesowymi, stronami internetowymi czy chatbotami.
 
+## Inne ważne pojęcia: Data Mining, Knowledge Mining i pokrewne
+
+W kontekście AI, ML i rozwiązań chmurowych warto znać także następujące pojęcia i technologie:
+
+| **Pojęcie** | **Opis** |
+|---|---|
+| **Data Mining** | Proces odkrywania wzorców, zależności i wiedzy w dużych zbiorach danych przy użyciu metod statystycznych, ML i baz danych. W Azure najczęściej realizowany przez Azure Machine Learning, Synapse Analytics lub Spark. |
+| | ![Architektura Data Mining](assets/arch-data-mining.svg) |
+| **Knowledge Mining** | Łączenie wyszukiwania, AI i ekstrakcji wiedzy z nieustrukturyzowanych danych (np. dokumentów, plików, e-maili). W Azure realizowane głównie przez Azure AI Search (dawniej Cognitive Search) z enrichment pipeline. |
+| | ![Architektura Knowledge Mining](assets/arch-knowledge-mining.svg) |
+| **Text Mining** | Wydobywanie informacji, wzorców i relacji z tekstów (np. analiza sentymentu, ekstrakcja kluczowych fraz, NER). W Azure: AI Language, Cognitive Search, Synapse. |
+| | ![Architektura Text Mining](assets/arch-text-mining.svg) |
+| **Web Mining** | Automatyczna analiza i ekstrakcja wiedzy z zasobów internetowych (strony WWW, social media, logi). |
+| **Process Mining** | Analiza logów procesów biznesowych w celu odkrycia rzeczywistych przepływów pracy i optymalizacji procesów. |
+| | ![Architektura Process Mining](assets/arch-process-mining.svg) |
+| **Pattern Mining** | Wyszukiwanie powtarzających się wzorców w danych (np. sekwencje, asocjacje, reguły). |
+| **Predictive Analytics** | Wykorzystanie danych historycznych i modeli ML do przewidywania przyszłych zdarzeń lub trendów. |
+| **Descriptive Analytics** | Analiza danych w celu opisania i zrozumienia przeszłych zdarzeń (raportowanie, dashboardy). |
+| **Prescriptive Analytics** | Analiza danych i rekomendacje działań optymalizujących decyzje biznesowe. |
+| **Big Data Analytics** | Przetwarzanie i analiza bardzo dużych, zróżnicowanych zbiorów danych (np. Hadoop, Spark, Synapse Analytics). |
+| **Business Intelligence (BI)** | Zestaw narzędzi i procesów do analizy danych biznesowych, raportowania i wspierania decyzji (np. Power BI, Synapse). |
+| **Data Science** | Dziedzina łącząca statystykę, ML, programowanie i wiedzę domenową do analizy i interpretacji danych. |
+| **Feature Engineering** | Proces tworzenia, selekcji i przetwarzania cech (features) wykorzystywanych w modelach ML. |
+| **Data Engineering** | Budowa i utrzymanie infrastruktury do gromadzenia, przetwarzania i udostępniania danych (np. ETL, Data Lake, Data Warehouse). |
+
+Znajomość tych pojęć pomaga lepiej zrozumieć ekosystem rozwiązań AI/ML oraz rolę poszczególnych usług Azure w praktycznych scenariuszach.
 ## Azure AI Services - co warto wiedzieć
 
 **Azure AI Services** (historycznie: Cognitive Services) to rodzina gotowych modeli AI udostępnianych jako usługi chmurowe przez REST API i SDK. Z perspektywy egzaminu AI-900 najważniejsze jest rozumienie, kiedy wybrać gotową usługę AI Services, a kiedy budować model samodzielnie w Azure Machine Learning.
