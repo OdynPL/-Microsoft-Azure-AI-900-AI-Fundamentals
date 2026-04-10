@@ -235,12 +235,26 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | | ![Autoencoder](assets/nn-autoencoder.svg) |
 | | 6. **Transformer** – mechanizm attention; podstawa GPT, BERT (najważniejsza na egzaminie) |
 | | ![Transformer](assets/nn-transformer.svg) |
-| **Supervised Learning** | Uczenie nadzorowane (dane z etykietami) | |
-| | | 1. <b>Linear Regression</b> (regresja liniowa – przewidywanie wartości liczbowych)<br>2. <b>Logistic Regression</b> (regresja logistyczna – klasyfikacja binarna)<br>3. <b>Decision Trees</b> (drzewa decyzyjne – klasyfikacja/regresja, interpretowalność)<br>4. <b>SVM</b> (maszyny wektorów nośnych – klasyfikacja liniowa/nieliniowa)<br>5. <b>k-NN</b> (k-najbliższych sąsiadów – klasyfikacja na podstawie podobieństwa)<br>6. <b>Random Forest</b> (las losowy – wiele drzew, większa dokładność)<br>7. <b>Neural Networks</b> (sieci neuronowe – złożone wzorce, deep learning) |
-| **Unsupervised Learning** | Uczenie nienadzorowane (grupowanie bez etykiet) | |
-| | | 1. <b>K-Means</b> (grupowanie na podstawie odległości)<br>2. <b>Hierarchical Clustering</b> (grupowanie hierarchiczne – drzewo klastrów)<br>3. <b>PCA</b> (analiza głównych składowych – redukcja wymiarów)<br>4. <b>t-SNE</b> (wizualizacja danych wielowymiarowych)<br>5. <b>DBSCAN</b> (gęstościowe grupowanie – wykrywanie anomalii)<br>6. <b>Autoencoders</b> (sieci do kompresji i rekonstrukcji danych) |
-| **Reinforcement Learning** | Uczenie ze wzmocnieniem (nagrody i kary) | |
-| | | 1. <b>Q-Learning</b> (uczenie przez nagrody – tablica wartości)<br>2. <b>SARSA</b> (uczenie przez nagrody – uwzględnia wybraną akcję)<br>3. <b>Deep Q-Networks</b> (Q-Learning z sieciami neuronowymi)<br>4. <b>Policy Gradients</b> (uczenie bezpośrednio strategii działania) |
+| **Supervised Learning** | Uczenie nadzorowane (dane z etykietami) |
+| | 1. **Linear Regression** – regresja liniowa (przewidywanie wartości liczbowych) |
+| | 2. **Logistic Regression** – regresja logistyczna (klasyfikacja binarna) |
+| | 3. **Decision Trees** – drzewa decyzyjne (klasyfikacja/regresja, interpretowalność) |
+| | 4. **SVM** – maszyny wektorów nośnych (klasyfikacja liniowa/nieliniowa) |
+| | 5. **k-NN** – k-najbliższych sąsiadów (klasyfikacja na podstawie podobieństwa) |
+| | 6. **Random Forest** – las losowy (wiele drzew, większa dokładność) |
+| | 7. **Neural Networks** – sieci neuronowe (złożone wzorce, deep learning) |
+| **Unsupervised Learning** | Uczenie nienadzorowane (grupowanie bez etykiet) |
+| | 1. **K-Means** – grupowanie na podstawie odległości |
+| | 2. **Hierarchical Clustering** – grupowanie hierarchiczne (drzewo klastrów) |
+| | 3. **PCA** – analiza głównych składowych (redukcja wymiarów) |
+| | 4. **t-SNE** – wizualizacja danych wielowymiarowych |
+| | 5. **DBSCAN** – gęstościowe grupowanie (wykrywanie anomalii) |
+| | 6. **Autoencoders** – sieci do kompresji i rekonstrukcji danych |
+| **Reinforcement Learning** | Uczenie ze wzmocnieniem (nagrody i kary) |
+| | 1. **Q-Learning** – uczenie przez nagrody (tablica wartości) |
+| | 2. **SARSA** – uczenie przez nagrody (uwzględnia wybraną akcję) |
+| | 3. **Deep Q-Networks** – Q-Learning z sieciami neuronowymi |
+| | 4. **Policy Gradients** – uczenie bezpośrednio strategii działania |
 | **Weights (wagi)** | Parametry modelu neuronowego aktualizowane podczas treningu; definiują siłę połączeń między neuronami |
 | **Activation Function** | Funkcja aktywacji w neuronach wprowadzająca nieliniowość do modelu |
 | | 1. **ReLU (Rectified Linear Unit)** – najczęstsza; f(x)=max(0,x); szybka, prosta |
