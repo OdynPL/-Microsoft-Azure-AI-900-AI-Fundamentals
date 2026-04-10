@@ -102,6 +102,15 @@ W kontekście AI, ML i rozwiązań chmurowych warto znać także następujące p
 | **Data Engineering** | Budowa i utrzymanie infrastruktury do gromadzenia, przetwarzania i udostępniania danych (np. ETL, Data Lake, Data Warehouse). |
 
 Znajomość tych pojęć pomaga lepiej zrozumieć ekosystem rozwiązań AI/ML oraz rolę poszczególnych usług Azure w praktycznych scenariuszach.
+
+## NIST AI Risk Management Framework (AI RMF)
+
+1. **Identyfikacja potencjalnych szkód (Identifying potential harms)** – rozpoznanie możliwych zagrożeń i ryzyk
+2. **Pomiar szkód (Measuring harms)** – ocena, czy i w jakim stopniu ryzyka występują
+3. **Łagodzenie ryzyk (Mitigating risks)** – wdrożenie działań ograniczających ryzyka
+4. **Planowanie wdrożenia (Planning for deployment)** – przygotowanie odpowiednich procedur i kontroli przed udostępnieniem rozwiązania
+
+Proces ten skupia się na zrozumieniu i minimalizowaniu ryzyk przed wdrożeniem AI. Pozostałe działania (np. operacje, bezpieczeństwo, rozwój modeli ML) są ważne, ale nie stanowią sedna Responsible AI.
 ## Azure AI Services - co warto wiedzieć
 
 **Azure AI Services** (historycznie: Cognitive Services) to rodzina gotowych modeli AI udostępnianych jako usługi chmurowe przez REST API i SDK. Z perspektywy egzaminu AI-900 najważniejsze jest rozumienie, kiedy wybrać gotową usługę AI Services, a kiedy budować model samodzielnie w Azure Machine Learning.
