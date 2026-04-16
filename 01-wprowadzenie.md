@@ -24,6 +24,7 @@ Platforma **Microsoft Azure** oferuje szeroki zestaw gotowych usług AI, które 
 | **Azure AI Speech** | Rozpoznawanie i synteza mowy, zamiana tekstu na mowę i odwrotnie, Speaker Recognition |
 | | ![Architektura Azure AI Speech](assets/arch-ai-speech.svg) |
 | | **Komunikacja:** REST API, Speech SDK (real-time streaming), Speech Studio (portal) <br><br> **Limity:** 20 współbieżnych żądań (STT), 200 żądań/min (TTS); audio do 60s (real-time), pliki do 2h (batch) <br><br> **Koszty:** Free (5h STT, 0.5M znaków TTS/mies.), S0 od ~$1/godz. STT, ~$16/1M znaków TTS |
+| **Universal Language Model** | Używany przez API Speech-to-Text jest zoptymalizowany pod kątem scenariuszy konwersacyjnych i dyktowania. Scenariusze akustyczne, językowe i wymowy wymagają stworzenia własnego modelu. |
 | **Azure AI Translator** | Tłumaczenia maszynowe tekstu (100+ języków), transliteracja, Custom Translator |
 | | ![Architektura Azure AI Translator](assets/arch-ai-translator.svg) |
 | | **Komunikacja:** REST API, Python/C# SDK <br><br> **Limity:** 50 000 znaków/żądanie, 2M znaków/godz. (Free) <br><br> **Koszty:** Free (2M znaków/mies.), S1 od ~$10/1M znaków |

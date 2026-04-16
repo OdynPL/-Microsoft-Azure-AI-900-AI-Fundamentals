@@ -60,6 +60,7 @@ switch (result.Reason)
 
 ## Ważne informacje
 - Obsługa wielu języków i akcentów, w tym polskiego.
+- **Universal Language Model** używany przez API Speech-to-Text jest zoptymalizowany pod kątem scenariuszy konwersacyjnych i dyktowania. Scenariusze akustyczne, językowe i wymowy wymagają stworzenia własnego modelu.
 - Możliwość trenowania własnych modeli rozpoznawania mowy.
 - Integracja z innymi usługami Azure (np. Bot Service, Power Automate).
 - Wysoka dokładność i niskie opóźnienia.
