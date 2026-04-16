@@ -387,13 +387,8 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 |---|---|
 | **Feature (cecha)** | Pojedyncza właściwość lub atrybut wykorzystywany przez model ML do nauki. |
 | **Label (etykieta)** | Poprawna odpowiedź przypisana do przykładu w uczeniu nadzorowanym. |
-|  |  |
-<!-- Rysunek: cechy (features) i etykieta (label) -->
-<p align="center">
-  <img src="assets/feature-label.svg" alt="Feature vs Label diagram" width="420"/>
-</p>
-
-Przykład: input (features) → output (label)
+| | ![Feature vs Label](assets/feature-label.svg) |
+| | Przykład: input (features) → output (label) |
 | **Feature Engineering** | Przygotowanie i wybór cech |
 | **Data Labeling** | Etykietowanie danych |
 | **Data Grounding** | Powiązanie generowanych odpowiedzi AI z wiarygodnymi, aktualnymi danymi źródłowymi. |
