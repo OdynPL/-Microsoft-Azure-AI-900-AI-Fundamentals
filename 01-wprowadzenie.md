@@ -50,6 +50,7 @@ Platforma **Microsoft Azure** oferuje szeroki zestaw gotowych usług AI, które 
 | | ![Architektura Azure AI Custom Vision](assets/arch-ai-custom-vision.svg) |
 | | **Komunikacja:** REST API, Python/C# SDK, Custom Vision Portal (no-code) <br><br> **Limity:** 2 projekty (Free), 100 projektów (S0); 5 000 obrazów/projekt (Free), 100 000 (S0) <br><br> **Koszty:** Free (2 projekty, 10 000 predykcji/mies.), S0 od ~$2/1000 predykcji, ~$10/godz. treningu |
 | **Azure Bot Service** | Budowa chatbotów wielokanałowych (Web Chat, Teams, Facebook, Slack) |
+| **Power Virtual Agents** | Platforma Microsoft do tworzenia chatbotów bez kodowania, integracja z Teams i Power Platform. |
 | | ![Architektura Azure Bot Service](assets/arch-bot-service.svg) |
 | | **Komunikacja:** Bot Framework SDK (C#, JS, Python), REST API, Azure Portal, Composer <br><br> **Limity:** wiele kanałów jednocześnie; limity związane z podłączonymi usługami AI <br><br> **Koszty:** kanał Web Chat/Direct Line – darmowy (Standard); Premium kanały płatne per wiadomość |
 | **Copilot Studio** | Platforma no-code do budowy chatbotów i agentów AI (dawniej Power Virtual Agents) |
