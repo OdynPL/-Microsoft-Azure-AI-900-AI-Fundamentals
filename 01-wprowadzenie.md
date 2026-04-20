@@ -465,6 +465,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | **Recall** | Odsetek wykrytych przypadków pozytywnych. |
 | **F1-score** | Średnia harmoniczna Precision i Recall. |
 | **Confusion Matrix** | Tabela pokazująca liczbę TP, FP, TN, FN. |
+| | ![Confusion Matrix](assets/confusion-matrix.svg) |
 | **ROC Curve, AUC** | Krzywa i pole pod nią oceniające skuteczność klasyfikatora binarnego. |
 | **MSE (Mean Square Error)** | Średnia kwadratów różnic między wartościami rzeczywistymi a przewidywanymi. |
 | **R² (R-Squared)** | Współczynnik pokazujący, jak dobrze model tłumaczy zmienność danych. |
